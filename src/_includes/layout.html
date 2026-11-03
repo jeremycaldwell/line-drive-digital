@@ -26,6 +26,7 @@
         "url": "{{ site.url }}/",
         "email": "{{ site.email }}",
         "telephone": "{{ site.telephone }}",
+        "openingHours": "{{ site.openingHours }}",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "{{ site.city }}",
@@ -44,7 +45,7 @@
           <a href="/" rel="home" class="ldd-logo" aria-label="Line Drive Digital, home" style="font-size: 23px">
             <span class="wmk" aria-hidden="true">
               <span>line drive</span>
-              <span>digital<span class="ball"><span class="fly"></span></span></span>
+              <span>digital<span class="ball">{% if page.url == '/' %}<span class="fly"></span>{% endif %}</span></span>
             </span>
           </a>
           <nav class="nav" aria-label="Main">
