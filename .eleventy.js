@@ -34,6 +34,7 @@ module.exports = function(eleventyConfig) {
   // ==========================================
   // 📦 RESPONSIVE IMAGE SHORTCODE
   // {% image "images/photo.jpg", "Alt text" %} — src is relative to src/.
+  // {% image "images/photo.jpg", "Alt text", { class: "css-class" } %} adds a class.
   // Pass { hero: true, isFirstHero: true } for the above-the-fold image.
   // ==========================================
   eleventyConfig.addAsyncShortcode("image", async function(src, alt, options = {}) {
@@ -53,10 +54,13 @@ module.exports = function(eleventyConfig) {
       formats: formats,
       outputDir: "./_site/images/",
       urlPath: "/images/",
+      // id is a hash of the source file, so replacing an image under the same
+      // name produces new output files (and busts browser/CDN caches) instead
+      // of reusing the old ones.
       filenameFormat: function (id, src, width, format) {
         const extension = path.extname(src);
         const name = path.basename(src, extension);
-        return `${name}-${width}.${format}`;
+        return `${name}-${id}-${width}.${format}`;
       }
     });
 

@@ -54,15 +54,9 @@ eleventyNavigation:
   <div class="container">
     <div class="grid grid--2 grid--rows-40">
       <article class="stack" data-cat="web">
-        <div
-          class="placeholder placeholder--rounded placeholder--screen"
-          role="img"
-          aria-label="Screenshot placeholder: SEO website · Roseburg, OR"
-        >
-          [PROJECT SCREENSHOT]
-        </div>
-        <p class="eyebrow eyebrow--muted">SEO website · Roseburg, OR</p>
-        <h2 class="heading heading--md">[Roofing client]</h2>
+        {% image "images/work/vance-fabrication.jpg", "Vance Fabrication LLC general construction services page", { class: "screenshot" } %}
+        <p class="eyebrow eyebrow--muted">SEO website · Kettle Falls, WA</p>
+        <h2 class="heading heading--md">Vance Fabrication LLC</h2>
         <p class="text text--muted">
           Service and location pages for every town they cover, with click-to-call and a quote form.
         </p>
@@ -74,15 +68,9 @@ eleventyNavigation:
         </div>
       </article>
       <article class="stack" data-cat="web">
-        <div
-          class="placeholder placeholder--rounded placeholder--screen"
-          role="img"
-          aria-label="Screenshot placeholder: Site rebuild + Google Business Profile"
-        >
-          [PROJECT SCREENSHOT]
-        </div>
+        {% image "images/work/mg-creative-concrete.jpg", "M&amp;G Creative Concrete website services page", { class: "screenshot" } %}
         <p class="eyebrow eyebrow--muted">Site rebuild + Google Business Profile</p>
-        <h2 class="heading heading--md">[HVAC client]</h2>
+        <h2 class="heading heading--md">M&amp;G Creative Concrete</h2>
         <p class="text text--muted">Rebuilt a slow template site and cleaned up their map listing and reviews.</p>
         <div>
           <span class="chip chip--success chip--on-light">

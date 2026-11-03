@@ -43,7 +43,6 @@ eleventyNavigation:
           <p class="lead">Thanks — we'll be in touch shortly with next steps.</p>
           <button type="button" id="send-another" class="button button--light">Send another</button>
         </div>
-
         <form
           id="contact-form"
           class="form"
@@ -117,7 +116,6 @@ eleventyNavigation:
           <div><button type="submit" class="button button--primary">Send message</button></div>
         </form>
       </div>
-
       <div class="stack">
         <div class="card card--dark card--rounded">
           <p class="eyebrow eyebrow--on-dark">Reach us directly</p>

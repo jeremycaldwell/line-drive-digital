@@ -23,8 +23,8 @@ The contact form uses Netlify Forms (`data-netlify="true"`, honeypot `bot-field`
 
 ## Structure
 - `src/_includes/layout.html` – the only layout: `<head>`, header/nav, footer, JSON-LD
-- `src/index.html`, `src/<page>/index.html` – page content (HTML with front matter, formatted by Prettier)
-- `src/_includes/` is excluded from Prettier (it would mangle Liquid tags); keep its indentation by hand
+- `src/index.md`, `src/<page>/index.md` – page content: HTML in Markdown, rendered with Nunjucks (like vance-fabrication and mg-creative-concrete). Don't leave blank lines inside an HTML block, or Markdown wraps the next tag in `<p>`.
+- `src/_includes/` and pages are not run through Prettier; keep their indentation by hand
 - `src/css/styles.css` – ordered `@import` list; PostCSS bundles it to `_site/css/styles.css`. New CSS files must be added here.
 
 ## CSS conventions
@@ -41,6 +41,7 @@ The contact form uses Netlify Forms (`data-netlify="true"`, honeypot `bot-field`
 New top-level pages need `eleventyNavigation` front matter (`key`, `order`) to show in the nav.
 
 ## Images
+Drop in a large source image (e.g. 2x the display size) under `src/images/`; the `{% image %}` shortcode generates AVIF/WebP/JPEG at 320, 640 and 1280px. Pass options as an object, e.g. `{ class: "screenshot" }` or `{ hero: true, isFirstHero: true }`.
 ```
 {% image "images/photo.jpg", "Alt text" %}
 {% image "images/photo.jpg", "Alt text", { hero: true, isFirstHero: true } %}

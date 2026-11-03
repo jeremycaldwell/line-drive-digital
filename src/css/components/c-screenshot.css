@@ -1,0 +1,13 @@
+/* =============================================================================
+   SCREENSHOT (project website screenshot, 16:10, cropped from the top)
+   ========================================================================== */
+
+.screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-24);
+  object-fit: cover;
+  object-position: top;
+}

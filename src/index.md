@@ -25,7 +25,6 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </div>
       </div>
     </div>
-
     <div class="showcase">
       <div
         class="placeholder placeholder--rounded placeholder--tall"
@@ -299,7 +298,6 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         Care &amp; hosting
       </a>
     </div>
-
     <div class="grid grid--2">
       <div class="card">
         <p class="eyebrow">SEO websites</p>
@@ -413,7 +411,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         <div class="placeholder placeholder--landscape" role="img" aria-label="Client photo placeholder">
           [CLIENT PHOTO]
         </div>
-        <p class="eyebrow eyebrow--muted">[Roofing client] · Roseburg</p>
+        <p class="eyebrow eyebrow--muted">Vance Fabrication LLC · Kettle Falls, WA</p>
         <blockquote class="quote quote--small">
           “[CLIENT TESTIMONIAL — one or two sentences about the result.]”
         </blockquote>

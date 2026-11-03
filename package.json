@@ -8,14 +8,12 @@
     "build": "eleventy",
     "format:css": "prettier --write \"src/css/**/*.css\"",
     "format:js": "prettier --write \"src/js/**/*.js\"",
-    "format": "npm run format:css && npm run format:js && npm run format:html",
+    "format": "npm run format:css && npm run format:js",
     "lint:css": "prettier --check \"src/css/**/*.css\" && stylelint \"src/css/**/*.css\"",
     "lint:js": "prettier --check \"src/js/**/*.js\" && eslint src/js",
-    "lint": "npm run lint:css && npm run lint:js && npm run lint:html",
+    "lint": "npm run lint:css && npm run lint:js",
     "watch:lint:css": "chokidar \"src/css/**/*.css\" --initial -c \"prettier --write {path} && stylelint --fix {path}\"",
-    "watch:lint:js": "chokidar \"src/js/**/*.js\" --initial -c \"prettier --write {path} && eslint --fix {path}\"",
-    "format:html": "prettier --write \"src/**/*.html\"",
-    "lint:html": "prettier --check \"src/**/*.html\""
+    "watch:lint:js": "chokidar \"src/js/**/*.js\" --initial -c \"prettier --write {path} && eslint --fix {path}\""
   },
   "license": "ISC",
   "devDependencies": {
