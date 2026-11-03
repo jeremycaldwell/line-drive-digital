@@ -70,9 +70,8 @@
     font-size: var(--font-size-14);
   }
 
-  /* On/off buttons: filters (aria-selected) and multi-select (aria-pressed) */
-  &--toggle[aria-selected='true'],
-  &--toggle[aria-pressed='true'] {
+  /* Selected filter tab */
+  &--toggle[aria-selected='true'] {
     background: var(--color-brown);
     color: var(--color-white);
   }

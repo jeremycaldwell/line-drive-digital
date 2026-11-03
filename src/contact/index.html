@@ -44,23 +44,37 @@ eleventyNavigation:
           <button type="button" id="send-another" class="button button--light">Send another</button>
         </div>
 
-        <form id="contact-form" class="form">
+        <form
+          id="contact-form"
+          class="form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="visually-hidden">
+            <label>
+              Don't fill this out:
+              <input name="bot-field" tabindex="-1" autocomplete="off" />
+            </label>
+          </p>
           <div class="grid grid--2">
             <div class="field">
               <label class="field__label" for="c-name">Name</label>
-              <input class="field__input" id="c-name" type="text" autocomplete="name" />
+              <input class="field__input" id="c-name" name="name" required type="text" autocomplete="name" />
             </div>
             <div class="field">
               <label class="field__label" for="c-biz">Business name</label>
-              <input class="field__input" id="c-biz" type="text" autocomplete="organization" />
+              <input class="field__input" id="c-biz" name="business" type="text" autocomplete="organization" />
             </div>
             <div class="field">
               <label class="field__label" for="c-email">Email</label>
-              <input class="field__input" id="c-email" type="email" autocomplete="email" />
+              <input class="field__input" id="c-email" name="email" required type="email" autocomplete="email" />
             </div>
             <div class="field">
               <label class="field__label" for="c-phone">Phone</label>
-              <input class="field__input" id="c-phone" type="tel" autocomplete="tel" />
+              <input class="field__input" id="c-phone" name="phone" type="tel" autocomplete="tel" />
             </div>
           </div>
           <div class="field">
@@ -68,49 +82,38 @@ eleventyNavigation:
               Current website
               <span class="field__hint">(optional)</span>
             </label>
-            <input class="field__input" id="c-site" type="url" placeholder="yourbusiness.com" />
+            <input class="field__input" id="c-site" name="website" type="url" placeholder="yourbusiness.com" />
           </div>
           <fieldset class="form__fieldset">
             <legend class="form__legend">What do you need?</legend>
             <div class="cluster">
-              <button
-                type="button"
-                class="button button--light button--small button--toggle"
-                data-need="web"
-                aria-pressed="false"
-              >
-                SEO website
-              </button>
-              <button
-                type="button"
-                class="button button--light button--small button--toggle"
-                data-need="ai"
-                aria-pressed="false"
-              >
-                AI consulting
-              </button>
-              <button
-                type="button"
-                class="button button--light button--small button--toggle"
-                data-need="app"
-                aria-pressed="false"
-              >
-                Custom tool / app
-              </button>
-              <button
-                type="button"
-                class="button button--light button--small button--toggle"
-                data-need="care"
-                aria-pressed="false"
-              >
-                Care plan
-              </button>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="SEO website" />
+                <span class="button button--light button--small">SEO website</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="AI consulting" />
+                <span class="button button--light button--small">AI consulting</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Custom tool / app" />
+                <span class="button button--light button--small">Custom tool / app</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Care plan" />
+                <span class="button button--light button--small">Care plan</span>
+              </label>
             </div>
           </fieldset>
           <div class="field">
             <label class="field__label" for="c-msg">Tell us about your business</label>
-            <textarea class="field__input field__input--textarea" id="c-msg" rows="5"></textarea>
+            <textarea class="field__input field__input--textarea" id="c-msg" name="message" rows="5"></textarea>
           </div>
+          <p id="form-error" class="form__error" role="alert" hidden>
+            Sorry, your message didn't send. Please email
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            or call {{ site.phone }}.
+          </p>
           <div><button type="submit" class="button button--primary">Send message</button></div>
         </form>
       </div>

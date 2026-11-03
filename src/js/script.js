@@ -20,32 +20,34 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
-   * Contact form.
-   * Demo behaviour only: wire the form to a form handler (e.g. Netlify Forms,
-   * Formspree) before launch.
+   * Contact form (Netlify Forms). Posts in the background and shows the
+   * thank-you message; without JS the form posts normally to Netlify.
    */
   const form = document.getElementById('contact-form');
 
   if (form) {
     const sent = document.getElementById('sent');
-    const needs = document.querySelectorAll('[data-need]');
+    const error = document.getElementById('form-error');
 
-    needs.forEach((button) => {
-      button.addEventListener('click', () => {
-        const pressed = button.getAttribute('aria-pressed') === 'true';
-        button.setAttribute('aria-pressed', pressed ? 'false' : 'true');
-      });
-    });
-
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
-      form.hidden = true;
-      sent.hidden = false;
+      error.hidden = true;
+      try {
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString(),
+        });
+        if (!response.ok) throw new Error(response.statusText);
+        form.hidden = true;
+        sent.hidden = false;
+      } catch {
+        error.hidden = false;
+      }
     });
 
     document.getElementById('send-another').addEventListener('click', () => {
       form.reset();
-      needs.forEach((button) => button.setAttribute('aria-pressed', 'false'));
       sent.hidden = true;
       form.hidden = false;
     });

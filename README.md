@@ -17,7 +17,9 @@ Runs `eleventy --serve` plus watchers that auto-format and lint CSS/JS on save.
 ```
 npm run build
 ```
-Output goes to `_site/`. Netlify config lives in `src/_redirects` and `src/_headers`.
+Output goes to `_site/`. Netlify builds from `netlify.toml` (`npm run build`, publish `_site`, Node 22); redirects and headers live in `src/_redirects` and `src/_headers`.
+
+The contact form uses Netlify Forms (`data-netlify="true"`, honeypot `bot-field`). Submissions show up under **Forms** in the Netlify dashboard once form detection is enabled for the site; set up email notifications there.
 
 ## Structure
 - `src/_includes/layout.html` – the only layout: `<head>`, header/nav, footer, JSON-LD
@@ -46,5 +48,4 @@ New top-level pages need `eleventyNavigation` front matter (`key`, `order`) to s
 
 ## Before launch
 - Replace every `[PLACEHOLDER]` (prices, email, phone, hours, client names, results, photos).
-- Connect the contact form to a handler (e.g. Netlify Forms).
 - Add a social preview image and `og:image` tags.
