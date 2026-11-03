@@ -73,8 +73,11 @@
   }
 }
 
+/* Trail grows with the ball (same linear timing as ldd-launch) so its tail
+   never sits below/left of the starting dot. */
 @keyframes ldd-streak {
   0% {
+    width: 0;
     opacity: 0;
   }
 
@@ -84,6 +87,7 @@
   }
 
   100% {
+    width: 0.75em;
     opacity: 0;
   }
 }
