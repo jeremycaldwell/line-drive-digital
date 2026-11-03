@@ -1,69 +1,120 @@
 /* =============================================================================
    TYPOGRAPHY
-   Headings use Outfit Bold to match the logo.
+   Headings use Outfit Bold to match the logo; labels use IBM Plex Mono.
    ========================================================================== */
 
+/* Small mono label above headings */
 .eyebrow {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 13px;
-  line-height: 16.9px;
-  font-weight: 500;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-13);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-label);
   text-transform: uppercase;
-  letter-spacing: 0.39px;
-  margin: 0;
-}
 
-.disp,
-.h2,
-.h3 {
-  font-family: Outfit, Inter, sans-serif;
-  font-weight: 700;
-  margin: 0;
-}
+  &--muted {
+    color: var(--color-text-muted);
+  }
 
-.disp {
-  font-size: 82px;
-  line-height: 1;
-  letter-spacing: -0.04em;
+  &--on-dark {
+    color: var(--color-on-dark-muted);
+  }
 
-  @media (--viewport-tablet-down) {
-    font-size: 46px;
-    letter-spacing: -1.4px;
+  &--center {
+    text-align: center;
   }
 }
 
-.h2 {
-  font-size: 56px;
-  line-height: 1.05;
-  letter-spacing: -0.035em;
+/* Smaller mono caption used inside UI mockups */
+.label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-11);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
 
-  @media (--viewport-tablet-down) {
-    font-size: 36px;
-    letter-spacing: -1px;
+  &--on-dark {
+    color: var(--color-on-dark-muted);
   }
 }
 
-.h3 {
-  font-size: 32px;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
+.heading {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+
+  &--xl {
+    font-size: var(--font-size-82);
+    line-height: var(--leading-none);
+    letter-spacing: -0.04em;
+
+    @media (--viewport-tablet-down) {
+      font-size: var(--font-size-46);
+      letter-spacing: -0.03em;
+    }
+  }
+
+  &--lg {
+    font-size: var(--font-size-56);
+    line-height: var(--leading-tight);
+    letter-spacing: -0.035em;
+
+    @media (--viewport-tablet-down) {
+      font-size: var(--font-size-36);
+      letter-spacing: -0.03em;
+    }
+  }
+
+  &--md {
+    font-size: var(--font-size-32);
+    line-height: var(--leading-tight);
+    letter-spacing: -0.03em;
+  }
+
+  &--sm {
+    font-size: var(--font-size-22);
+    line-height: var(--leading-tight);
+    letter-spacing: -0.02em;
+  }
 }
 
 .lead {
-  font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: -0.4px;
-  color: #595959;
   margin: 0;
+  font-size: var(--font-size-18);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-lead);
+  color: var(--color-text-muted);
+
+  &--on-dark {
+    color: var(--color-on-dark-muted);
+  }
+}
+
+.text {
+  margin: 0;
+  font-size: var(--font-size-16);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-body);
+
+  &--muted {
+    color: var(--color-text-muted);
+  }
+
+  &--on-dark-muted {
+    color: var(--color-on-dark-muted);
+  }
 }
 
 .link {
-  color: #b85a16;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-link);
   text-decoration: none;
 
   &:hover {
+    color: var(--color-link-hover);
     text-decoration: underline;
-    color: #8f430f;
   }
 }

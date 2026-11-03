@@ -24,6 +24,13 @@ Output goes to `_site/`. Netlify config lives in `src/_redirects` and `src/_head
 - `src/index.html`, `src/<page>/index.html` – page content (HTML with front matter, formatted by Prettier)
 - `src/_includes/` is excluded from Prettier (it would mangle Liquid tags); keep its indentation by hand
 - `src/css/styles.css` – ordered `@import` list; PostCSS bundles it to `_site/css/styles.css`. New CSS files must be added here.
+
+## CSS conventions
+- **Tokens:** all colors, font families, font sizes, weights, spacing and radii live in `src/css/base/variables.css`. Use `var(--token)` everywhere else.
+- **Spacing scale:** `--space-2`, `4`, `8`, `16`, `24`, `32`, `40`, `48`, `56`, `64` (plus `--hairline` for 1px grid lines). Margin, padding and gap must use these.
+- **BEM:** `block__element--modifier`, kebab-case. One block per file in `src/css/components/` (`c-<block>.css`); layout objects (`container`, `section`, `grid`, `stack`, `cluster`) live in `src/css/layout/`.
+- **No inline styles** in templates; add or extend a component instead.
+- **Linting:** `npm run lint` runs stylelint, which enforces BEM class names, bans raw hex/rgb colors outside the tokens file, and requires tokens for spacing, font family, size and weight.
 - `src/js/script.js` – all page JS (work filters, contact form demo)
 - `src/fonts/` – self-hosted Latin woff2 (Inter, Outfit, IBM Plex Mono, Adamina)
 - `src/_data/site.json` – site name, URL, description

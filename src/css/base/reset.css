@@ -4,15 +4,24 @@
 
 body {
   margin: 0;
-  background: #fff;
+  background: var(--color-white);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv11', 'ss03';
 }
 
 a {
-  color: #b85a16;
+  color: var(--color-link);
 
   &:hover {
-    color: #8f430f;
+    color: var(--color-link-hover);
   }
+}
+
+figure,
+blockquote,
+dd {
+  margin: 0;
 }
 
 [hidden] {

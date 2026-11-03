@@ -1,0 +1,45 @@
+/* =============================================================================
+   ESTIMATE (estimate builder mockup)
+   ========================================================================== */
+
+.estimate {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-24);
+  border-radius: var(--radius-16);
+  background: var(--color-dark-raised);
+  font-size: var(--font-size-14);
+  letter-spacing: var(--tracking-body);
+
+  &__notes {
+    padding: var(--space-16);
+    border-radius: var(--radius-12);
+    background: var(--color-on-dark-fill);
+    color: var(--color-on-dark-soft);
+  }
+
+  &__lines {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    margin: 0;
+  }
+
+  &__line {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-16);
+    padding-bottom: var(--space-8);
+    border-bottom: var(--hairline) solid var(--color-on-dark-line);
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    &--total {
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+}

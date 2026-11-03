@@ -1,0 +1,64 @@
+/* =============================================================================
+   CARD (rounded panel)
+   ========================================================================== */
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-40);
+  border-radius: var(--radius-16);
+  background: var(--color-oat);
+  overflow: hidden;
+  isolation: isolate;
+
+  @media (--viewport-tablet-down) {
+    padding: var(--space-32);
+  }
+
+  &--compact {
+    padding: var(--space-32);
+  }
+
+  &--large {
+    padding: var(--space-48);
+    border-radius: var(--radius-24);
+
+    @media (--viewport-tablet-down) {
+      padding: var(--space-32);
+    }
+  }
+
+  &--rounded {
+    border-radius: var(--radius-24);
+  }
+
+  &--dark {
+    background: var(--color-dark);
+    color: var(--color-on-dark);
+  }
+
+  &--brown {
+    justify-content: space-between;
+    background: var(--color-brown);
+    color: var(--color-on-dark);
+  }
+
+  &--white {
+    background: var(--color-white);
+  }
+
+  /* Fill remaining height in a flex column */
+  &--grow {
+    flex: 1;
+    position: relative;
+  }
+
+  /* Mockup area at the bottom of a card */
+  &__visual {
+    position: relative;
+    min-height: 220px;
+    margin-top: var(--space-24);
+  }
+}

@@ -1,0 +1,22 @@
+/* =============================================================================
+   LOGOS (client logo strip)
+   ========================================================================== */
+
+.logos {
+  margin-top: var(--space-64);
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-16) var(--space-56);
+    margin: var(--space-32) 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--tracking-lead);
+    color: var(--color-text-subtle);
+  }
+}

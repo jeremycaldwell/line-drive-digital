@@ -7,161 +7,124 @@ eleventyNavigation:
   order: 2
 ---
 
-<section class="sec" style="padding: 88px 0 40px">
-  <div class="wrap">
-    <div
-      class="hero"
-      style="display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: end"
-    >
+<section class="section section--intro">
+  <div class="container">
+    <div class="intro">
       <div>
-        <p class="eyebrow" style="margin-bottom: 24px">Our work</p>
-        <h1 class="disp">Built for the businesses down the road.</h1>
+        <p class="eyebrow intro__eyebrow">Our work</p>
+        <h1 class="heading heading--xl">Built for the businesses down the road.</h1>
       </div>
       <p class="lead">
         Websites that rank in their towns, and the tools that help the people behind them get home on time.
       </p>
     </div>
-    <div
-      role="tablist"
-      aria-label="Filter projects"
-      style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 48px"
-    >
-      <button role="tab" type="button" class="pill filt" data-filter="all" aria-selected="true">All work</button>
-      <button role="tab" type="button" class="pill filt" data-filter="web" aria-selected="false">Websites</button>
-      <button role="tab" type="button" class="pill filt" data-filter="ai" aria-selected="false">
+    <div class="cluster cluster--spaced" role="tablist" aria-label="Filter projects">
+      <button
+        role="tab"
+        type="button"
+        class="button button--secondary button--small button--toggle"
+        data-filter="all"
+        aria-selected="true"
+      >
+        All work
+      </button>
+      <button
+        role="tab"
+        type="button"
+        class="button button--secondary button--small button--toggle"
+        data-filter="web"
+        aria-selected="false"
+      >
+        Websites
+      </button>
+      <button
+        role="tab"
+        type="button"
+        class="button button--secondary button--small button--toggle"
+        data-filter="ai"
+        aria-selected="false"
+      >
         AI tools &amp; apps
       </button>
     </div>
   </div>
 </section>
 
-<section class="sec" style="padding: 0 0 72px">
-  <div class="wrap">
-    <div class="g2" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 16px">
-      <article data-cat="web" style="display: flex; flex-direction: column; gap: 14px">
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2 grid--rows-40">
+      <article class="stack" data-cat="web">
         <div
-          class="ph"
+          class="placeholder placeholder--rounded placeholder--screen"
           role="img"
           aria-label="Screenshot placeholder: SEO website · Roseburg, OR"
-          style="aspect-ratio: 16 / 10; border-radius: 24px"
         >
           [PROJECT SCREENSHOT]
         </div>
-        <p class="eyebrow" style="color: #595959; margin-top: 6px">SEO website · Roseburg, OR</p>
-        <h2
-          style="
-            margin: 0;
-            font-family: Outfit, sans-serif;
-            font-size: 32px;
-            line-height: 1.1;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-          "
-        >
-          [Roofing client]
-        </h2>
-        <p style="margin: 0; font-size: 16px; line-height: 1.4; letter-spacing: -0.3px; color: #595959">
+        <p class="eyebrow eyebrow--muted">SEO website · Roseburg, OR</p>
+        <h2 class="heading heading--md">[Roofing client]</h2>
+        <p class="text text--muted">
           Service and location pages for every town they cover, with click-to-call and a quote form.
         </p>
         <div>
-          <span class="chip" style="background: #f7f4f1; color: #1e681d">
-            <span class="dot" style="background: #288a26"></span>
+          <span class="chip chip--success chip--on-light">
+            <span class="chip__dot"></span>
             [RESULT]
           </span>
         </div>
       </article>
-      <article data-cat="web" style="display: flex; flex-direction: column; gap: 14px">
+      <article class="stack" data-cat="web">
         <div
-          class="ph"
+          class="placeholder placeholder--rounded placeholder--screen"
           role="img"
           aria-label="Screenshot placeholder: Site rebuild + Google Business Profile"
-          style="aspect-ratio: 16 / 10; border-radius: 24px"
         >
           [PROJECT SCREENSHOT]
         </div>
-        <p class="eyebrow" style="color: #595959; margin-top: 6px">Site rebuild + Google Business Profile</p>
-        <h2
-          style="
-            margin: 0;
-            font-family: Outfit, sans-serif;
-            font-size: 32px;
-            line-height: 1.1;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-          "
-        >
-          [HVAC client]
-        </h2>
-        <p style="margin: 0; font-size: 16px; line-height: 1.4; letter-spacing: -0.3px; color: #595959">
-          Rebuilt a slow template site and cleaned up their map listing and reviews.
-        </p>
+        <p class="eyebrow eyebrow--muted">Site rebuild + Google Business Profile</p>
+        <h2 class="heading heading--md">[HVAC client]</h2>
+        <p class="text text--muted">Rebuilt a slow template site and cleaned up their map listing and reviews.</p>
         <div>
-          <span class="chip" style="background: #f7f4f1; color: #1e681d">
-            <span class="dot" style="background: #288a26"></span>
+          <span class="chip chip--success chip--on-light">
+            <span class="chip__dot"></span>
             [RESULT]
           </span>
         </div>
       </article>
-      <article data-cat="ai" style="display: flex; flex-direction: column; gap: 14px">
+      <article class="stack" data-cat="ai">
         <div
-          class="ph"
+          class="placeholder placeholder--rounded placeholder--screen"
           role="img"
           aria-label="Screenshot placeholder: AI estimate builder"
-          style="aspect-ratio: 16 / 10; border-radius: 24px"
         >
           [PROJECT SCREENSHOT]
         </div>
-        <p class="eyebrow" style="color: #595959; margin-top: 6px">AI estimate builder</p>
-        <h2
-          style="
-            margin: 0;
-            font-family: Outfit, sans-serif;
-            font-size: 32px;
-            line-height: 1.1;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-          "
-        >
-          [Contractor client]
-        </h2>
-        <p style="margin: 0; font-size: 16px; line-height: 1.4; letter-spacing: -0.3px; color: #595959">
+        <p class="eyebrow eyebrow--muted">AI estimate builder</p>
+        <h2 class="heading heading--md">[Contractor client]</h2>
+        <p class="text text--muted">
           Crew enters job details on a phone; the tool drafts a branded estimate for review.
         </p>
         <div>
-          <span class="chip" style="background: #f7f4f1; color: #1e681d">
-            <span class="dot" style="background: #288a26"></span>
+          <span class="chip chip--success chip--on-light">
+            <span class="chip__dot"></span>
             [RESULT]
           </span>
         </div>
       </article>
-      <article data-cat="ai" style="display: flex; flex-direction: column; gap: 14px">
+      <article class="stack" data-cat="ai">
         <div
-          class="ph"
+          class="placeholder placeholder--rounded placeholder--screen"
           role="img"
           aria-label="Screenshot placeholder: Custom scheduling dashboard"
-          style="aspect-ratio: 16 / 10; border-radius: 24px"
         >
           [PROJECT SCREENSHOT]
         </div>
-        <p class="eyebrow" style="color: #595959; margin-top: 6px">Custom scheduling dashboard</p>
-        <h2
-          style="
-            margin: 0;
-            font-family: Outfit, sans-serif;
-            font-size: 32px;
-            line-height: 1.1;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-          "
-        >
-          [Service client]
-        </h2>
-        <p style="margin: 0; font-size: 16px; line-height: 1.4; letter-spacing: -0.3px; color: #595959">
-          A simple internal app tying form leads, the calendar and job notes together.
-        </p>
+        <p class="eyebrow eyebrow--muted">Custom scheduling dashboard</p>
+        <h2 class="heading heading--md">[Service client]</h2>
+        <p class="text text--muted">A simple internal app tying form leads, the calendar and job notes together.</p>
         <div>
-          <span class="chip" style="background: #f7f4f1; color: #1e681d">
-            <span class="dot" style="background: #288a26"></span>
+          <span class="chip chip--success chip--on-light">
+            <span class="chip__dot"></span>
             [RESULT]
           </span>
         </div>
@@ -170,90 +133,42 @@ eleventyNavigation:
   </div>
 </section>
 
-<section class="sec" style="padding: 0 0 88px">
-  <div class="wrap">
-    <div
-      class="card hero"
-      style="
-        background: #211006;
-        color: #fff;
-        border-radius: 24px;
-        padding: 56px;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-        gap: 48px;
-        align-items: center;
-      "
-    >
+<section class="section">
+  <div class="container">
+    <div class="feature feature--dark">
       <div
-        class="ph"
+        class="placeholder placeholder--dark placeholder--landscape"
         role="img"
         aria-label="Client photo placeholder"
-        style="aspect-ratio: 4 / 3; background: #2b170c; color: #d9cfc8"
       >
         [FEATURED CLIENT PHOTO]
       </div>
-      <div style="display: flex; flex-direction: column; gap: 20px">
-        <p class="eyebrow" style="color: #d9cfc8">Featured story · [Client] · [Town]</p>
-        <blockquote
-          style="
-            margin: 0;
-            font-family: Adamina, Georgia, serif;
-            font-size: 28px;
-            line-height: 1.3;
-            letter-spacing: -0.3px;
-          "
-        >
-          “[CLIENT TESTIMONIAL — the problem, what we built, and what changed.]”
-        </blockquote>
-        <p style="margin: 0; font-size: 15px; color: #d9cfc8">[Client name], [Role]</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px">
-          <span class="chip" style="color: #1e681d">
-            <span class="dot" style="background: #288a26"></span>
+      <figure class="feature__content">
+        <p class="eyebrow eyebrow--on-dark">Featured story · [Client] · [Town]</p>
+        <blockquote class="quote">“[CLIENT TESTIMONIAL — the problem, what we built, and what changed.]”</blockquote>
+        <figcaption class="text text--on-dark-muted">[Client name], [Role]</figcaption>
+        <div class="cluster">
+          <span class="chip chip--success">
+            <span class="chip__dot"></span>
             [KEY RESULT]
           </span>
-          <span class="chip" style="color: #000">SEO website + AI intake</span>
+          <span class="chip">SEO website + AI intake</span>
         </div>
-      </div>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="sec" style="padding: 0 0 88px">
-  <div class="wrap">
-    <div
-      class="card"
-      style="
-        background: #f7f4f1;
-        border-radius: 24px;
-        padding: 72px 56px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        position: relative;
-        overflow: hidden;
-      "
-    >
-      <div
-        aria-hidden="true"
-        style="
-          position: absolute;
-          left: -90px;
-          bottom: -110px;
-          width: 280px;
-          height: 280px;
-          border-radius: 50%;
-          background: #d66733;
-        "
-      ></div>
-      <p class="eyebrow" style="position: relative">Your project</p>
-      <h2 class="h2" style="max-width: 760px; position: relative">Your business could be next.</h2>
-      <p class="lead" style="max-width: 620px; position: relative">
+<section class="section">
+  <div class="container">
+    <div class="cta cta--light">
+      <div class="decor decor--large decor--bottom-left" aria-hidden="true"></div>
+      <p class="eyebrow">Your project</p>
+      <h2 class="heading heading--lg cta__title">Your business could be next.</h2>
+      <p class="lead cta__text">
         Tell us what you do and where you do it. We'll show you what's possible before you spend a dollar.
       </p>
-      <div style="position: relative"><a href="/contact/" class="pill pill-brown">Let's talk</a></div>
+      <div class="cta__actions"><a href="/contact/" class="button button--primary">Let's talk</a></div>
     </div>
   </div>
 </section>

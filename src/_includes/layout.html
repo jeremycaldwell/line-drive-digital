@@ -41,19 +41,19 @@
     <a href="#main-content" class="visually-hidden skip-link">Skip to main content</a>
     <div class="page">
       <header class="header">
-        <div class="wrap">
-          <a href="/" rel="home" class="ldd-logo" aria-label="Line Drive Digital, home" style="font-size: 23px">
-            <span class="wmk" aria-hidden="true">
-              Line Drive Digital<span class="ball">{% if page.url == '/' %}<span class="fly"></span>{% endif %}</span>
+        <div class="container header__inner">
+          <a href="/" rel="home" class="logo logo--header" aria-label="Line Drive Digital, home">
+            <span class="logo__wordmark" aria-hidden="true">
+              Line Drive Digital<span class="logo__ball">{% if page.url == '/' %}<span class="logo__fly"></span>{% endif %}</span>
             </span>
           </a>
           <nav class="nav" aria-label="Main">
             {%- assign navPages = collections.all | eleventyNavigation %}
             {%- for entry in navPages %}
               {%- if entry.url == '/contact/' %}
-            <a href="{{ entry.url }}" class="pill pill-brown"{% if entry.url == page.url %} aria-current="page"{% endif %}>Let's talk</a>
+            <a href="{{ entry.url }}" class="button button--primary button--small"{% if entry.url == page.url %} aria-current="page"{% endif %}>Let's talk</a>
               {%- else %}
-            <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+            <a href="{{ entry.url }}" class="nav__link"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
               {%- endif %}
             {%- endfor %}
           </nav>
@@ -66,66 +66,43 @@
 
       {%- if page.url == '/services/' %}{% assign svc = '' %}{% else %}{% assign svc = '/services/' %}{% endif %}
       <footer class="footer">
-        <div class="wrap">
-          <div
-            class="g4"
-            style="display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr)); gap: 32px"
-          >
-            <div style="display: flex; flex-direction: column; gap: 14px">
-              <a href="/" class="ldd-logo" aria-label="Line Drive Digital, home" style="font-size: 36px">
-                <span class="wmk" aria-hidden="true">
-                  Line Drive Digital<span class="ball"></span>
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__brand">
+              <a href="/" class="logo logo--footer" aria-label="Line Drive Digital, home">
+                <span class="logo__wordmark" aria-hidden="true">
+                  Line Drive Digital<span class="logo__ball"></span>
                 </span>
               </a>
-              <p style="margin: 0; font-size: 14px; line-height: 1.4; color: #595959; max-width: 300px">
+              <p class="footer__about">
                 SEO websites, AI consulting and custom tools for local businesses. Based in Sutherlin, Oregon.
               </p>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 10px">
-              <p class="eyebrow" style="color: #595959; margin-bottom: 6px">Services</p>
-              <a href="{{ svc }}#seo">SEO websites</a>
-              <a href="{{ svc }}#ai">AI consulting</a>
-              <a href="{{ svc }}#apps">Custom AI tools</a>
-              <a href="{{ svc }}#care">Care plans</a>
+            <div class="footer__column">
+              <p class="eyebrow eyebrow--muted footer__heading">Services</p>
+              <a href="{{ svc }}#seo" class="footer__link">SEO websites</a>
+              <a href="{{ svc }}#ai" class="footer__link">AI consulting</a>
+              <a href="{{ svc }}#apps" class="footer__link">Custom AI tools</a>
+              <a href="{{ svc }}#care" class="footer__link">Care plans</a>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 10px">
-              <p class="eyebrow" style="color: #595959; margin-bottom: 6px">Company</p>
-              <a href="/about/">About</a>
-              <a href="/work/">Work</a>
-              <a href="/contact/">Contact</a>
+            <div class="footer__column">
+              <p class="eyebrow eyebrow--muted footer__heading">Company</p>
+              <a href="/about/" class="footer__link">About</a>
+              <a href="/work/" class="footer__link">Work</a>
+              <a href="/contact/" class="footer__link">Contact</a>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 10px">
-              <p class="eyebrow" style="color: #595959; margin-bottom: 6px">Contact</p>
-              <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-              <a href="tel:{{ site.telephone }}">{{ site.phone }}</a>
-              <span style="font-size: 14px; color: #595959">Sutherlin, Oregon</span>
+            <div class="footer__column">
+              <p class="eyebrow eyebrow--muted footer__heading">Contact</p>
+              <a href="mailto:{{ site.email }}" class="footer__link">{{ site.email }}</a>
+              <a href="tel:{{ site.telephone }}" class="footer__link">{{ site.phone }}</a>
+              <span class="footer__text">Sutherlin, Oregon</span>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-              gap: 12px;
-              margin-top: 56px;
-              padding-top: 24px;
-              border-top: 1px solid #f7f4f1;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                font-family: 'IBM Plex Mono', monospace;
-                font-size: 11px;
-                text-transform: uppercase;
-                color: #595959;
-              "
-            >
-              &copy; {% year %} {{ site.businessname }}
-            </p>
-            <div style="display: flex; gap: 24px">
-              <a href="#" style="font-size: 13px; color: #595959">Privacy</a>
-              <a href="#" style="font-size: 13px; color: #595959">Terms</a>
+          <div class="footer__bottom">
+            <p class="label">&copy; {% year %} {{ site.businessname }}</p>
+            <div class="footer__legal">
+              <a href="#" class="footer__legal-link">Privacy</a>
+              <a href="#" class="footer__legal-link">Terms</a>
             </div>
           </div>
         </div>

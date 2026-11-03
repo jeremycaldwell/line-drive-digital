@@ -7,15 +7,12 @@ eleventyNavigation:
   order: 4
 ---
 
-<section class="sec" style="padding: 88px 0 48px">
-  <div class="wrap">
-    <div
-      class="hero"
-      style="display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: end"
-    >
+<section class="section section--intro">
+  <div class="container">
+    <div class="intro">
       <div>
-        <p class="eyebrow" style="margin-bottom: 24px">Contact</p>
-        <h1 class="disp">Let's talk about your next customer.</h1>
+        <p class="eyebrow intro__eyebrow">Contact</p>
+        <h1 class="heading heading--xl">Let's talk about your next customer.</h1>
       </div>
       <p class="lead">
         Tell us a little about your business. We'll reply within [RESPONSE TIME] with next steps and your free audit.
@@ -24,239 +21,140 @@ eleventyNavigation:
   </div>
 </section>
 
-<section class="sec" style="padding: 0 0 88px">
-  <div class="wrap">
-    <div
-      class="g2"
-      style="display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 16px; align-items: stretch"
-    >
-      <div class="card" style="background: #f7f4f1; border-radius: 24px; padding: 48px">
-        <div id="sent" hidden style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px">
+<section class="section">
+  <div class="container">
+    <div class="grid grid--aside-right">
+      <div class="card card--large">
+        <div id="sent" class="form__success" hidden>
           <svg
+            class="form__success-icon"
             width="40"
             height="40"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#1e681d"
+            stroke="currentColor"
             stroke-width="1.5"
             aria-hidden="true"
           >
             <circle cx="12" cy="12" r="9"></circle>
             <path d="M8 12.5l2.5 2.5L16 9.5"></path>
           </svg>
-          <p
-            style="
-              margin: 0;
-              font-family: Outfit, sans-serif;
-              font-size: 32px;
-              font-weight: 700;
-              letter-spacing: -0.03em;
-            "
-          >
-            Message sent.
-          </p>
+          <p class="heading heading--md">Message sent.</p>
           <p class="lead">Thanks — we'll be in touch shortly with next steps.</p>
-          <button type="button" id="send-another" class="pill" style="background: #fff; color: #000">
-            Send another
-          </button>
+          <button type="button" id="send-another" class="button button--light">Send another</button>
         </div>
 
-        <form id="contact-form" style="display: flex; flex-direction: column; gap: 20px">
-          <div class="g2" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+        <form id="contact-form" class="form">
+          <div class="grid grid--2">
             <div class="field">
-              <label for="c-name">Name</label>
-              <input id="c-name" type="text" autocomplete="name" />
+              <label class="field__label" for="c-name">Name</label>
+              <input class="field__input" id="c-name" type="text" autocomplete="name" />
             </div>
             <div class="field">
-              <label for="c-biz">Business name</label>
-              <input id="c-biz" type="text" autocomplete="organization" />
+              <label class="field__label" for="c-biz">Business name</label>
+              <input class="field__input" id="c-biz" type="text" autocomplete="organization" />
             </div>
             <div class="field">
-              <label for="c-email">Email</label>
-              <input id="c-email" type="email" autocomplete="email" />
+              <label class="field__label" for="c-email">Email</label>
+              <input class="field__input" id="c-email" type="email" autocomplete="email" />
             </div>
             <div class="field">
-              <label for="c-phone">Phone</label>
-              <input id="c-phone" type="tel" autocomplete="tel" />
+              <label class="field__label" for="c-phone">Phone</label>
+              <input class="field__input" id="c-phone" type="tel" autocomplete="tel" />
             </div>
           </div>
           <div class="field">
-            <label for="c-site">
+            <label class="field__label" for="c-site">
               Current website
-              <span style="color: #595959; font-weight: 400">(optional)</span>
+              <span class="field__hint">(optional)</span>
             </label>
-            <input id="c-site" type="url" placeholder="yourbusiness.com" />
+            <input class="field__input" id="c-site" type="url" placeholder="yourbusiness.com" />
           </div>
-          <fieldset style="margin: 0; padding: 0; border: 0">
-            <legend style="font-size: 14px; font-weight: 500; letter-spacing: -0.3px; margin-bottom: 12px">
-              What do you need?
-            </legend>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px">
-              <button type="button" class="pill need" data-need="web" aria-pressed="false">SEO website</button>
-              <button type="button" class="pill need" data-need="ai" aria-pressed="false">AI consulting</button>
-              <button type="button" class="pill need" data-need="app" aria-pressed="false">Custom tool / app</button>
-              <button type="button" class="pill need" data-need="care" aria-pressed="false">Care plan</button>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">What do you need?</legend>
+            <div class="cluster">
+              <button
+                type="button"
+                class="button button--light button--small button--toggle"
+                data-need="web"
+                aria-pressed="false"
+              >
+                SEO website
+              </button>
+              <button
+                type="button"
+                class="button button--light button--small button--toggle"
+                data-need="ai"
+                aria-pressed="false"
+              >
+                AI consulting
+              </button>
+              <button
+                type="button"
+                class="button button--light button--small button--toggle"
+                data-need="app"
+                aria-pressed="false"
+              >
+                Custom tool / app
+              </button>
+              <button
+                type="button"
+                class="button button--light button--small button--toggle"
+                data-need="care"
+                aria-pressed="false"
+              >
+                Care plan
+              </button>
             </div>
           </fieldset>
           <div class="field">
-            <label for="c-msg">Tell us about your business</label>
-            <textarea id="c-msg" rows="5" style="resize: vertical; line-height: 1.45"></textarea>
+            <label class="field__label" for="c-msg">Tell us about your business</label>
+            <textarea class="field__input field__input--textarea" id="c-msg" rows="5"></textarea>
           </div>
-          <div><button type="submit" class="pill pill-brown">Send message</button></div>
+          <div><button type="submit" class="button button--primary">Send message</button></div>
         </form>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 16px">
-        <div
-          class="card"
-          style="
-            background: #211006;
-            color: #fff;
-            border-radius: 24px;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-          "
-        >
-          <p class="eyebrow" style="color: #d9cfc8">Reach us directly</p>
-          <div style="display: flex; flex-direction: column; gap: 14px; font-size: 16px; letter-spacing: -0.3px">
+      <div class="stack">
+        <div class="card card--dark card--rounded">
+          <p class="eyebrow eyebrow--on-dark">Reach us directly</p>
+          <dl class="contact-list">
             <div>
-              <p
-                style="
-                  margin: 0;
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 11px;
-                  text-transform: uppercase;
-                  color: #d9cfc8;
-                "
-              >
-                Email
-              </p>
-              <a href="mailto:{{ site.email }}" style="color: #fff">{{ site.email }}</a>
+              <dt class="label label--on-dark">Email</dt>
+              <dd>
+                <a href="mailto:{{ site.email }}" class="contact-list__link">{{ site.email }}</a>
+              </dd>
             </div>
             <div>
-              <p
-                style="
-                  margin: 0;
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 11px;
-                  text-transform: uppercase;
-                  color: #d9cfc8;
-                "
-              >
-                Phone
-              </p>
-              <a href="tel:{{ site.telephone }}" style="color: #fff">{{ site.phone }}</a>
+              <dt class="label label--on-dark">Phone</dt>
+              <dd>
+                <a href="tel:{{ site.telephone }}" class="contact-list__link">{{ site.phone }}</a>
+              </dd>
             </div>
             <div>
-              <p
-                style="
-                  margin: 0;
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 11px;
-                  text-transform: uppercase;
-                  color: #d9cfc8;
-                "
-              >
-                Hours
-              </p>
-              <span>{{ site.hours }}</span>
+              <dt class="label label--on-dark">Hours</dt>
+              <dd>{{ site.hours }}</dd>
             </div>
             <div>
-              <p
-                style="
-                  margin: 0;
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 11px;
-                  text-transform: uppercase;
-                  color: #d9cfc8;
-                "
-              >
-                Service area
-              </p>
-              <span>Sutherlin, Roseburg &amp; Southern Oregon</span>
+              <dt class="label label--on-dark">Service area</dt>
+              <dd>Sutherlin, Roseburg &amp; Southern Oregon</dd>
             </div>
-          </div>
+          </dl>
         </div>
-        <div
-          class="card"
-          style="
-            background: #f7f4f1;
-            border-radius: 24px;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            flex: 1;
-            position: relative;
-            overflow: hidden;
-          "
-        >
-          <div
-            aria-hidden="true"
-            style="
-              position: absolute;
-              right: -70px;
-              bottom: -90px;
-              width: 200px;
-              height: 200px;
-              border-radius: 50%;
-              background: #d66733;
-            "
-          ></div>
-          <p class="eyebrow" style="position: relative">What happens next</p>
-          <ol
-            style="
-              margin: 0;
-              padding: 0;
-              list-style: none;
-              display: flex;
-              flex-direction: column;
-              gap: 14px;
-              font-size: 16px;
-              line-height: 1.4;
-              letter-spacing: -0.3px;
-              position: relative;
-            "
-          >
-            <li style="display: flex; gap: 14px">
-              <span
-                style="
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 13px;
-                  color: #595959;
-                  padding-top: 2px;
-                "
-              >
-                01
-              </span>
+        <div class="card card--rounded card--grow">
+          <div class="decor decor--small decor--bottom-right" aria-hidden="true"></div>
+          <p class="eyebrow">What happens next</p>
+          <ol class="numbered-list">
+            <li class="numbered-list__item">
+              <span class="numbered-list__number">01</span>
               <span>We review your site and search presence.</span>
             </li>
-            <li style="display: flex; gap: 14px">
-              <span
-                style="
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 13px;
-                  color: #595959;
-                  padding-top: 2px;
-                "
-              >
-                02
-              </span>
+            <li class="numbered-list__item">
+              <span class="numbered-list__number">02</span>
               <span>A short call to learn how your business runs.</span>
             </li>
-            <li style="display: flex; gap: 14px">
-              <span
-                style="
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 13px;
-                  color: #595959;
-                  padding-top: 2px;
-                "
-              >
-                03
-              </span>
+            <li class="numbered-list__item">
+              <span class="numbered-list__number">03</span>
               <span>You get a free audit and a clear proposal.</span>
             </li>
           </ol>

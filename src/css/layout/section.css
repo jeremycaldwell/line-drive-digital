@@ -1,0 +1,29 @@
+/* =============================================================================
+   SECTION
+   Vertical rhythm between page bands. Default: space below only, so stacked
+   sections are 64px apart.
+   ========================================================================== */
+
+.section {
+  padding: 0 0 var(--space-64);
+
+  /* Page intro at the top of every page */
+  &--intro {
+    padding: var(--space-64) 0 var(--space-40);
+  }
+
+  /* Space above and below */
+  &--padded {
+    padding: var(--space-64) 0;
+  }
+
+  /* Tighter bands for consecutive feature blocks */
+  &--band {
+    padding: var(--space-40) 0;
+  }
+
+  /* Last band before a regular section */
+  &--band-end {
+    padding: var(--space-40) 0 var(--space-64);
+  }
+}

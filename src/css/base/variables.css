@@ -1,0 +1,115 @@
+/* =============================================================================
+   DESIGN TOKENS
+   The only place raw colors, font stacks and sizes are allowed (enforced by
+   stylelint). Everything else uses var(--token).
+   ========================================================================== */
+
+:root {
+  /* Color: neutrals */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-text: var(--color-black);
+  --color-text-muted: #595959;
+  --color-text-subtle: #919191;
+
+  /* Color: oat (light warm surfaces) */
+  --color-oat: #f7f4f1;
+  --color-oat-hover: #eee8e2;
+  --color-oat-line: #ece7e2;
+  --color-oat-skeleton: #f0ebe6;
+  --color-oat-input: #e6e0da;
+  --color-oat-tint: #fcfbfa;
+
+  /* Color: brown / dark (dark warm surfaces) */
+  --color-brown: #3b281d;
+  --color-brown-hover: #4d3628;
+  --color-dark: #211006;
+  --color-dark-raised: #2b170c;
+  --color-dark-overlay: rgba(33, 16, 6, 0.92);
+
+  /* Color: text and lines on dark surfaces */
+  --color-on-dark: var(--color-white);
+  --color-on-dark-muted: #d9cfc8;
+  --color-on-dark-subtle: #c9bfb8;
+  --color-on-dark-soft: #e8e0da;
+  --color-on-dark-line: rgba(255, 255, 255, 0.08);
+  --color-on-dark-fill: rgba(255, 255, 255, 0.06);
+  --color-on-dark-button: rgba(255, 255, 255, 0.1);
+
+  /* Color: brand accent */
+  --color-accent: #d66733;
+  --color-accent-clear: rgba(214, 103, 51, 0);
+  --color-accent-strong: rgba(214, 103, 51, 0.85);
+  --color-link: #b85a16;
+  --color-link-hover: #8f430f;
+
+  /* Color: status */
+  --color-success: #1e681d;
+  --color-success-dot: #288a26;
+  --color-warning: #8b6900;
+  --color-danger: #99001c;
+
+  /* Spacing (margin, padding, gap) */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --hairline: 1px;
+
+  /* Font families */
+  --font-sans: inter, arial, 'Helvetica Neue', sans-serif;
+  --font-display: outfit, inter, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-serif: adamina, georgia, serif;
+
+  /* Font sizes */
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-22: 22px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-46: 46px;
+  --font-size-56: 56px;
+  --font-size-82: 82px;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line height */
+  --leading-none: 1;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.45;
+
+  /* Letter spacing */
+  --tracking-body: -0.3px;
+  --tracking-lead: -0.4px;
+  --tracking-label: 0.03em;
+
+  /* Radius */
+  --radius-4: 4px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-pill: 9999px;
+  --radius-round: 50%;
+
+  /* Layout */
+  --container-width: 1280px;
+}

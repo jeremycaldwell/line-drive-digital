@@ -2,42 +2,51 @@
    LOGO (text wordmark with animated ball)
    ========================================================================== */
 
-.ldd-logo {
+.logo {
   display: inline-flex;
-  text-decoration: none;
-  color: #000;
   line-height: 0;
+  color: var(--color-text);
+  text-decoration: none;
 
   &:hover {
-    color: #000;
+    color: var(--color-text);
   }
-}
 
-.wmk {
-  display: inline-block;
-  font-family: Outfit, sans-serif;
-  font-weight: 800;
-  letter-spacing: -0.055em;
-  line-height: 0.85;
-  white-space: nowrap;
+  &--header {
+    font-size: var(--font-size-24);
+  }
 
-  & .ball {
+  &--footer {
+    font-size: var(--font-size-36);
+  }
+
+  &__wordmark {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-extrabold);
+    line-height: 0.85;
+    letter-spacing: -0.055em;
+    white-space: nowrap;
+  }
+
+  &__ball {
     display: inline-block;
     position: relative;
     width: 0.22em;
     height: 0.22em;
     margin-left: 0.06em;
-    border-radius: 50%;
-    background: #d66733;
+    border-radius: var(--radius-round);
+    background: var(--color-accent);
   }
 
-  & .fly {
+  &__fly {
     position: absolute;
     inset: 0;
-    border-radius: 50%;
-    background: #d66733;
+    border-radius: var(--radius-round);
+    background: var(--color-accent);
     animation: ldd-launch 2.1s linear 0.6s 1 both;
 
+    /* Trail */
     &::before {
       content: '';
       position: absolute;
@@ -48,8 +57,8 @@
       border-radius: 1em;
       background: linear-gradient(
         90deg,
-        rgba(214, 103, 51, 0),
-        rgba(214, 103, 51, 0.85)
+        var(--color-accent-clear),
+        var(--color-accent-strong)
       );
       transform-origin: 100% 50%;
       transform: translateY(-50%) rotate(-35.5deg);
@@ -90,8 +99,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .wmk .fly,
-  .wmk .fly::before {
+  .logo__fly,
+  .logo__fly::before {
     animation: none;
     opacity: 0;
   }

@@ -1,0 +1,14 @@
+/* =============================================================================
+   SHOWCASE (home hero: photo with toast + lead inbox mockup)
+   ========================================================================== */
+
+.showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: var(--space-16);
+  margin-top: var(--space-56);
+
+  @media (--viewport-tablet-down) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,20 @@
+/* =============================================================================
+   CONTACT LIST (email, phone, hours on dark card)
+   ========================================================================== */
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin: 0;
+  font-size: var(--font-size-16);
+  letter-spacing: var(--tracking-body);
+
+  &__link {
+    color: var(--color-on-dark);
+
+    &:hover {
+      color: var(--color-on-dark-muted);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/* =============================================================================
+   DECOR (orange circle cropped by its panel)
+   Parent needs position: relative, overflow: hidden and isolation: isolate
+   (so z-index: -1 sits above the parent's background, below its content).
+   ========================================================================== */
+
+.decor {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: var(--radius-round);
+  background: var(--color-accent);
+  z-index: -1;
+  pointer-events: none;
+
+  &--small {
+    width: 200px;
+    height: 200px;
+  }
+
+  &--large {
+    width: 280px;
+    height: 280px;
+  }
+
+  &--bottom-right {
+    right: -64px;
+    bottom: -88px;
+  }
+
+  &--bottom-left {
+    left: -80px;
+    bottom: -96px;
+  }
+
+  &--top-right {
+    right: -80px;
+    top: -80px;
+  }
+}

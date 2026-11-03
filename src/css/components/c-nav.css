@@ -1,0 +1,27 @@
+/* =============================================================================
+   NAV (primary navigation)
+   ========================================================================== */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-8) var(--space-32);
+
+  &__link {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--tracking-body);
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-text-muted);
+    }
+
+    &[aria-current='page'] {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+  }
+}

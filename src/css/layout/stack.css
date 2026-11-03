@@ -1,16 +1,14 @@
 /* =============================================================================
-   CHECK LIST (services page)
+   STACK
+   Vertical flow with consistent gaps.
    ========================================================================== */
 
-.li {
+.stack {
   display: flex;
-  gap: 12px;
-  font-size: 16px;
-  line-height: 1.4;
-  letter-spacing: -0.3px;
+  flex-direction: column;
+  gap: var(--space-16);
 
-  & svg {
-    flex-shrink: 0;
-    margin-top: 2px;
+  &--24 {
+    gap: var(--space-24);
   }
 }

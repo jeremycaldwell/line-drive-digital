@@ -1,0 +1,69 @@
+/* =============================================================================
+   INBOX (sample lead inbox mockup)
+   ========================================================================== */
+
+.inbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  min-width: 0;
+  padding: var(--space-32);
+  border-radius: var(--radius-24);
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-16);
+  }
+
+  &__period {
+    font-size: var(--font-size-13);
+    color: var(--color-on-dark-muted);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--hairline);
+    margin: 0;
+    padding: 0;
+    border-radius: var(--radius-12);
+    background: var(--color-on-dark-line);
+    list-style: none;
+    overflow: hidden;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--space-16);
+    padding: var(--space-16);
+    background: var(--color-dark-raised);
+    font-size: var(--font-size-14);
+    letter-spacing: var(--tracking-body);
+  }
+
+  &__subject {
+    display: block;
+    font-weight: var(--font-weight-medium);
+  }
+
+  &__source,
+  &__time,
+  &__footnote {
+    font-size: var(--font-size-13);
+    color: var(--color-on-dark-subtle);
+  }
+
+  &__source {
+    display: block;
+  }
+
+  &__footnote {
+    margin: 0;
+  }
+}
