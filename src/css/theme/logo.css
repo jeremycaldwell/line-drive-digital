@@ -1,107 +1,28 @@
 /* =============================================================================
-   LOGO (text wordmark with animated ball)
+   LOGO (inline SVG wordmark: src/_includes/svg/logo.svg; the homepage header
+   uses logo-animated.svg, which plays the ball hit once)
    ========================================================================== */
 
 .logo {
   display: inline-flex;
   line-height: 0;
   color: var(--color-text);
-  text-decoration: none;
 
   &:hover {
     color: var(--color-text);
   }
 
+  &__image {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+
   &--header {
-    font-size: var(--font-size-24);
+    height: 24px;
   }
 
   &--footer {
-    font-size: var(--font-size-36);
-  }
-
-  &__wordmark {
-    display: inline-block;
-    font-family: var(--font-display);
-    font-weight: var(--font-weight-extrabold);
-    line-height: 0.85;
-    letter-spacing: -0.055em;
-    white-space: nowrap;
-  }
-
-  &__ball {
-    display: inline-block;
-    position: relative;
-    width: 0.22em;
-    height: 0.22em;
-    margin-left: 0.06em;
-    border-radius: var(--radius-round);
-    background: var(--color-accent);
-  }
-
-  &__fly {
-    position: absolute;
-    inset: 0;
-    border-radius: var(--radius-round);
-    background: var(--color-accent);
-    animation: ldd-launch 2.1s linear 0.6s 1 both;
-
-    /* Trail */
-    &::before {
-      content: '';
-      position: absolute;
-      right: 50%;
-      top: 50%;
-      height: 0.07em;
-      width: 0.75em;
-      border-radius: 1em;
-      background: linear-gradient(
-        90deg,
-        var(--color-accent-clear),
-        var(--color-accent-strong)
-      );
-      transform-origin: 100% 50%;
-      transform: translateY(-50%) rotate(-35.5deg);
-      animation: ldd-streak 2.1s linear 0.6s 1 both;
-    }
-  }
-}
-
-@keyframes ldd-launch {
-  from {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-
-  to {
-    transform: translate(0.7em, -0.5em);
-    opacity: 0;
-  }
-}
-
-/* Trail grows with the ball (same linear timing as ldd-launch) so its tail
-   never sits below/left of the starting dot. */
-@keyframes ldd-streak {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-
-  20%,
-  75% {
-    opacity: 1;
-  }
-
-  100% {
-    width: 0.75em;
-    opacity: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .logo__fly,
-  .logo__fly::before {
-    animation: none;
-    opacity: 0;
+    height: 36px;
   }
 }

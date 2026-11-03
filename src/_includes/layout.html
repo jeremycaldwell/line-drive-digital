@@ -43,9 +43,7 @@
       <header class="header">
         <div class="container header__inner">
           <a href="/" rel="home" class="logo logo--header" aria-label="Line Drive Digital, home">
-            <span class="logo__wordmark" aria-hidden="true">
-              Line Drive Digital<span class="logo__ball">{% if page.url == '/' %}<span class="logo__fly"></span>{% endif %}</span>
-            </span>
+            {%- if page.url == '/' %}{% include "svg/logo-animated.svg" %}{% else %}{% include "svg/logo.svg" %}{% endif -%}
           </a>
           <nav class="nav" aria-label="Main">
             {%- assign navPages = collections.all | eleventyNavigation %}
@@ -70,9 +68,7 @@
           <div class="footer__grid">
             <div class="footer__brand">
               <a href="/" class="logo logo--footer" aria-label="Line Drive Digital, home">
-                <span class="logo__wordmark" aria-hidden="true">
-                  Line Drive Digital<span class="logo__ball"></span>
-                </span>
+                {%- include "svg/logo.svg" -%}
               </a>
               <p class="footer__about">
                 SEO websites, AI consulting and custom tools for local businesses. Based in Sutherlin, Oregon.
