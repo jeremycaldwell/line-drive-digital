@@ -1,0 +1,97 @@
+/* =============================================================================
+   LOGO (text wordmark with animated ball)
+   ========================================================================== */
+
+.ldd-logo {
+  display: inline-flex;
+  text-decoration: none;
+  color: #000;
+  line-height: 0;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.wmk {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  font-family: Outfit, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.85;
+  white-space: nowrap;
+
+  & .ball {
+    display: inline-block;
+    position: relative;
+    width: 0.22em;
+    height: 0.22em;
+    margin-left: 0.06em;
+    border-radius: 50%;
+    background: #d66733;
+  }
+
+  & .fly {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: #d66733;
+    animation: ldd-launch 2.1s linear 0.6s 1 both;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      height: 0.07em;
+      width: 0.75em;
+      border-radius: 1em;
+      background: linear-gradient(
+        90deg,
+        rgba(214, 103, 51, 0),
+        rgba(214, 103, 51, 0.85)
+      );
+      transform-origin: 100% 50%;
+      transform: translateY(-50%) rotate(-35.5deg);
+      animation: ldd-streak 2.1s linear 0.6s 1 both;
+    }
+  }
+}
+
+@keyframes ldd-launch {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(0.7em, -0.5em);
+    opacity: 0;
+  }
+}
+
+@keyframes ldd-streak {
+  0% {
+    opacity: 0;
+  }
+
+  20%,
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wmk .fly,
+  .wmk .fly::before {
+    animation: none;
+    opacity: 0;
+  }
+}

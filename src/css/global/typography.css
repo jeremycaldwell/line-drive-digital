@@ -1,0 +1,69 @@
+/* =============================================================================
+   TYPOGRAPHY
+   Headings use Outfit Bold to match the logo.
+   ========================================================================== */
+
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  line-height: 16.9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.39px;
+  margin: 0;
+}
+
+.disp,
+.h2,
+.h3 {
+  font-family: Outfit, Inter, sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.disp {
+  font-size: 82px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+
+  @media (--viewport-tablet-down) {
+    font-size: 46px;
+    letter-spacing: -1.4px;
+  }
+}
+
+.h2 {
+  font-size: 56px;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+
+  @media (--viewport-tablet-down) {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.4px;
+  color: #595959;
+  margin: 0;
+}
+
+.link {
+  color: #b85a16;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: #8f430f;
+  }
+}

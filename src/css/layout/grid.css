@@ -1,0 +1,26 @@
+/* =============================================================================
+   GRID
+   Column counts are set inline per section; these collapse them on small
+   screens (hence !important).
+   ========================================================================== */
+
+@media (--viewport-tablet-down) {
+  .hero,
+  .g2,
+  .g3,
+  .g4 {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .g5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .sec {
+    padding: 64px 0 !important;
+  }
+
+  .card {
+    padding: 28px !important;
+  }
+}

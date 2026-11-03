@@ -1,0 +1,15 @@
+/* =============================================================================
+   PAGE
+   ========================================================================== */
+
+.page {
+  min-height: 100vh;
+  background: #fff;
+  color: #000;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-feature-settings: 'cv11', 'ss03';
+}
+
+.main:focus {
+  outline: 0;
+}

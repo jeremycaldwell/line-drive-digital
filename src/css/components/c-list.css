@@ -1,0 +1,16 @@
+/* =============================================================================
+   CHECK LIST (services page)
+   ========================================================================== */
+
+.li {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+
+  & svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+}
