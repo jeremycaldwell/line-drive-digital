@@ -1,7 +1,7 @@
 ---
 layout: layout.html
 title: Services
-description: "SEO websites, AI consulting, custom AI tools and care plans for small businesses."
+description: "SEO Growth Starter, full-service website management, and custom apps and AI tools for small businesses."
 eleventyNavigation:
   key: Services
   order: 1
@@ -12,44 +12,45 @@ eleventyNavigation:
     <div class="intro">
       <div>
         <p class="eyebrow intro__eyebrow">Services</p>
-        <h1 class="heading heading--xl">Four ways we help you win more work.</h1>
+        <h1 class="heading heading--xl">Three ways we help you win more work.</h1>
       </div>
       <div class="intro__aside">
         <p class="lead">
-          Start with the website, add AI when it makes sense, or bring us a problem you need a custom tool for. Every
-          engagement starts with a free audit.
+          Get found on Google with a one-time SEO setup, hand us your whole website, or bring us a problem and we'll
+          build the tool that solves it. Every engagement starts with a free audit.
         </p>
         <div><a href="/contact/" class="button button--primary">Get a free audit</a></div>
       </div>
     </div>
     <nav class="cluster cluster--spaced" aria-label="On this page">
-      <a href="#seo" class="button button--secondary button--small">01 · SEO websites</a>
-      <a href="#ai" class="button button--secondary button--small">02 · AI consulting</a>
-      <a href="#apps" class="button button--secondary button--small">03 · Custom AI &amp; apps</a>
-      <a href="#care" class="button button--secondary button--small">04 · Care plans</a>
+      <a href="#seo" class="button button--secondary button--small">01 · SEO Growth Starter</a>
+      <a href="#websites" class="button button--secondary button--small">02 · Website management</a>
+      <a href="#apps" class="button button--secondary button--small">03 · Custom apps &amp; AI</a>
     </nav>
   </div>
 </section>
 
 <section id="seo" class="section section--band">
   <div class="container">
-    <div class="feature">
+    <div class="feature feature--top">
       <div class="feature__content">
-        <p class="eyebrow">01 · SEO-focused websites</p>
-        <h2 class="heading heading--lg">Rank in the towns you actually serve.</h2>
+        <p class="eyebrow">01 · SEO Growth Starter</p>
+        <h2 class="heading heading--lg">Get on Google the right way, from day one.</h2>
         <p class="lead">
-          A fast, clear site built around the searches your customers already make — your services, your service area,
-          your phone number one tap away.
+          An initial SEO strategy that establishes your business on Google and other search engines: every account set
+          up properly, research on what your customers search, and a roadmap for what to do next.
         </p>
-        <p class="price">
-          <span class="price__note">From</span>
-          <strong class="price__value">[PRICE]</strong>
-          <span class="price__note">· typically [X] weeks</span>
+        <p class="text text--muted">
+          A good fit if you're new, starting over, or have a website but no real presence on Google yet.
         </p>
-        <div><a href="/contact/" class="button button--primary">Start with an audit</a></div>
+        <div><a href="/contact/" class="button button--primary">Get started</a></div>
       </div>
-      <div class="card card--white card--compact">
-        <p class="eyebrow eyebrow--muted">What's included</p>
+      <div class="plan">
+        <p class="eyebrow eyebrow--muted">One-time setup</p>
+        <p class="plan__price">
+          <strong class="plan__amount">$500</strong>
+          <span class="plan__unit">one-time fee</span>
+        </p>
         <ul class="checklist">
           <li class="checklist__item">
             <svg
@@ -65,44 +66,8 @@ eleventyNavigation:
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
             </svg>
             <span>
-              <strong class="checklist__term">Keyword &amp; competitor research</strong>
-              — what people search, and who shows up today
-            </span>
-          </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">Service + location pages</strong>
-              written to rank
-            </span>
-          </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
               <strong class="checklist__term">Google Business Profile</strong>
-              setup and review strategy
+              — created and set up so you show up on Maps and local search
             </span>
           </li>
           <li class="checklist__item">
@@ -119,8 +84,8 @@ eleventyNavigation:
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
             </svg>
             <span>
-              <strong class="checklist__term">Lead capture &amp; call tracking</strong>
-              from day one
+              <strong class="checklist__term">Google Analytics &amp; Search Console</strong>
+              — see who finds you, and how
             </span>
           </li>
           <li class="checklist__item">
@@ -137,59 +102,200 @@ eleventyNavigation:
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
             </svg>
             <span>
-              <strong class="checklist__term">Technical SEO</strong>
-              — speed, schema, sitemaps
+              <strong class="checklist__term">Google Ads account</strong>
+              — set up and ready whenever you want to run ads
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Keyword research</strong>
+              — the words your customers actually search
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Competitor analysis</strong>
+              — who shows up today, and why
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">SEO roadmap</strong>
+              — a clear, prioritized plan for what comes next
             </span>
           </li>
         </ul>
+        <p class="plan__note">
+          Add-on: updates to your Facebook, Instagram, Yelp, Angi and other profiles, for an additional fee.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ai" class="section section--band">
+<section id="websites" class="section section--band">
   <div class="container">
-    <div class="section-header">
-      <p class="eyebrow">02 · AI consulting</p>
-      <h2 class="heading heading--lg section-header__title">Practical AI for small business. No hype.</h2>
-      <p class="lead section-header__lead">
-        We sit down with how your business runs today, find the repetitive work, and show you exactly which AI tools —
-        off-the-shelf or custom — are worth paying for.
-      </p>
-    </div>
-    <div class="grid grid--3">
-      <div class="card">
-        <p class="eyebrow">Workflow audit</p>
-        <h3 class="heading heading--md">Find the hours.</h3>
-        <p class="text text--muted">
-          A working session plus a written plan: top opportunities, rough cost, and what to skip.
+    <div class="feature feature--top">
+      <div class="decor decor--large decor--top-right" aria-hidden="true"></div>
+      <div class="feature__content">
+        <p class="eyebrow">02 · Full-Service Website Management</p>
+        <h2 class="heading heading--lg">Your whole website, handled.</h2>
+        <p class="lead">
+          Design, development, hosting and maintenance, plus SEO, social media integration and content updates. It's
+          like having a full-time marketing team for your website.
         </p>
-        <p class="price price--end">
-          <span class="price__note">From</span>
-          <strong class="price__value">[PRICE]</strong>
-        </p>
+        <ul class="checklist">
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Design &amp; development</strong>
+              — a fast, clear site built to rank and bring in calls
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Hosting &amp; maintenance</strong>
+              — updates, security and backups taken care of
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Ongoing SEO</strong>
+              — service and location pages that keep you climbing
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Social media integration</strong>
+              — your profiles connected to your site
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Content updates</strong>
+              — new services, photos, hours and offers, whenever you need them
+            </span>
+          </li>
+        </ul>
+        <div><a href="/contact/" class="button button--primary">Talk about your site</a></div>
       </div>
-      <div class="card">
-        <p class="eyebrow">Setup &amp; training</p>
-        <h3 class="heading heading--md">Get the team using it.</h3>
-        <p class="text text--muted">
-          We set up the tools you pick, write the prompts and templates, and train your crew to use them safely.
-        </p>
-        <p class="price price--end">
-          <span class="price__note">From</span>
-          <strong class="price__value">[PRICE]</strong>
-        </p>
-      </div>
-      <div class="card">
-        <p class="eyebrow">Workshops</p>
-        <h3 class="heading heading--md">AI, in plain English.</h3>
-        <p class="text text--muted">
-          A hands-on session for owners and staff: what AI is good at, where it fails, and how to start.
-        </p>
-        <p class="price price--end">
-          <span class="price__note">From</span>
-          <strong class="price__value">[PRICE]</strong>
-        </p>
+      <div class="stack">
+        <div class="plan">
+          <p class="eyebrow eyebrow--muted">Monthly subscription</p>
+          <p class="plan__price">
+            <strong class="plan__amount">$175</strong>
+            <span class="plan__unit">/ month</span>
+          </p>
+          <p class="plan__text">
+            Everything included, for one monthly fee. 12-month minimum commitment.
+          </p>
+        </div>
+        <p class="plan__or">or</p>
+        <div class="plan">
+          <p class="eyebrow eyebrow--muted">Own your website</p>
+          <p class="plan__price">
+            <strong class="plan__amount">$3,500</strong>
+            <span class="plan__unit">one-time</span>
+          </p>
+          <p class="plan__text">
+            Pay once and the website is yours, then just $25/month for hosting and maintenance.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -197,17 +303,231 @@ eleventyNavigation:
 
 <section id="apps" class="section section--band">
   <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">03 · Custom apps &amp; AI tools</p>
+      <h2 class="heading heading--lg section-header__title">Software that fits the way you work.</h2>
+      <p class="lead section-header__lead">
+        Every business has the job nobody wants to do: the quote typed up at 9pm, the missed call, the spreadsheet that
+        lives in one person's head. We build small, practical tools around those problems, using AI where it saves real
+        time and plain software where that's the better fit.
+      </p>
+    </div>
+    <div class="grid grid--3">
+      <div class="plan plan--oat">
+        <p class="eyebrow eyebrow--muted">Start here</p>
+        <h3 class="heading heading--sm">Workflow review</h3>
+        <p class="plan__price">
+          <strong class="plan__amount">$250</strong>
+          <span class="plan__unit">flat</span>
+        </p>
+        <p class="plan__text">We sit down with how your business runs, find the repetitive work, and hand you a written plan.</p>
+        <ul class="checklist">
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Where time goes</strong>
+                — the tasks worth automating, and the ones to leave alone
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Tool picks</strong>
+                — off-the-shelf software vs. something custom
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Rough cost &amp; timeline</strong>
+                for each idea
+              </span>
+            </li>
+        </ul>
+        <p class="plan__note">Credited in full toward any build within 60 days.</p>
+      </div>
+      <div class="plan plan--oat">
+        <p class="eyebrow eyebrow--muted">One job, done well</p>
+        <h3 class="heading heading--sm">Quick tool or automation</h3>
+        <p class="plan__price">
+          <strong class="plan__amount">$750–$2,000</strong>
+          <span class="plan__unit">per project</span>
+        </p>
+        <p class="plan__text">One focused fix for one recurring headache, usually live in one to two weeks.</p>
+        <ul class="checklist">
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Lead routing</strong>
+                — forms and calls into one inbox, with text alerts
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Review requests</strong>
+                — sent automatically after each job
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Templates &amp; drafts</strong>
+                — quotes, follow-ups and replies written for you to approve
+              </span>
+            </li>
+        </ul>
+        <p class="plan__note">Fixed price, agreed before any work starts.</p>
+      </div>
+      <div class="plan plan--oat">
+        <p class="eyebrow eyebrow--muted">Built around you</p>
+        <h3 class="heading heading--sm">Custom app</h3>
+        <p class="plan__price">
+          <strong class="plan__amount">$2,500–$7,500</strong>
+          <span class="plan__unit">per project</span>
+        </p>
+        <p class="plan__text">A tool shaped to your business, usually built in three to six weeks with check-ins along the way.</p>
+        <ul class="checklist">
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Estimate builders</strong>
+                — job notes in, a branded estimate out
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Job &amp; lead dashboards</strong>
+                — schedule, leads and notes in one view
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Customer intake &amp; portals</strong>
+                — online booking, requests and status updates
+              </span>
+            </li>
+        </ul>
+        <p class="plan__note">Bigger builds are quoted after the review.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--band-end">
+  <div class="container">
     <div class="feature feature--dark feature--top">
       <div class="feature__content">
-        <p class="eyebrow eyebrow--on-dark">03 · Custom AI tools &amp; apps</p>
-        <h2 class="heading heading--lg">When the software doesn't fit, we build what does.</h2>
+        <p class="eyebrow eyebrow--on-dark">What we can build</p>
+        <h2 class="heading heading--lg">If it slows you down, we can probably build it.</h2>
         <p class="lead lead--on-dark">
-          Small, focused tools shaped to how your business runs — connected to Google Workspace, your CRM, forms and
-          spreadsheets.
+          Tools connect to what you already use: Google Workspace, your CRM, forms, spreadsheets, email and text. You
+          approve anything AI writes before it goes out.
         </p>
         <p class="price price--on-dark">
-          <span class="price__note">Quoted per project ·</span>
-          <strong class="price__value">[PRICE RANGE]</strong>
+          <span class="price__note">Hosting &amp; support for your tools ·</span>
+          <strong class="price__value">from $50 / month</strong>
         </p>
         <div><a href="/contact/" class="button button--light">Describe your idea</a></div>
       </div>
@@ -217,8 +537,8 @@ eleventyNavigation:
           <p class="tool-list__text">Job notes in, a clean branded estimate out.</p>
         </li>
         <li class="tool-list__item">
-          <p class="label label--on-dark">Intake assistant</p>
-          <p class="tool-list__text">Answers, qualifies and books after hours.</p>
+          <p class="label label--on-dark">After-hours intake</p>
+          <p class="tool-list__text">Answers questions, qualifies leads and books jobs while you're off.</p>
         </li>
         <li class="tool-list__item">
           <p class="label label--on-dark">Job dashboard</p>
@@ -227,6 +547,10 @@ eleventyNavigation:
         <li class="tool-list__item">
           <p class="label label--on-dark">Follow-up drafts</p>
           <p class="tool-list__text">Review requests and replies, ready to approve.</p>
+        </li>
+        <li class="tool-list__item">
+          <p class="label label--on-dark">Paperwork from job notes</p>
+          <p class="tool-list__text">Field notes turned into invoices, reports and emails.</p>
         </li>
         <li class="tool-list__item tool-list__item--tags">
           <span class="chip chip--success">
@@ -243,44 +567,6 @@ eleventyNavigation:
           </span>
         </li>
       </ul>
-    </div>
-  </div>
-</section>
-
-<section id="care" class="section section--band-end">
-  <div class="container">
-    <div class="feature">
-      <div class="decor decor--large decor--top-right" aria-hidden="true"></div>
-      <div class="feature__content">
-        <p class="eyebrow">04 · Care plans &amp; reporting</p>
-        <h2 class="heading heading--lg">We keep it running. You keep working.</h2>
-        <p class="lead">Hosting, security updates, content tweaks and a monthly report you can read in five minutes.</p>
-        <p class="price">
-          <span class="price__note">From</span>
-          <strong class="price__value">[PRICE] / month</strong>
-        </p>
-      </div>
-      <div class="report">
-        <p class="label">Monthly report · sample layout</p>
-        <dl class="report__list">
-          <div class="report__row">
-            <dt>Calls from website</dt>
-            <dd class="report__value">[#]</dd>
-          </div>
-          <div class="report__row">
-            <dt>Form &amp; quote requests</dt>
-            <dd class="report__value">[#]</dd>
-          </div>
-          <div class="report__row">
-            <dt>Top-3 local rankings</dt>
-            <dd class="report__value">[#]</dd>
-          </div>
-          <div class="report__row">
-            <dt>Next month</dt>
-            <dd class="report__value report__value--note">Add Winston service page</dd>
-          </div>
-        </dl>
-      </div>
     </div>
   </div>
 </section>
@@ -328,8 +614,20 @@ eleventyNavigation:
             <span class="faq__icon" aria-hidden="true"></span>
           </summary>
           <p class="faq__answer">
-            Every project is quoted after the free audit. Websites start at [STARTING PRICE]; AI consulting starts at
-            [STARTING PRICE].
+            The SEO Growth Starter is a one-time $500. Full-Service Website Management is $175/month with a 12-month
+            minimum, or $3,500 once to own your website plus $25/month for hosting and maintenance. Custom tools start
+            with a $250 workflow review; quick tools run $750–$2,000 and custom apps $2,500–$7,500.
+          </p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question">
+            <span>Monthly or one-time: which website option is right for me?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <p class="faq__answer">
+            The monthly plan keeps your upfront cost low and bundles everything into one predictable fee. The one-time
+            option costs more upfront, but the website is yours and your monthly cost drops to $25 for hosting and
+            maintenance. We'll help you pick in your free audit.
           </p>
         </details>
       </div>

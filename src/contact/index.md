@@ -87,20 +87,20 @@ eleventyNavigation:
             <legend class="form__legend">What do you need?</legend>
             <div class="cluster">
               <label class="toggle">
-                <input class="toggle__input" type="checkbox" name="needs" value="SEO website" />
-                <span class="button button--light button--small">SEO website</span>
+                <input class="toggle__input" type="checkbox" name="needs" value="SEO Growth Starter" />
+                <span class="button button--light button--small">SEO Growth Starter</span>
               </label>
               <label class="toggle">
-                <input class="toggle__input" type="checkbox" name="needs" value="AI consulting" />
-                <span class="button button--light button--small">AI consulting</span>
+                <input class="toggle__input" type="checkbox" name="needs" value="Website management" />
+                <span class="button button--light button--small">Website management</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Workflow review" />
+                <span class="button button--light button--small">Workflow review</span>
               </label>
               <label class="toggle">
                 <input class="toggle__input" type="checkbox" name="needs" value="Custom tool / app" />
                 <span class="button button--light button--small">Custom tool / app</span>
-              </label>
-              <label class="toggle">
-                <input class="toggle__input" type="checkbox" name="needs" value="Care plan" />
-                <span class="button button--light button--small">Care plan</span>
               </label>
             </div>
           </fieldset>
