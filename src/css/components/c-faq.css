@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--space-16);
-    min-height: 64px;
+    min-height: 4rem;
     padding: var(--space-16) 0;
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-semibold);
@@ -34,8 +34,8 @@
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     border-radius: var(--radius-round);
     background: var(--color-oat);
     font-size: var(--font-size-18);
@@ -50,7 +50,7 @@
   }
 
   &__answer {
-    max-width: 640px;
+    max-width: 40rem;
     margin: 0 0 var(--space-24);
     font-size: var(--font-size-16);
     line-height: var(--leading-normal);

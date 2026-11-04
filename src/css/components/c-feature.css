@@ -38,7 +38,8 @@
     &,
     &--wide-visual {
       grid-template-columns: minmax(0, 1fr);
-      padding: var(--space-32);
+      gap: var(--space-32);
+      padding: var(--space-24);
     }
   }
 }

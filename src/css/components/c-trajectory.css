@@ -10,6 +10,16 @@
   &__sun {
     fill: var(--color-accent);
     opacity: 0.9;
+    transform-box: fill-box;
+  }
+
+  .is-visible &__sun {
+    animation: float var(--motion-float-duration) var(--motion-float-easing)
+      infinite alternate;
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
   }
 
   &__path {

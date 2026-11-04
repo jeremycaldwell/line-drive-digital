@@ -59,7 +59,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </div>
         <ul class="inbox__list">
           <li class="inbox__row">
-            <span>
+            <span class="inbox__main">
               <strong class="inbox__subject">Water heater repair</strong>
               <span class="inbox__source">Google search · Roseburg</span>
             </span>
@@ -70,7 +70,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
             </span>
           </li>
           <li class="inbox__row">
-            <span>
+            <span class="inbox__main">
               <strong class="inbox__subject">AC not cooling</strong>
               <span class="inbox__source">Map pack call · Sutherlin</span>
             </span>
@@ -81,7 +81,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
             </span>
           </li>
           <li class="inbox__row">
-            <span>
+            <span class="inbox__main">
               <strong class="inbox__subject">Roof leak estimate</strong>
               <span class="inbox__source">Quote form · Winston</span>
             </span>
@@ -92,7 +92,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
             </span>
           </li>
           <li class="inbox__row">
-            <span>
+            <span class="inbox__main">
               <strong class="inbox__subject">Drain clog</strong>
               <span class="inbox__source">After-hours chat · Oakland</span>
             </span>
@@ -109,40 +109,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
   </div>
 </section>
 
-<section class="section section--padded">
-  <div class="container">
-    <div class="stats">
-      <div class="stats__item">
-        <p class="stats__value">20 yrs</p>
-        <p class="eyebrow eyebrow--muted">building for the web</p>
-      </div>
-      <div class="stats__item">
-        <p class="stats__value">2</p>
-        <p class="eyebrow eyebrow--muted">local sites launched</p>
-      </div>
-      <div class="stats__item">
-        <p class="stats__value">5</p>
-        <p class="eyebrow eyebrow--muted">AI tools in daily use</p>
-      </div>
-      <div class="stats__item">
-        <p class="stats__value">1</p>
-        <p class="eyebrow eyebrow--muted">person you talk to</p>
-      </div>
-    </div>
-    <div class="logos">
-      <p class="eyebrow eyebrow--muted eyebrow--center">Trusted by local businesses across Southern Oregon</p>
-      <ul class="logos__list">
-        <li>[CLIENT LOGO]</li>
-        <li>[CLIENT LOGO]</li>
-        <li>[CLIENT LOGO]</li>
-        <li>[CLIENT LOGO]</li>
-        <li>[CLIENT LOGO]</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section">
+<section class="section section--band-end">
   <div class="container">
     <div class="section-header">
       <p class="eyebrow">What we do</p>
@@ -302,9 +269,9 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
       <div class="card">
         <p class="eyebrow">SEO websites</p>
         <h3 class="heading heading--md">Rank in the towns you actually serve.</h3>
-        <a href="/services/" class="link">Explore SEO websites →</a>
+        <a href="/services/" class="link">Explore SEO websites <span class="link__arrow" aria-hidden="true">→</span></a>
         <div class="card__visual">
-          <div class="decor decor--bottom-right" aria-hidden="true"></div>
+          <div class="decor decor--shot" aria-hidden="true"></div>
           <div class="serp">
             <div class="serp__query">
               <svg
@@ -334,9 +301,9 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
       <div class="card">
         <p class="eyebrow">AI for small business</p>
         <h3 class="heading heading--md">Put AI to work on the parts of the job nobody enjoys.</h3>
-        <a href="/services/" class="link">Explore AI consulting →</a>
+        <a href="/services/" class="link">Explore AI consulting <span class="link__arrow" aria-hidden="true">→</span></a>
         <div class="card__visual">
-          <div class="decor decor--bottom-left" aria-hidden="true"></div>
+          <div class="decor decor--small decor--bottom-left" aria-hidden="true"></div>
           <div class="chat">
             <div class="chat__bubble chat__bubble--incoming">Can you come look at my furnace Saturday?</div>
             <div class="chat__bubble chat__bubble--reply">

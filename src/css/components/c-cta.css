@@ -26,11 +26,11 @@
   }
 
   &__title {
-    max-width: 760px;
+    max-width: 47.5rem;
   }
 
   &__text {
-    max-width: 620px;
+    max-width: 38.75rem;
   }
 
   &__actions {

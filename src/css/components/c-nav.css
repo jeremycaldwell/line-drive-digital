@@ -21,7 +21,34 @@
 
     &[aria-current='page'] {
       text-decoration: underline;
-      text-underline-offset: 6px;
+      text-underline-offset: 0.375rem;
     }
+  }
+}
+
+/* Phones: collapsed into a full-width panel under the header row, opened by
+   .menu-toggle (header--collapsible is added by script.js) */
+@media (--viewport-tablet-down) {
+  .header--collapsible .nav {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-bottom: var(--space-8);
+  }
+
+  .header--open .nav {
+    display: flex;
+  }
+
+  .header--collapsible .nav__link {
+    padding: var(--space-16) 0;
+    border-top: var(--hairline) solid var(--color-oat-line);
+    font-size: var(--font-size-16);
+  }
+
+  .header--collapsible .nav .button {
+    margin-top: var(--space-16);
   }
 }

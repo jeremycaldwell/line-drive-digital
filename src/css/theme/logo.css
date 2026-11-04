@@ -19,10 +19,10 @@
   }
 
   &--header {
-    height: 24px;
+    height: 1.5rem;
   }
 
   &--footer {
-    height: 36px;
+    height: 1.25rem;
   }
 }

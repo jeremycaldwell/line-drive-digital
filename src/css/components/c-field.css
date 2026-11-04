@@ -19,7 +19,7 @@
 
   &__input {
     box-sizing: border-box;
-    min-height: 52px;
+    min-height: 3.25rem;
     padding: var(--space-16);
     border: var(--hairline) solid var(--color-oat-input);
     border-radius: var(--radius-12);
@@ -30,8 +30,8 @@
     color: var(--color-text);
 
     &:focus {
-      outline: 2px solid var(--color-brown);
-      outline-offset: 1px;
+      outline: 0.125rem solid var(--color-brown);
+      outline-offset: 0.125rem;
     }
 
     &--textarea {

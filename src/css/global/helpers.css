@@ -5,8 +5,8 @@
 /* Hidden until focused (skip link) */
 .visually-hidden:not(:focus) {
   position: absolute !important;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
@@ -14,8 +14,8 @@
 
 .skip-link:focus {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 0.5rem;
+  left: 0.5rem;
   z-index: 10;
   padding: var(--space-8) var(--space-16);
   background: var(--color-white);
@@ -27,4 +27,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* Shared float motion for decorative dots (see --motion-float-* tokens) */
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-1 * var(--motion-float-distance)));
+  }
 }

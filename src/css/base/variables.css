@@ -50,16 +50,16 @@
   --color-danger: #99001c;
 
   /* Spacing (margin, padding, gap) */
-  --space-2: 2px;
-  --space-4: 4px;
-  --space-8: 8px;
-  --space-16: 16px;
-  --space-24: 24px;
-  --space-32: 32px;
-  --space-40: 40px;
-  --space-48: 48px;
-  --space-56: 56px;
-  --space-64: 64px;
+  --space-2: 0.125rem;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-56: 3.5rem;
+  --space-64: 4rem;
   --hairline: 1px;
 
   /* Font families */
@@ -69,20 +69,20 @@
   --font-serif: adamina, georgia, serif;
 
   /* Font sizes */
-  --font-size-11: 11px;
-  --font-size-12: 12px;
-  --font-size-13: 13px;
-  --font-size-14: 14px;
-  --font-size-16: 16px;
-  --font-size-18: 18px;
-  --font-size-22: 22px;
-  --font-size-24: 24px;
-  --font-size-28: 28px;
-  --font-size-32: 32px;
-  --font-size-36: 36px;
-  --font-size-46: 46px;
-  --font-size-56: 56px;
-  --font-size-82: 82px;
+  --font-size-11: 0.6875rem;
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.8125rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-22: 1.375rem;
+  --font-size-24: 1.5rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  --font-size-36: 2.25rem;
+  --font-size-46: 2.875rem;
+  --font-size-56: 3.5rem;
+  --font-size-82: 5.125rem;
 
   /* Font weights */
   --font-weight-regular: 400;
@@ -98,18 +98,23 @@
   --leading-normal: 1.45;
 
   /* Letter spacing */
-  --tracking-body: -0.3px;
-  --tracking-lead: -0.4px;
+  --tracking-body: -0.0187rem;
+  --tracking-lead: -0.025rem;
   --tracking-label: 0.03em;
 
   /* Radius */
-  --radius-4: 4px;
-  --radius-12: 12px;
-  --radius-16: 16px;
-  --radius-24: 24px;
-  --radius-pill: 9999px;
+  --radius-4: 0.25rem;
+  --radius-12: 0.75rem;
+  --radius-16: 1rem;
+  --radius-24: 1.5rem;
+  --radius-pill: 624.9375rem;
   --radius-round: 50%;
 
+  /* Motion: shared float for every decorative dot */
+  --motion-float-distance: 1rem;
+  --motion-float-duration: 4s;
+  --motion-float-easing: ease-in-out;
+
   /* Layout */
-  --container-width: 1280px;
+  --container-width: 80rem;
 }

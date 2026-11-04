@@ -24,6 +24,11 @@ dd {
   margin: 0;
 }
 
+/* Keyboard focus ring sits 2px outside the element */
+:focus-visible {
+  outline-offset: 0.125rem;
+}
+
 [hidden] {
   display: none !important;
 }

@@ -58,7 +58,7 @@ eleventyNavigation:
         <p class="eyebrow eyebrow--muted">SEO website · Kettle Falls, WA</p>
         <h2 class="heading heading--md">Vance Fabrication LLC</h2>
         <p class="text text--muted">
-          Service and location pages for every town they cover, with click-to-call and a quote form.
+          Service pages for a welding, fencing and construction company in Eastern Washington.
         </p>
         <div>
           <span class="chip chip--success chip--on-light">
@@ -71,7 +71,7 @@ eleventyNavigation:
         {% image "images/work/mg-creative-concrete.jpg", "M&amp;G Creative Concrete website services page", { class: "screenshot" } %}
         <p class="eyebrow eyebrow--muted">Site rebuild + Google Business Profile</p>
         <h2 class="heading heading--md">M&amp;G Creative Concrete</h2>
-        <p class="text text--muted">Rebuilt a slow template site and cleaned up their map listing and reviews.</p>
+        <p class="text text--muted">Service pages and project galleries for a concrete contractor in Eastern Washington.</p>
         <div>
           <span class="chip chip--success chip--on-light">
             <span class="chip__dot"></span>
@@ -80,17 +80,11 @@ eleventyNavigation:
         </div>
       </article>
       <article class="stack" data-cat="ai">
-        <div
-          class="placeholder placeholder--rounded placeholder--screen"
-          role="img"
-          aria-label="Screenshot placeholder: AI estimate builder"
-        >
-          [PROJECT SCREENSHOT]
-        </div>
-        <p class="eyebrow eyebrow--muted">AI estimate builder</p>
-        <h2 class="heading heading--md">[Contractor client]</h2>
+        {% image "images/work/business-finance-tracker.jpg", "Business Finance Tracker app dashboard", { class: "screenshot" } %}
+        <p class="eyebrow eyebrow--muted">Custom finance dashboard</p>
+        <h2 class="heading heading--md">Business Finance Tracker</h2>
         <p class="text text--muted">
-          Crew enters job details on a phone; the tool drafts a branded estimate for review.
+          Clients, invoicing, timesheets and projections in one place.
         </p>
         <div>
           <span class="chip chip--success chip--on-light">
@@ -100,16 +94,10 @@ eleventyNavigation:
         </div>
       </article>
       <article class="stack" data-cat="ai">
-        <div
-          class="placeholder placeholder--rounded placeholder--screen"
-          role="img"
-          aria-label="Screenshot placeholder: Custom scheduling dashboard"
-        >
-          [PROJECT SCREENSHOT]
-        </div>
-        <p class="eyebrow eyebrow--muted">Custom scheduling dashboard</p>
-        <h2 class="heading heading--md">[Service client]</h2>
-        <p class="text text--muted">A simple internal app tying form leads, the calendar and job notes together.</p>
+        {% image "images/work/scripture-study.jpg", "Scripture Study app, Old Testament reading progress", { class: "screenshot" } %}
+        <p class="eyebrow eyebrow--muted">Scripture reading tracker</p>
+        <h2 class="heading heading--md">Scripture Study</h2>
+        <p class="text text--muted">Read, search and bookmark scriptures, with chapter-by-chapter progress.</p>
         <div>
           <span class="chip chip--success chip--on-light">
             <span class="chip__dot"></span>

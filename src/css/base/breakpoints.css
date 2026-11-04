@@ -2,4 +2,4 @@
    BREAKPOINTS
    ========================================================================== */
 
-@custom-media --viewport-tablet-down (max-width: 900px);
+@custom-media --viewport-tablet-down (max-width: 56.25rem);

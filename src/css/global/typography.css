@@ -36,6 +36,10 @@
   text-transform: uppercase;
   color: var(--color-text-muted);
 
+  @media (--viewport-tablet-down) {
+    font-size: var(--font-size-12);
+  }
+
   &--on-dark {
     color: var(--color-on-dark-muted);
   }
@@ -116,5 +120,22 @@
   &:hover {
     color: var(--color-link-hover);
     text-decoration: underline;
+  }
+
+  /* Trailing arrow nudges right on hover/focus */
+  &__arrow {
+    display: inline-block;
+    transition: transform 0.2s ease-out;
+  }
+
+  &:hover &__arrow,
+  &:focus-visible &__arrow {
+    transform: translateX(0.25rem);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__arrow {
+      transition: none;
+    }
   }
 }

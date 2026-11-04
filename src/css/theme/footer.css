@@ -29,7 +29,7 @@
   }
 
   &__about {
-    max-width: 300px;
+    max-width: 18.75rem;
     margin: 0;
     font-size: var(--font-size-14);
     line-height: var(--leading-normal);

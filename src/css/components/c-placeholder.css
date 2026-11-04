@@ -28,7 +28,11 @@
 
   &--tall {
     position: relative;
-    min-height: 420px;
+    min-height: 26.25rem;
+
+    @media (--viewport-tablet-down) {
+      min-height: 20rem;
+    }
   }
 
   &--wide {
