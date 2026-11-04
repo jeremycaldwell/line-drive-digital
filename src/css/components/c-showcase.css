@@ -1,0 +1,35 @@
+/* =============================================================================
+   SHOWCASE (home hero: photo with toast + lead inbox mockup)
+   ========================================================================== */
+
+.showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: var(--space-16);
+  margin-top: var(--space-56);
+
+  @media (--viewport-tablet-down) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.showcase__photo {
+  position: relative;
+  min-height: 26.25rem;
+  border-radius: var(--radius-24);
+  background: var(--color-oat);
+  overflow: hidden;
+
+  @media (--viewport-tablet-down) {
+    min-height: 20rem;
+  }
+}
+
+.showcase__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 65% 40%;
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256" role="img" aria-label="Line Drive Digital mark">
+  <defs>
+    <linearGradient id="ldd-comet" gradientUnits="userSpaceOnUse" x1="-36" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#d66733" stop-opacity="0"/>
+      <stop offset="1" stop-color="#d66733" stop-opacity="1"/>
+    </linearGradient>
+    <clipPath id="ldd-clip"><rect width="64" height="64" rx="14"/></clipPath>
+  </defs>
+  <style>
+    /* the comet glides steadily to the right, rising slightly, then re-enters from the left */
+    .comet { animation: ldd-glide 3.2s linear infinite; }
+    @keyframes ldd-glide {
+      0%   { transform: translate(-30px, 8.6px); opacity: 0; }
+      15%  { opacity: 1; }
+      50%  { transform: translate(0px, 0px); opacity: 1; }
+      85%  { opacity: 1; }
+      100% { transform: translate(30px, -8.6px); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { .comet { animation: none; } }
+  </style>
+  <g clip-path="url(#ldd-clip)">
+    <g class="comet">
+      <g transform="translate(41 30) rotate(-16)">
+        <path d="M-36 -0.9 L0 -7.6 L0 7.6 L-36 0.9 Z" fill="url(#ldd-comet)"/>
+        <circle cx="0" cy="0" r="10.5" fill="#d66733"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,121 @@
+/* =============================================================================
+   DESIGN TOKENS
+   The only place raw colors, font stacks and sizes are allowed (enforced by
+   stylelint). Everything else uses var(--token).
+   ========================================================================== */
+
+:root {
+  /* Color: neutrals */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-text: var(--color-black);
+  --color-text-muted: #595959;
+  --color-text-subtle: #919191;
+
+  /* Color: oat (light warm surfaces) */
+  --color-oat: #f7f4f1;
+  --color-oat-hover: #eee8e2;
+  --color-oat-line: #ece7e2;
+  --color-oat-skeleton: #f0ebe6;
+  --color-oat-input: #e6e0da;
+  --color-oat-tint: #fcfbfa;
+
+  /* Color: brown / dark (dark warm surfaces) */
+  --color-brown: #3b281d;
+  --color-brown-hover: #4d3628;
+  --color-dark: #211006;
+  --color-dark-raised: #2b170c;
+  --color-dark-overlay: rgba(33, 16, 6, 0.92);
+
+  /* Color: text and lines on dark surfaces */
+  --color-on-dark: var(--color-white);
+  --color-on-dark-muted: #d9cfc8;
+  --color-on-dark-subtle: #c9bfb8;
+  --color-on-dark-soft: #e8e0da;
+  --color-on-dark-line: rgba(255, 255, 255, 0.08);
+  --color-on-dark-fill: rgba(255, 255, 255, 0.06);
+  --color-on-dark-button: rgba(255, 255, 255, 0.1);
+
+  /* Color: brand accent */
+  --color-accent: #d66733;
+  --color-accent-clear: rgba(214, 103, 51, 0);
+  --color-accent-strong: rgba(214, 103, 51, 0.85);
+  --color-accent-text: #a64f12; /* accent hue, dark enough for small text on white and oat (AA) */
+  --color-link: #b85a16;
+  --color-link-hover: #8f430f;
+
+  /* Color: status */
+  --color-success: #1e681d;
+  --color-success-dot: #288a26;
+  --color-warning: #8b6900;
+  --color-danger: #99001c;
+
+  /* Spacing (margin, padding, gap) */
+  --space-2: 0.125rem;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-56: 3.5rem;
+  --space-64: 4rem;
+  --hairline: 1px;
+
+  /* Font families */
+  --font-sans: inter, arial, 'Helvetica Neue', sans-serif;
+  --font-display: outfit, inter, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-serif: adamina, georgia, serif;
+
+  /* Font sizes */
+  --font-size-11: 0.6875rem;
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.8125rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-22: 1.375rem;
+  --font-size-24: 1.5rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  --font-size-36: 2.25rem;
+  --font-size-46: 2.875rem;
+  --font-size-56: 3.5rem;
+  --font-size-82: 5.125rem;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line height */
+  --leading-none: 1;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.45;
+
+  /* Letter spacing */
+  --tracking-body: -0.0187rem;
+  --tracking-lead: -0.025rem;
+  --tracking-label: 0.03em;
+
+  /* Radius */
+  --radius-4: 0.25rem;
+  --radius-12: 0.75rem;
+  --radius-16: 1rem;
+  --radius-24: 1.5rem;
+  --radius-pill: 624.9375rem;
+  --radius-round: 50%;
+
+  /* Motion: shared float for every decorative dot */
+  --motion-float-distance: 1rem;
+  --motion-float-duration: 4s;
+  --motion-float-easing: ease-in-out;
+
+  /* Layout */
+  --container-width: 80rem;
+}

@@ -1,0 +1,34 @@
+/* =============================================================================
+   TOOL LIST (custom tools examples on dark)
+   ========================================================================== */
+
+.tool-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hairline);
+  margin: 0;
+  padding: 0;
+  border-radius: var(--radius-16);
+  background: var(--color-on-dark-line);
+  list-style: none;
+  overflow: hidden;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: var(--space-24);
+    background: var(--color-dark-raised);
+
+    &--tags {
+      flex-flow: row wrap;
+      padding: var(--space-16) var(--space-24);
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: var(--font-size-16);
+    letter-spacing: var(--tracking-body);
+  }
+}

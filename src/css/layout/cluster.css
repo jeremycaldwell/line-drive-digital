@@ -1,0 +1,24 @@
+/* =============================================================================
+   CLUSTER
+   Horizontal, wrapping group (buttons, chips).
+   ========================================================================== */
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-8);
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  /* Space above when following other content */
+  &--spaced {
+    margin-top: var(--space-48);
+  }
+}

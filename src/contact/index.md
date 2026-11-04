@@ -1,0 +1,168 @@
+---
+layout: layout.html
+title: Contact
+description: "Get a free site audit from Line Drive Digital."
+eleventyNavigation:
+  key: Contact
+  order: 4
+---
+
+<section class="section section--intro">
+  <div class="container">
+    <div class="intro">
+      <div>
+        <p class="eyebrow intro__eyebrow">Contact</p>
+        <h1 class="heading heading--xl">Let's talk about your next customer.</h1>
+      </div>
+      <p class="lead">
+        Tell us a little about your business. We'll reply within one business day with next steps and your free audit.
+          Want to see pricing first? <a href="/services/" class="link">See services &amp; pricing</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid--aside-right">
+      <div class="card card--large">
+        <div id="sent" class="form__success" hidden>
+          <svg
+            class="form__success-icon icon"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M8 12.5l2.5 2.5L16 9.5"></path>
+          </svg>
+          <p class="heading heading--md">Message sent.</p>
+          <p class="lead">Thanks — we'll be in touch shortly with next steps.</p>
+          <button type="button" id="send-another" class="button button--light">Send another</button>
+        </div>
+        <form
+          id="contact-form"
+          class="form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="visually-hidden">
+            <label>
+              Don't fill this out:
+              <input name="bot-field" tabindex="-1" autocomplete="off" />
+            </label>
+          </p>
+          <div class="grid grid--2">
+            <div class="field">
+              <label class="field__label" for="c-name">Name</label>
+              <input class="field__input" id="c-name" name="name" required type="text" autocomplete="name" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="c-biz">Business name</label>
+              <input class="field__input" id="c-biz" name="business" type="text" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="c-email">Email</label>
+              <input class="field__input" id="c-email" name="email" required type="email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="c-phone">Phone</label>
+              <input class="field__input" id="c-phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="c-site">
+              Current website
+              <span class="field__hint">(optional)</span>
+            </label>
+            <input class="field__input" id="c-site" name="website" type="url" placeholder="yourbusiness.com" />
+          </div>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">What do you need?</legend>
+            <div class="cluster">
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="SEO Growth Starter" />
+                <span class="button button--light button--small">SEO Growth Starter</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Website management" />
+                <span class="button button--light button--small">Website management</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Workflow review" />
+                <span class="button button--light button--small">Workflow review</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Custom tool / app" />
+                <span class="button button--light button--small">Custom tool / app</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Not sure yet" />
+                <span class="button button--light button--small">Not sure yet</span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label class="field__label" for="c-msg">Tell us about your business</label>
+            <textarea class="field__input field__input--textarea" id="c-msg" name="message" rows="5"></textarea>
+          </div>
+          <p id="form-error" class="form__error" role="alert" hidden>
+            Sorry, your message didn't send. Please email
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            or call {{ site.phone }}.
+          </p>
+          <div><button type="submit" class="button button--primary">Send message</button></div>
+        </form>
+      </div>
+      <div class="stack">
+        <div class="card card--dark card--rounded">
+          <p class="eyebrow eyebrow--on-dark">Reach us directly</p>
+          <dl class="contact-list">
+            <div>
+              <dt class="label label--on-dark">Email</dt>
+              <dd>
+                <a href="mailto:{{ site.email }}" class="contact-list__link">{{ site.email }}</a>
+              </dd>
+            </div>
+            <div>
+              <dt class="label label--on-dark">Phone</dt>
+              <dd>
+                <a href="tel:{{ site.telephone }}" class="contact-list__link">{{ site.phone }}</a>
+              </dd>
+            </div>
+            <div>
+              <dt class="label label--on-dark">Hours</dt>
+              <dd>{{ site.hours }}</dd>
+            </div>
+            <div>
+              <dt class="label label--on-dark">Service area</dt>
+              <dd>Sutherlin, Roseburg &amp; Southern Oregon</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="card card--rounded card--grow">
+          <div class="decor decor--small decor--bottom-right" aria-hidden="true"></div>
+          <p class="eyebrow">What happens next</p>
+          <ol class="numbered-list">
+            <li class="numbered-list__item">
+              <span class="numbered-list__number">01</span>
+              <span>We review your site and search presence.</span>
+            </li>
+            <li class="numbered-list__item">
+              <span class="numbered-list__number">02</span>
+              <span>A short call to learn how your business runs.</span>
+            </li>
+            <li class="numbered-list__item">
+              <span class="numbered-list__number">03</span>
+              <span>You get a free audit and a clear proposal.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

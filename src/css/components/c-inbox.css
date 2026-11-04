@@ -1,0 +1,104 @@
+/* =============================================================================
+   INBOX (sample lead inbox mockup)
+   ========================================================================== */
+
+.inbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  min-width: 0;
+  padding: var(--space-32);
+  border-radius: var(--radius-24);
+  background: var(--color-dark);
+
+  @media (--viewport-tablet-down) {
+    padding: var(--space-24) var(--space-16);
+  }
+
+  color: var(--color-on-dark);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-16);
+  }
+
+  &__period {
+    font-size: var(--font-size-13);
+    color: var(--color-on-dark-muted);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--hairline);
+    margin: 0;
+    padding: 0;
+    border-radius: var(--radius-12);
+    background: var(--color-on-dark-line);
+    list-style: none;
+    overflow: hidden;
+  }
+
+  &__row {
+    display: grid;
+
+    /* Fixed equal columns so subject, time and status line up across rows
+       (an auto-width status column made every row's time sit differently) */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: var(--space-16);
+    padding: var(--space-16);
+    background: var(--color-dark-raised);
+    font-size: var(--font-size-14);
+    letter-spacing: var(--tracking-body);
+
+    /* Phone: subject + source on the left, status chip on the right, time below */
+    @media (--viewport-tablet-down) {
+      grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-areas:
+        'main status'
+        'time status';
+      gap: var(--space-4) var(--space-16);
+    }
+  }
+
+  &__row .chip {
+    justify-self: end;
+  }
+
+  @media (--viewport-tablet-down) {
+    &__main {
+      grid-area: main;
+    }
+
+    &__time {
+      grid-area: time;
+    }
+
+    &__row .chip {
+      grid-area: status;
+    }
+  }
+
+  &__subject {
+    display: block;
+    font-weight: var(--font-weight-medium);
+  }
+
+  &__source,
+  &__time,
+  &__footnote {
+    font-size: var(--font-size-13);
+    color: var(--color-on-dark-subtle);
+  }
+
+  &__source {
+    display: block;
+  }
+
+  &__footnote {
+    margin: 0;
+  }
+}

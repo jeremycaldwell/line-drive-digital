@@ -1,0 +1,42 @@
+/* =============================================================================
+   FIELD (label + input)
+   ========================================================================== */
+
+.field {
+  display: grid;
+  gap: var(--space-8);
+
+  &__label {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--tracking-body);
+  }
+
+  &__hint {
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-muted);
+  }
+
+  &__input {
+    box-sizing: border-box;
+    min-height: 3.25rem;
+    padding: var(--space-16);
+    border: var(--hairline) solid var(--color-oat-input);
+    border-radius: var(--radius-12);
+    background: var(--color-white);
+    font: inherit;
+    font-size: var(--font-size-16);
+    letter-spacing: var(--tracking-body);
+    color: var(--color-text);
+
+    &:focus {
+      outline: 0.125rem solid var(--color-brown);
+      outline-offset: 0.125rem;
+    }
+
+    &--textarea {
+      line-height: var(--leading-normal);
+      resize: vertical;
+    }
+  }
+}

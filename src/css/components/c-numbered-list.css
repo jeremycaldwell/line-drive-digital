@@ -1,0 +1,27 @@
+/* =============================================================================
+   NUMBERED LIST ("What happens next" steps)
+   ========================================================================== */
+
+.numbered-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--font-size-16);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-body);
+
+  &__item {
+    display: flex;
+    gap: var(--space-16);
+  }
+
+  &__number {
+    padding-top: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-13);
+    color: var(--color-accent-text);
+  }
+}

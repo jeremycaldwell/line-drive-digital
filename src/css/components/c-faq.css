@@ -1,0 +1,59 @@
+/* =============================================================================
+   FAQ (details/summary accordion)
+   ========================================================================== */
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--hairline) solid var(--color-oat-line);
+
+  &__item {
+    border-bottom: var(--hairline) solid var(--color-oat-line);
+  }
+
+  &__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-16);
+    min-height: 4rem;
+    padding: var(--space-16) 0;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--tracking-lead);
+    list-style: none;
+    cursor: pointer;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__icon {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius-round);
+    background: var(--color-oat);
+    font-size: var(--font-size-18);
+
+    &::after {
+      content: '+';
+    }
+  }
+
+  &__item[open] &__icon::after {
+    content: '\2212';
+  }
+
+  &__answer {
+    max-width: 40rem;
+    margin: 0 0 var(--space-24);
+    font-size: var(--font-size-16);
+    line-height: var(--leading-normal);
+    color: var(--color-text-muted);
+  }
+}

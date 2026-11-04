@@ -1,0 +1,42 @@
+/* =============================================================================
+   TRAJECTORY (about page "line drive" illustration)
+   ========================================================================== */
+
+.trajectory {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  &__sun {
+    fill: var(--color-accent);
+    opacity: 0.9;
+    transform-box: fill-box;
+  }
+
+  .is-visible &__sun {
+    animation: float var(--motion-float-duration) var(--motion-float-easing)
+      infinite alternate;
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
+  }
+
+  &__path {
+    stroke: var(--color-white);
+    stroke-width: 6;
+    stroke-linecap: round;
+  }
+
+  &__ball {
+    fill: var(--color-white);
+  }
+
+  &__marker {
+    fill: var(--color-on-dark-muted);
+  }
+
+  &__base {
+    fill: var(--color-text-subtle);
+  }
+}

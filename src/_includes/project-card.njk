@@ -1,0 +1,11 @@
+{#- One project card. Data: src/_data/projects.js. Set headingTag before including (default h2). A chip shows only when result is set. -#}
+{%- set tag = headingTag or "h2" -%}
+<article class="stack" data-cat="{{ project.category }}">
+  {{ project.imageHtml | safe }}
+  <p class="eyebrow eyebrow--muted">{{ project.type | escape }}</p>
+  <{{ tag }} class="heading heading--md">{{ project.name | escape }}</{{ tag }}>
+  <p class="text text--muted">{{ project.description | escape }}</p>
+  {%- if project.result %}
+  <div><span class="chip chip--success chip--on-light"><span class="chip__dot"></span>{{ project.result | escape }}</span></div>
+  {%- endif %}
+</article>

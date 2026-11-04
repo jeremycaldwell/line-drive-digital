@@ -1,0 +1,57 @@
+/* =============================================================================
+   CTA (centered call-to-action banner)
+   ========================================================================== */
+
+.cta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-24);
+  padding: var(--space-64) var(--space-56);
+  border-radius: var(--radius-24);
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+
+  @media (--viewport-tablet-down) {
+    padding: var(--space-48) var(--space-24);
+  }
+
+  &--light {
+    background: var(--color-oat);
+    color: var(--color-text);
+  }
+
+  &__title {
+    max-width: 47.5rem;
+  }
+
+  &__text {
+    max-width: 38.75rem;
+  }
+
+  /* "You'll work directly with Jeremy" line with a small photo */
+  &__person {
+    display: flex;
+    align-items: center;
+    gap: var(--space-16);
+    margin: 0;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  &__avatar {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-round);
+    object-fit: cover;
+  }
+
+  &__actions {
+    margin-top: var(--space-8);
+  }
+}

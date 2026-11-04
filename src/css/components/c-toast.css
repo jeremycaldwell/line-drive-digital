@@ -1,0 +1,31 @@
+/* =============================================================================
+   TOAST (notification floating over the hero photo)
+   ========================================================================== */
+
+.toast {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  padding: var(--space-16);
+  border-radius: var(--radius-12);
+  background: var(--color-dark-overlay);
+  color: var(--color-on-dark);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-14);
+  letter-spacing: var(--tracking-body);
+  text-align: left;
+  text-transform: none;
+
+  &__title {
+    display: block;
+    font-weight: var(--font-weight-semibold);
+  }
+
+  &__meta {
+    display: block;
+    color: var(--color-on-dark-subtle);
+  }
+}

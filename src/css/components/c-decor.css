@@ -1,0 +1,139 @@
+/* =============================================================================
+   DECOR (orange circle cropped by its panel)
+   Every circle floats (--motion-float-* tokens) once its panel scrolls into
+   view; script.js adds .is-visible to the panel.
+   Parent needs position: relative, overflow: hidden and isolation: isolate
+   (so z-index: -1 sits above the parent's background, below its content).
+   ========================================================================== */
+
+.decor {
+  position: absolute;
+  width: 16.25rem;
+  height: 16.25rem;
+  border-radius: var(--radius-round);
+  background: var(--color-accent);
+  z-index: -1;
+  pointer-events: none;
+
+  /* Hidden on phones: columns stack and the circle would sit behind text */
+  @media (--viewport-tablet-down) {
+    display: none;
+  }
+
+  &--small {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  &--large {
+    width: 17.5rem;
+    height: 17.5rem;
+  }
+
+  &--bottom-right {
+    right: -4rem;
+    bottom: -5.5rem;
+  }
+
+  &--bottom-left {
+    left: -5rem;
+    bottom: -6rem;
+  }
+
+  &--top-right {
+    right: -5rem;
+    top: -5rem;
+  }
+
+  /* Small ball that rests, then shoots up and to the right with a trail and
+     fades out, once, after its panel scrolls into view. It fades in first,
+     holds, then flies. Hidden until then (and without JS). (The brand's
+     "line drive".) */
+  &--shot {
+    left: 0;
+    bottom: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    opacity: 0;
+
+    /* Trail */
+    &::before {
+      content: '';
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      width: 0;
+      height: 1rem;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(
+        90deg,
+        var(--color-accent-clear),
+        var(--color-accent-strong)
+      );
+      transform: translateY(-50%) rotate(-28.5deg);
+      transform-origin: 100% 50%;
+    }
+  }
+}
+
+.is-visible .decor {
+  animation: float var(--motion-float-duration) var(--motion-float-easing)
+    infinite alternate;
+}
+
+.is-visible .decor--shot {
+  animation: decor-shot 3s forwards;
+
+  &::before {
+    animation: decor-trail 3s forwards;
+  }
+}
+
+@keyframes decor-shot {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+
+  20%,
+  45% {
+    transform: translate(0, 0);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.9, 0.6);
+  }
+
+  100% {
+    transform: translate(32rem, -17.5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes decor-trail {
+  0%,
+  45% {
+    width: 0;
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.9, 0.6);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 12rem;
+    opacity: 0;
+  }
+}
+
+/* Reduced motion: no movement; the shot ball just shows where it starts */
+@media (prefers-reduced-motion: reduce) {
+  .decor,
+  .decor--shot::before {
+    animation: none !important;
+  }
+
+  .decor--shot {
+    opacity: 1;
+  }
+}

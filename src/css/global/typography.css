@@ -1,0 +1,138 @@
+/* =============================================================================
+   TYPOGRAPHY
+   Headings use Outfit Bold to match the logo; labels use IBM Plex Mono.
+   ========================================================================== */
+
+/* Small mono label above headings */
+.eyebrow {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-13);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-accent-text);
+
+  &--muted {
+    color: var(--color-text-muted);
+  }
+
+  &--on-dark {
+    color: var(--color-on-dark-muted);
+  }
+}
+
+/* Smaller mono caption used inside UI mockups */
+.label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-11);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+
+  @media (--viewport-tablet-down) {
+    font-size: var(--font-size-12);
+  }
+
+  &--on-dark {
+    color: var(--color-on-dark-muted);
+  }
+}
+
+.heading {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+
+  &--xl {
+    font-size: var(--font-size-82);
+    line-height: var(--leading-none);
+    letter-spacing: -0.04em;
+
+    @media (--viewport-tablet-down) {
+      font-size: var(--font-size-46);
+      letter-spacing: -0.03em;
+    }
+  }
+
+  &--lg {
+    font-size: var(--font-size-56);
+    line-height: var(--leading-tight);
+    letter-spacing: -0.035em;
+
+    @media (--viewport-tablet-down) {
+      font-size: var(--font-size-36);
+      letter-spacing: -0.03em;
+    }
+  }
+
+  &--md {
+    font-size: var(--font-size-32);
+    line-height: var(--leading-tight);
+    letter-spacing: -0.03em;
+  }
+
+  &--sm {
+    font-size: var(--font-size-22);
+    line-height: var(--leading-tight);
+    letter-spacing: -0.02em;
+  }
+}
+
+.lead {
+  margin: 0;
+  font-size: var(--font-size-18);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-lead);
+  color: var(--color-text-muted);
+
+  &--on-dark {
+    color: var(--color-on-dark-muted);
+  }
+}
+
+.text {
+  margin: 0;
+  font-size: var(--font-size-16);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-body);
+
+  &--muted {
+    color: var(--color-text-muted);
+  }
+
+  &--on-dark-muted {
+    color: var(--color-on-dark-muted);
+  }
+}
+
+.link {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-link);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+  }
+
+  /* Trailing arrow nudges right on hover/focus */
+  &__arrow {
+    display: inline-block;
+    transition: transform 0.2s ease-out;
+  }
+
+  &:hover &__arrow,
+  &:focus-visible &__arrow {
+    transform: translateX(0.25rem);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__arrow {
+      transition: none;
+    }
+  }
+}

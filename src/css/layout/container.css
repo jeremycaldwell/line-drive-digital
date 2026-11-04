@@ -1,0 +1,14 @@
+/* =============================================================================
+   CONTAINER
+   ========================================================================== */
+
+.container {
+  box-sizing: border-box;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-32);
+
+  @media (--viewport-tablet-down) {
+    padding: 0 var(--space-16);
+  }
+}

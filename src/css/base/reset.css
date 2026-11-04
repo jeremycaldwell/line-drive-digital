@@ -1,0 +1,34 @@
+/* =============================================================================
+   RESET
+   ========================================================================== */
+
+body {
+  margin: 0;
+  background: var(--color-white);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv11', 'ss03';
+}
+
+a {
+  color: var(--color-link);
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+
+figure,
+blockquote,
+dd {
+  margin: 0;
+}
+
+/* Keyboard focus ring sits 2px outside the element */
+:focus-visible {
+  outline-offset: 0.125rem;
+}
+
+[hidden] {
+  display: none !important;
+}

@@ -1,0 +1,66 @@
+/* =============================================================================
+   CARD (rounded panel)
+   ========================================================================== */
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-40);
+  border-radius: var(--radius-16);
+  background: var(--color-oat);
+  overflow: hidden;
+  isolation: isolate;
+
+  @media (--viewport-tablet-down) {
+    padding: var(--space-24);
+  }
+
+  &--compact {
+    padding: var(--space-32);
+  }
+
+  &--large {
+    padding: var(--space-48);
+    border-radius: var(--radius-24);
+
+    @media (--viewport-tablet-down) {
+      padding: var(--space-24);
+    }
+  }
+
+  &--rounded {
+    border-radius: var(--radius-24);
+  }
+
+  &--dark {
+    background: var(--color-dark);
+    color: var(--color-on-dark);
+  }
+
+  &--brown {
+    justify-content: space-between;
+    background: var(--color-brown);
+    color: var(--color-on-dark);
+  }
+
+  /* Fill remaining height in a flex column */
+  &--grow {
+    flex: 1;
+    position: relative;
+  }
+
+  /* Mockup area at the bottom of a card */
+  &__visual {
+    position: relative;
+    min-height: 13.75rem;
+    margin-top: var(--space-24);
+
+    /* No decor circle on phones, so no need to reserve space for it */
+    @media (--viewport-tablet-down) {
+      min-height: 0;
+      margin-top: var(--space-8);
+    }
+  }
+}

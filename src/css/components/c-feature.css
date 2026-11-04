@@ -1,0 +1,45 @@
+/* =============================================================================
+   FEATURE (two-column panel: copy + visual)
+   ========================================================================== */
+
+.feature {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: var(--space-48);
+  padding: var(--space-56);
+  border-radius: var(--radius-24);
+  background: var(--color-oat);
+  overflow: hidden;
+  isolation: isolate;
+
+  &--dark {
+    background: var(--color-dark);
+    color: var(--color-on-dark);
+  }
+
+  /* Visual column slightly wider */
+  &--wide-visual {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  }
+
+  &--top {
+    align-items: start;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+
+  @media (--viewport-tablet-down) {
+    &,
+    &--wide-visual {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-32);
+      padding: var(--space-24);
+    }
+  }
+}

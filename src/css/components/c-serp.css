@@ -1,0 +1,51 @@
+/* =============================================================================
+   SERP (search result mockup)
+   ========================================================================== */
+
+.serp {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  max-width: 22.5rem;
+  padding: var(--space-16);
+  border-radius: var(--radius-12);
+  background: var(--color-white);
+  font-size: var(--font-size-13);
+  letter-spacing: -0.0125rem;
+
+  &__query {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    padding: var(--space-8) var(--space-16);
+    border-radius: var(--radius-pill);
+    background: var(--color-oat);
+    color: var(--color-text-muted);
+  }
+
+  &__title {
+    display: block;
+    font-weight: var(--font-weight-semibold);
+  }
+
+  &__url {
+    display: block;
+    color: var(--color-success);
+  }
+
+  &__desc {
+    display: block;
+    color: var(--color-text-muted);
+  }
+
+  &__line {
+    width: 70%;
+    height: 0.5rem;
+    border-radius: var(--radius-4);
+    background: var(--color-oat-skeleton);
+
+    &--short {
+      width: 55%;
+    }
+  }
+}

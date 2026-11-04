@@ -1,0 +1,21 @@
+/* =============================================================================
+   PRICE ("From [PRICE] · typically X weeks")
+   ========================================================================== */
+
+.price {
+  margin: var(--space-8) 0 0;
+  font-size: var(--font-size-16);
+  letter-spacing: var(--tracking-body);
+
+  &__note {
+    color: var(--color-text-muted);
+  }
+
+  &__value {
+    font-weight: var(--font-weight-semibold);
+  }
+
+  &--on-dark .price__note {
+    color: var(--color-on-dark-muted);
+  }
+}

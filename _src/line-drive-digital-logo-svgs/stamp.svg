@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256" role="img" aria-label="Line Drive Digital stamp">
+  <circle cx="32" cy="32" r="32" fill="#211006"/>
+  <circle cx="32" cy="32" r="28.5" fill="none" stroke="#d66733" stroke-opacity="0.35" stroke-width="1"/>
+  <defs>
+    <linearGradient id="ldd-comet" gradientUnits="userSpaceOnUse" x1="-36" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#d66733" stop-opacity="0"/>
+      <stop offset="1" stop-color="#d66733" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(41 30) rotate(-16)">
+    <path d="M-36 -0.9 L0 -7.6 L0 7.6 L-36 0.9 Z" fill="url(#ldd-comet)"/>
+    <circle cx="0" cy="0" r="10.5" fill="#d66733"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+/* =============================================================================
+   CHAT (message bubbles mockup)
+   ========================================================================== */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 22.5rem;
+  margin-left: auto;
+  font-size: var(--font-size-14);
+  letter-spacing: var(--tracking-body);
+
+  &__bubble {
+    padding: var(--space-16);
+    border-radius: var(--radius-12);
+
+    &--incoming {
+      align-self: flex-end;
+      border-bottom-right-radius: var(--radius-4);
+      background: var(--color-white);
+    }
+
+    &--reply {
+      border-bottom-left-radius: var(--radius-4);
+      background: var(--color-dark);
+      color: var(--color-on-dark);
+    }
+  }
+}

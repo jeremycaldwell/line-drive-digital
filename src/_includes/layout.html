@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <meta name="robots" content="{% if noindex %}noindex, nofollow{% else %}index, follow{% endif %}" />
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}" />
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:locale" content="{{ site.language }}">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" media="all" href="/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "{{ site.name }}",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}/",
+        "email": "{{ site.email }}",
+        "telephone": "{{ site.telephone }}",
+        "openingHours": "{{ site.openingHours }}",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "{{ site.city }}",
+          "addressRegion": "{{ site.region }}",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="visually-hidden skip-link">Skip to main content</a>
+    <div class="page">
+      <header class="header">
+        <div class="container header__inner">
+          <a href="/" rel="home" class="logo logo--header" aria-label="Line Drive Digital, home">
+            {%- if page.url == '/' %}{% include "svg/logo-animated.svg" %}{% else %}{% include "svg/logo.svg" %}{% endif -%}
+          </a>
+          <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" hidden>
+            <svg class="menu-toggle__icon menu-toggle__icon--open icon icon--bold icon--round" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+            <svg class="menu-toggle__icon menu-toggle__icon--close icon icon--bold icon--round" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+            Menu
+          </button>
+          <nav class="nav" id="primary-nav" aria-label="Main">
+            {%- assign navPages = collections.all | eleventyNavigation %}
+            {%- for entry in navPages %}
+              {%- if entry.url == '/contact/' %}
+            <a href="{{ entry.url }}" class="button button--primary button--small"{% if entry.url == page.url %} aria-current="page"{% endif %}>Let's talk</a>
+              {%- else %}
+            <a href="{{ entry.url }}" class="nav__link"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+              {%- endif %}
+            {%- endfor %}
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" class="main" tabindex="-1">
+        {{ content }}
+      </main>
+
+      {%- if page.url == '/services/' %}{% assign svc = '' %}{% else %}{% assign svc = '/services/' %}{% endif %}
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__brand">
+              <a href="/" class="logo logo--footer" aria-label="Line Drive Digital, home">
+                {%- include "svg/logo.svg" -%}
+              </a>
+              <p class="footer__about">
+                SEO, websites and custom apps for local businesses. Based in Sutherlin, Oregon.
+              </p>
+            </div>
+            <div class="footer__column">
+              <p class="eyebrow eyebrow--muted footer__heading">Services</p>
+              <a href="{{ svc }}#seo" class="footer__link">SEO Growth Starter</a>
+              <a href="{{ svc }}#websites" class="footer__link">Website management</a>
+              <a href="{{ svc }}#apps" class="footer__link">Custom apps &amp; AI</a>
+            </div>
+            <div class="footer__column">
+              <p class="eyebrow eyebrow--muted footer__heading">Company</p>
+              <a href="/about/" class="footer__link">About</a>
+              <a href="/work/" class="footer__link">Work</a>
+              <a href="/contact/" class="footer__link">Contact</a>
+            </div>
+            <div class="footer__column">
+              <p class="eyebrow eyebrow--muted footer__heading">Contact</p>
+              <a href="mailto:{{ site.email }}" class="footer__link">{{ site.email }}</a>
+              <a href="tel:{{ site.telephone }}" class="footer__link">{{ site.phone }}</a>
+              <span class="footer__text">Sutherlin, Oregon</span>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p class="label">&copy; {% year %} {{ site.businessname }}</p>
+            <div class="footer__legal">
+              <a href="#" class="footer__legal-link">Privacy</a>
+              <a href="#" class="footer__legal-link">Terms</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

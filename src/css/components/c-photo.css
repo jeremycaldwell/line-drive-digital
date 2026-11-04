@@ -1,0 +1,23 @@
+/* =============================================================================
+   PHOTO (content photo with rounded corners, cropped to a fixed shape)
+   ========================================================================== */
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-24);
+  object-fit: cover;
+
+  /* Square head-and-shoulders (source is cropped square) */
+  &--square {
+    aspect-ratio: 1;
+  }
+
+  /* Full-width banner under a page intro */
+  &--banner {
+    margin-top: var(--space-56);
+    aspect-ratio: 21 / 8;
+    object-position: 50% 65%;
+  }
+}

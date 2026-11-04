@@ -1,0 +1,54 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["custom-media"] }],
+    "custom-property-pattern": null,
+    "selector-class-pattern": [
+      "^[a-z][a-z0-9]*(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$",
+      { "message": "Use BEM class names: block__element--modifier (kebab-case)" }
+    ],
+    "selector-max-id": 0,
+    "color-no-hex": true,
+    "color-named": "never",
+    "function-disallowed-list": [
+      ["rgb", "rgba", "hsl", "hsla"],
+      { "message": "Use a --color-* token from base/variables.css" }
+    ],
+    "declaration-property-value-allowed-list": [
+      {
+        "/^(margin|padding|gap|row-gap|column-gap|inset)/": [
+          "/^((-?var\\(--(space|hairline)[a-z0-9-]*\\)|0|auto|-?[0-9.]+em)\\s*)+$/"
+        ],
+        "font-family": ["/^var\\(--font-(sans|display|mono|serif)\\)$/", "inherit"],
+        "font-size": ["/^var\\(--font-size-[0-9]+\\)$/", "inherit", "/em$/"],
+        "font-weight": ["/^var\\(--font-weight-[a-z]+\\)$/", "inherit"]
+      },
+      { "message": "Use design tokens (--space-*, --font-*, --font-size-*, --font-weight-*)" }
+    ],
+    "color-function-notation": "legacy",
+    "color-function-alias-notation": null,
+    "alpha-value-notation": "number",
+    "keyframes-name-pattern": null,
+    "selector-pseudo-element-colon-notation": null,
+    "property-no-vendor-prefix": null,
+    "selector-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
+    "property-no-deprecated": null,
+    "no-descending-specificity": null,
+    "declaration-property-value-no-unknown": null,
+    "media-feature-range-notation": null,
+    "declaration-block-single-line-max-declarations": null,
+    "number-max-precision": null,
+    "declaration-block-no-redundant-longhand-properties": null
+  },
+  "overrides": [
+    {
+      "files": ["src/css/base/variables.css"],
+      "rules": { "color-no-hex": null, "function-disallowed-list": null, "declaration-property-value-allowed-list": null }
+    },
+    {
+      "files": ["src/css/global/fonts.css"],
+      "rules": { "declaration-property-value-allowed-list": null }
+    }
+  ]
+}
