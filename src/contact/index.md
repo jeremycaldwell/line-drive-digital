@@ -13,7 +13,7 @@ eleventyNavigation:
     <div class="intro">
       <div>
         <p class="eyebrow intro__eyebrow">Contact</p>
-        <h1 class="heading heading--xl">Let's talk about your next customer.</h1>
+        <h1 class="heading heading--xl">Let's talk about your next customer<span class="heading__dot">.</span></h1>
       </div>
       <p class="lead">
         Tell us a little about your business. We'll reply within one business day with next steps and your free audit.

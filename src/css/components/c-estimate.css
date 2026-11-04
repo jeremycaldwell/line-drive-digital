@@ -12,6 +12,14 @@
   font-size: var(--font-size-14);
   letter-spacing: var(--tracking-body);
 
+  /* Label + Pause button row (script.js adds the button when it goes live) */
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-16);
+  }
+
   &__notes {
     padding: var(--space-16);
     border-radius: var(--radius-12);

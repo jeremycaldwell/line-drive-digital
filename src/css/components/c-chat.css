@@ -171,19 +171,3 @@
     transform: none;
   }
 }
-
-/* Reduced motion: show the finished conversation */
-@media (prefers-reduced-motion: reduce) {
-  .chat--armed {
-    .chat__time,
-    .chat__bubble,
-    .chat__status {
-      opacity: 1;
-      animation: none !important;
-    }
-
-    .chat__typing {
-      display: none;
-    }
-  }
-}

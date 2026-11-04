@@ -13,7 +13,7 @@ eleventyNavigation:
     <div class="intro">
       <div>
         <p class="eyebrow intro__eyebrow">About</p>
-        <h1 class="heading heading--xl">A local studio with big-project experience.</h1>
+        <h1 class="heading heading--xl">A local studio with big-project experience<span class="heading__dot">.</span></h1>
       </div>
       <p class="lead">
         Line Drive Digital is based in Sutherlin, Oregon. We bring the standards of enterprise web development to the

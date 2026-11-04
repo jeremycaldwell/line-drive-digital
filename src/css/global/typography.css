@@ -50,6 +50,27 @@
   /* Even out line lengths so a heading never ends on one stranded word */
   text-wrap: balance;
 
+  /* Closing period in the logo's orange: the brand's "ball". Used on every
+     page title that ends in a period. Large text, so it passes contrast. */
+  &__dot {
+    color: var(--color-accent);
+  }
+
+  /* Homepage hero: "Show up first." slides in from the left, then "Book the
+     job." rises into focus. Plays once on load; CSS only. */
+  &--reveal {
+    .heading__line {
+      display: block;
+      animation: heading-line 0.6s 0s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+
+      /* Second line answers the first: it rises into place and comes into
+         focus, rather than travelling in from the side again */
+      + .heading__line {
+        animation: heading-settle 0.7s 0.85s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+      }
+    }
+  }
+
   &--xl {
     font-size: var(--font-size-82);
     line-height: var(--leading-none);
@@ -137,5 +158,20 @@
     &__arrow {
       transition: none;
     }
+  }
+}
+
+@keyframes heading-line {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+}
+
+@keyframes heading-settle {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em);
+    filter: blur(0.5rem);
   }
 }

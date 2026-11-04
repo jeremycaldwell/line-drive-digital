@@ -9,10 +9,9 @@ description: "SEO-focused websites, website management and custom apps that help
     <div class="intro">
       <div>
         <p class="eyebrow intro__eyebrow">Local SEO · Website management · Custom apps &amp; AI</p>
-        <h1 class="heading heading--xl">
-          Show up first.
-          <br />
-          Book the job.
+        <h1 class="heading heading--xl heading--reveal">
+          <span class="heading__line">Show up first<span class="heading__dot">.</span></span>
+          <span class="heading__line">Book the job<span class="heading__dot">.</span></span>
         </h1>
       </div>
       <div class="intro__aside">
@@ -334,7 +333,9 @@ description: "SEO-focused websites, website management and custom apps that help
         <div><a href="/services/#apps" class="button button--light">See custom builds &amp; pricing</a></div>
       </div>
       <div class="estimate">
-        <p class="label label--on-dark">Estimate builder · sample</p>
+        <div class="estimate__header">
+          <p class="label label--on-dark">Estimate builder · sample</p>
+        </div>
         <div class="estimate__notes">
           Job notes: replace 50-gal water heater, haul away old unit, new expansion tank.
         </div>

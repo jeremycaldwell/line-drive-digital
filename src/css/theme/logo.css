@@ -108,12 +108,3 @@
     opacity: 0;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .logo__hit,
-  .logo__streak,
-  .logo__hit-ball {
-    animation: none;
-    opacity: 0;
-  }
-}

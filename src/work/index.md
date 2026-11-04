@@ -13,7 +13,7 @@ eleventyNavigation:
     <div class="intro">
       <div>
         <p class="eyebrow intro__eyebrow">Our work</p>
-        <h1 class="heading heading--xl">Built for the businesses down the road.</h1>
+        <h1 class="heading heading--xl">Built for the businesses down the road<span class="heading__dot">.</span></h1>
       </div>
       <p class="lead">
         Websites that rank in their towns, and the tools that help the people behind them get home on time.

@@ -13,7 +13,7 @@ eleventyNavigation:
     <div class="intro">
       <div>
         <p class="eyebrow intro__eyebrow">Services</p>
-        <h1 class="heading heading--xl">Three ways we help you win more work.</h1>
+        <h1 class="heading heading--xl">Three ways we help you win more work<span class="heading__dot">.</span></h1>
       </div>
       <div class="intro__aside">
         <p class="lead">

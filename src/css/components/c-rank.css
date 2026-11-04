@@ -94,17 +94,3 @@
     transform: scale(1);
   }
 }
-
-/* Reduced motion: show the finished chart */
-@media (prefers-reduced-motion: reduce) {
-  .is-visible .rank {
-    .rank__line,
-    .rank__dot,
-    .rank__ball,
-    .rank__badge {
-      animation: none;
-      stroke-dashoffset: 0;
-      transform: none;
-    }
-  }
-}
