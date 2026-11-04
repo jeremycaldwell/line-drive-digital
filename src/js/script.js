@@ -135,7 +135,7 @@ window.addEventListener('DOMContentLoaded', () => {
    * Hero lead inbox: after the headline settles (about 1.55s, typography.css),
    * a new lead arrives at the top every 6s, the others slide down, the oldest
    * drops off, and the new lead's status moves from new, to drafted, to its
-   * outcome.
+   * outcome. Booked leads also replace the toast on the hero photo.
    */
   const inbox = document.querySelector('.inbox');
 
@@ -143,15 +143,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const list = inbox.querySelector('.inbox__list');
     const template = list.querySelector('.inbox__row');
     const ages = ['Just now', '6 min ago', '22 min ago', '1 hr ago'];
+    // Booked leads are AC / heat pump jobs, to match the technician in the
+    // hero photo, since they also show in its toast
     const leads = [
-      [
-        'Furnace not starting',
-        'Google search · Sutherlin',
-        'Booked',
-        'success',
-      ],
+      ['AC tune-up', 'Google search · Sutherlin', 'Booked', 'success'],
       ['Gutter cleaning', 'Quote form · Roseburg', 'Estimate sent', 'success'],
-      ['Leaky faucet', 'After-hours chat · Winston', 'Booked', 'success'],
+      ['Heat pump repair', 'After-hours chat · Winston', 'Booked', 'success'],
       [
         'Panel upgrade',
         'Google Maps call · Oakland',
@@ -159,7 +156,7 @@ window.addEventListener('DOMContentLoaded', () => {
         'danger',
       ],
       [
-        'Garage door stuck',
+        'AC unit not cooling',
         'Google search · Myrtle Creek',
         'Booked',
         'success',
@@ -175,6 +172,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
     liveFeed(inbox, 'live inbox', 2050, (later, toggle) => {
       inbox.querySelector('.inbox__period').replaceWith(toggle);
+
+      // The "New lead booked" toast on the hero photo follows the inbox: when
+      // a lead is booked, the old toast drops away and the new one pops up.
+      const toast = document.querySelector('.toast');
+      const showToast = (subject, source) => {
+        if (!toast) return;
+        toast.animate(
+          { opacity: [1, 0], transform: ['none', 'translateY(0.5rem)'] },
+          { duration: 200, easing, fill: 'forwards' },
+        );
+        later(300, () => {
+          toast.getAnimations().forEach((a) => a.cancel());
+          toast.querySelector('.toast__title').textContent = 'New lead booked';
+          toast.querySelector('.toast__meta').textContent =
+            `${subject} · ${source.split(' · ')[1]}`;
+          toast.animate(
+            { opacity: [0, 1], transform: ['translateY(0.75rem)', 'none'] },
+            { duration: 400, easing: pop },
+          );
+        });
+      };
 
       const addLead = () => {
         const [subject, source, outcome, tone] = leads[next % leads.length];
@@ -213,7 +231,10 @@ window.addEventListener('DOMContentLoaded', () => {
           list.style.height = '';
         });
         later(1600, () => setChip(chip, 'AI reply drafted', 'warning'));
-        later(3400, () => setChip(chip, outcome, tone));
+        later(3400, () => {
+          setChip(chip, outcome, tone);
+          if (outcome === 'Booked') showToast(subject, source);
+        });
         later(6000, addLead);
       };
 
