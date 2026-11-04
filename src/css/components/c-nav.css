@@ -21,6 +21,8 @@
 
     &[aria-current='page'] {
       text-decoration: underline;
+      text-decoration-color: var(--color-accent);
+      text-decoration-thickness: 0.125rem;
       text-underline-offset: 0.375rem;
     }
   }

@@ -22,6 +22,6 @@
     padding-top: var(--space-2);
     font-family: var(--font-mono);
     font-size: var(--font-size-13);
-    color: var(--color-text-muted);
+    color: var(--color-accent-text);
   }
 }

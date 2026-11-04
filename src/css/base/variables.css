@@ -40,6 +40,7 @@
   --color-accent: #d66733;
   --color-accent-clear: rgba(214, 103, 51, 0);
   --color-accent-strong: rgba(214, 103, 51, 0.85);
+  --color-accent-text: #a64f12; /* accent hue, dark enough for small text on white and oat (AA) */
   --color-link: #b85a16;
   --color-link-hover: #8f430f;
 

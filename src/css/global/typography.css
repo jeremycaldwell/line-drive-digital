@@ -12,6 +12,7 @@
   line-height: var(--leading-snug);
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
+  color: var(--color-accent-text);
 
   &--muted {
     color: var(--color-text-muted);
