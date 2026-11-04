@@ -22,6 +22,7 @@
 @import url('./theme/footer.css');
 
 /* Components. */
+@import url('./components/c-icon.css');
 @import url('./components/c-nav.css');
 @import url('./components/c-menu-toggle.css');
 @import url('./components/c-button.css');

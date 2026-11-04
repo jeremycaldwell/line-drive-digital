@@ -28,13 +28,10 @@ eleventyNavigation:
       <div class="card card--large">
         <div id="sent" class="form__success" hidden>
           <svg
-            class="form__success-icon"
+            class="form__success-icon icon"
             width="40"
             height="40"
             viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
             aria-hidden="true"
           >
             <circle cx="12" cy="12" r="9"></circle>

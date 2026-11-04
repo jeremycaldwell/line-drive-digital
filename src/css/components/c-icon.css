@@ -1,0 +1,18 @@
+/* =============================================================================
+   ICON (inline line icons; colour follows the text via currentColor)
+   ========================================================================== */
+
+.icon {
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.5;
+
+  &--bold {
+    stroke-width: 2;
+  }
+
+  &--round {
+    stroke-linecap: round;
+  }
+}

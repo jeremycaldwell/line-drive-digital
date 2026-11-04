@@ -74,7 +74,7 @@ eleventyNavigation:
         aria-label="Illustration: a straight rising trajectory ending in a node"
       >
         <circle class="trajectory__sun" cx="330" cy="150" r="130"></circle>
-        <path class="trajectory__path" d="M20 210 L340 60" stroke-width="6" stroke-linecap="round"></path>
+        <path class="trajectory__path" d="M20 210 L340 60"></path>
         <circle class="trajectory__ball" cx="340" cy="60" r="14"></circle>
         <circle class="trajectory__marker" cx="120" cy="163" r="5"></circle>
         <circle class="trajectory__marker" cx="220" cy="116" r="5"></circle>

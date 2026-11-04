@@ -19,7 +19,6 @@
   }
 
   &__icon {
-    flex-shrink: 0;
     margin-top: var(--space-2);
     color: var(--color-accent);
   }

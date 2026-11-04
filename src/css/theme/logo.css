@@ -26,3 +26,94 @@
     height: 1.25rem;
   }
 }
+
+/* Logo SVG parts (src/_includes/svg/logo*.svg) */
+.logo__ball {
+  fill: var(--color-accent);
+}
+
+.logo__fade-start {
+  stop-color: var(--color-accent);
+  stop-opacity: 0;
+}
+
+.logo__fade-end {
+  stop-color: var(--color-accent);
+  stop-opacity: 0.9;
+}
+
+/* Homepage hit animation (logo-animated.svg). After a 3s wait the hit ball
+   fades in and grows to 1.6x over 0.6s, then shrinks back to size as it flies
+   off with the streak (flight starts at 3.6s). Distances are SVG units. */
+.logo__hit {
+  animation: logo-hit 1.4s cubic-bezier(0.25, 0.6, 0.45, 1) 3.6s 1 both;
+}
+
+.logo__streak {
+  animation: logo-streak 1.4s linear 3.6s 1 both;
+}
+
+.logo__hit-ball {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: logo-hit-ball 2s linear 3s 1 both;
+}
+
+@keyframes logo-hit-ball {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+
+  30% {
+    opacity: 1;
+    transform: scale(1.6);
+    animation-timing-function: cubic-bezier(0.25, 0.6, 0.45, 1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes logo-hit {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(150px, -107px);
+    opacity: 0;
+  }
+}
+
+@keyframes logo-streak {
+  0% {
+    opacity: 0;
+  }
+
+  15%,
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo__hit,
+  .logo__streak,
+  .logo__hit-ball {
+    animation: none;
+    opacity: 0;
+  }
+}

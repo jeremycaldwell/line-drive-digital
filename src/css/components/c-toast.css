@@ -19,10 +19,6 @@
   text-align: left;
   text-transform: none;
 
-  &__icon {
-    flex-shrink: 0;
-  }
-
   &__title {
     display: block;
     font-weight: var(--font-weight-semibold);

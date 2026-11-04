@@ -54,13 +54,10 @@ eleventyNavigation:
         <ul class="checklist">
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -72,13 +69,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -90,13 +84,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -108,13 +99,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -126,13 +114,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -144,13 +129,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -187,13 +169,10 @@ eleventyNavigation:
         <ul class="checklist">
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -205,13 +184,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -223,13 +199,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -241,13 +214,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -259,13 +229,10 @@ eleventyNavigation:
           </li>
           <li class="checklist__item">
             <svg
-              class="checklist__icon"
+              class="checklist__icon icon icon--bold"
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
               aria-hidden="true"
             >
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -331,13 +298,10 @@ eleventyNavigation:
         <ul class="checklist">
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -349,13 +313,10 @@ eleventyNavigation:
             </li>
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -367,13 +328,10 @@ eleventyNavigation:
             </li>
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -397,13 +355,10 @@ eleventyNavigation:
         <ul class="checklist">
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -415,13 +370,10 @@ eleventyNavigation:
             </li>
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -433,13 +385,10 @@ eleventyNavigation:
             </li>
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -463,13 +412,10 @@ eleventyNavigation:
         <ul class="checklist">
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -481,13 +427,10 @@ eleventyNavigation:
             </li>
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
@@ -499,13 +442,10 @@ eleventyNavigation:
             </li>
             <li class="checklist__item">
               <svg
-                class="checklist__icon"
+                class="checklist__icon icon icon--bold"
                 width="18"
                 height="18"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>

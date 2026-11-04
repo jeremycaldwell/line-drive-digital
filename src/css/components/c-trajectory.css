@@ -24,6 +24,8 @@
 
   &__path {
     stroke: var(--color-white);
+    stroke-width: 6;
+    stroke-linecap: round;
   }
 
   &__ball {

@@ -30,13 +30,10 @@ description: "SEO-focused websites, website management and custom apps that help
         {% image "images/home/hvac-technician.jpg", "HVAC technician inspecting an outdoor AC unit beside a house", { class: "showcase__image", sizes: "(max-width: 56.25rem) calc(100vw - 2rem), 34rem", priority: true } %}
         <div class="toast">
           <svg
-            class="toast__icon"
+            class="icon"
             width="22"
             height="22"
             viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
             aria-hidden="true"
           >
             <circle cx="12" cy="12" r="9"></circle>
@@ -113,13 +110,10 @@ description: "SEO-focused websites, website management and custom apps that help
     </div>
     <div class="service-grid">
       <a href="/services/#seo" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <circle cx="11" cy="11" r="6"></circle>
@@ -128,13 +122,10 @@ description: "SEO-focused websites, website management and custom apps that help
         Local SEO
       </a>
       <a href="/services/#seo" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"></path>
@@ -143,13 +134,10 @@ description: "SEO-focused websites, website management and custom apps that help
         Google Business Profile
       </a>
       <a href="/services/#websites" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <rect x="3" y="4" width="18" height="16" rx="2"></rect>
@@ -158,13 +146,10 @@ description: "SEO-focused websites, website management and custom apps that help
         Website design
       </a>
       <a href="/services/#websites" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <path d="M3 13l3-8h12l3 8v6H3z"></path>
@@ -173,13 +158,10 @@ description: "SEO-focused websites, website management and custom apps that help
         Lead capture
       </a>
       <a href="/services/#websites" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path>
@@ -187,13 +169,10 @@ description: "SEO-focused websites, website management and custom apps that help
         Call tracking
       </a>
       <a href="/services/#apps" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <path d="M4 5h16v11H9l-5 4z"></path>
@@ -201,13 +180,10 @@ description: "SEO-focused websites, website management and custom apps that help
         Workflow reviews
       </a>
       <a href="/services/#apps" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"></path>
@@ -215,13 +191,10 @@ description: "SEO-focused websites, website management and custom apps that help
         AI assistants
       </a>
       <a href="/services/#apps" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <path d="M8 8l-4 4 4 4"></path>
@@ -230,13 +203,10 @@ description: "SEO-focused websites, website management and custom apps that help
         Custom apps
       </a>
       <a href="/services/#apps" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <path d="M4 12a8 8 0 0 1 14-5.3L20 9"></path>
@@ -247,13 +217,10 @@ description: "SEO-focused websites, website management and custom apps that help
         Automations
       </a>
       <a href="/services/#websites" class="service-grid__item">
-        <svg
+        <svg class="icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
           aria-hidden="true"
         >
           <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path>
@@ -270,13 +237,10 @@ description: "SEO-focused websites, website management and custom apps that help
           <div class="decor decor--shot" aria-hidden="true"></div>
           <div class="serp">
             <div class="serp__query">
-              <svg
+              <svg class="icon icon--bold"
                 width="14"
                 height="14"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
                 aria-hidden="true"
               >
                 <circle cx="11" cy="11" r="6"></circle>
