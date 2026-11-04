@@ -6,7 +6,7 @@ const imageHtml = require("../../lib/image.js");
 const projects = [
   {
     "name": "Vance Fabrication LLC",
-    "type": "SEO website · Kettle Falls, WA",
+    "type": "SEO website · Location & service pages",
     "description": "Service pages for a welding, fencing and construction company in Eastern Washington.",
     "image": "images/work/vance-fabrication.jpg",
     "alt": "Vance Fabrication LLC general construction services page",
