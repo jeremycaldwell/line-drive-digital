@@ -1,5 +1,6 @@
 ---
 layout: layout.html
+seoTitle: "Our Work | Websites & Apps for Southern Oregon Businesses"
 title: Work
 description: "Websites and AI tools built for local businesses in Southern Oregon."
 eleventyNavigation:

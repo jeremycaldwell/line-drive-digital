@@ -10,5 +10,14 @@
   "description": "SEO-focused websites, website management and custom apps that help local businesses in Southern Oregon show up first and book the job.",
   "city": "Sutherlin",
   "region": "OR",
-  "language": "en_US"
+  "language": "en_US",
+  "googleMaps": "https://www.google.com/maps?cid=3172615712863497771",
+  "serviceArea": [
+    "Sutherlin",
+    "Roseburg",
+    "Oakland",
+    "Winston",
+    "Douglas County"
+  ],
+  "founder": "Jeremy Caldwell"
 }

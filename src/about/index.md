@@ -1,5 +1,6 @@
 ---
 layout: layout.html
+seoTitle: "About Jeremy Caldwell | Web Developer in Sutherlin, OR"
 title: About
 description: "Line Drive Digital is a Sutherlin, Oregon studio with 20 years of web development experience."
 eleventyNavigation:

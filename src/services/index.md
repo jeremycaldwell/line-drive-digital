@@ -1,5 +1,6 @@
 ---
 layout: layout.html
+seoTitle: "SEO, Website & Custom App Pricing | Line Drive Digital"
 title: Services
 description: "SEO Growth Starter, full-service website management, and custom apps and AI tools for small businesses."
 eleventyNavigation:
