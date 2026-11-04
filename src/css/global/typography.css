@@ -47,6 +47,9 @@
   font-family: var(--font-display);
   font-weight: var(--font-weight-bold);
 
+  /* Even out line lengths so a heading never ends on one stranded word */
+  text-wrap: balance;
+
   &--xl {
     font-size: var(--font-size-82);
     line-height: var(--leading-none);

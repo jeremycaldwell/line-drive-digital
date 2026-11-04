@@ -51,6 +51,14 @@
     position: relative;
   }
 
+  /* Price + action pinned to the bottom, so side-by-side cards line up */
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    margin-top: auto;
+  }
+
   /* Mockup area at the bottom of a card */
   &__visual {
     position: relative;

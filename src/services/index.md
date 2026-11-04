@@ -17,7 +17,7 @@ eleventyNavigation:
       <div class="intro__aside">
         <p class="lead">
           Get found on Google with a one-time SEO setup, hand us your whole website, or bring us a problem and we'll
-          build the tool that solves it. Every engagement starts with a free audit.
+          build the tool that solves it. Every engagement starts with a free audit, whether you have a website or not.
         </p>
         <div><a href="/contact/" class="button button--primary">Get a free audit</a></div>
       </div>
@@ -27,6 +27,48 @@ eleventyNavigation:
       <a href="#websites" class="button button--secondary button--small">02 · Website management</a>
       <a href="#apps" class="button button--secondary button--small">03 · Custom apps &amp; AI</a>
     </nav>
+  </div>
+</section>
+
+<section class="section section--band">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Start here</p>
+      <h2 class="heading heading--lg section-header__title">See where you stand before you spend a dollar.</h2>
+    </div>
+    <div class="grid grid--2">
+      <div class="card">
+        <p class="eyebrow">Free audit</p>
+        <h3 class="heading heading--md">Scouting Report</h3>
+        <p class="text text--muted">
+          Send us your website and we'll run a Scouting Report: your score out of 100, the three things costing you the
+          most calls, and how you compare to two local competitors. No website yet? We'll look at how you show up on
+          Google today and who you're up against.
+        </p>
+        <div class="card__footer">
+          <p class="price">
+            <strong class="price__value">Free</strong>
+            <span class="price__note">· no commitment</span>
+          </p>
+          <div><a href="/contact/" class="button button--primary">Get a free audit</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <p class="eyebrow">In-depth audit</p>
+        <h3 class="heading heading--md">Scorecard</h3>
+        <p class="text text--muted">
+          Our full audit: every page checked, category scores, what's working, what's costing you, a complete
+          competitor comparison, and a prioritized list of what to fix first, with the reasoning behind each step.
+        </p>
+        <div class="card__footer">
+          <p class="price">
+            <span class="price__note">Included in the</span>
+            <strong class="price__value">SEO Growth Starter</strong>
+          </p>
+          <div><a href="#seo" class="button button--primary">See SEO Growth Starter</a></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -52,6 +94,21 @@ eleventyNavigation:
           <span class="plan__unit">one-time fee</span>
         </p>
         <ul class="checklist">
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon icon icon--bold"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Scorecard audit</strong>
+              — a page-by-page review of your site (or your top local competitors if you're starting fresh) with a prioritized fix list
+            </span>
+          </li>
           <li class="checklist__item">
             <svg
               class="checklist__icon icon icon--bold"
@@ -592,7 +649,8 @@ eleventyNavigation:
       <p class="eyebrow eyebrow--on-dark">Not sure where to start?</p>
       <h2 class="heading heading--lg cta__title">Start with a free audit.</h2>
       <p class="lead lead--on-dark cta__text">
-        We'll look at your site, your rankings and your workflow, then tell you the one thing we'd fix first.
+        Have a website? We'll run a Scouting Report and tell you the one thing we'd fix first. Starting from scratch?
+        We'll show you who you're up against on Google.
       </p>
       <div class="cta__actions"><a href="/contact/" class="button button--light">Let's talk</a></div>
     </div>

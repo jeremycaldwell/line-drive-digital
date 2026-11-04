@@ -47,8 +47,9 @@
     background: var(--color-white);
     color: var(--color-text);
 
+    /* Darker than oat so the hover stays visible on oat cards too */
     &:hover {
-      background: var(--color-oat);
+      background: var(--color-oat-hover);
       color: var(--color-text);
     }
   }

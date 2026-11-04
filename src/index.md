@@ -355,7 +355,7 @@ description: "SEO-focused websites, website management and custom apps that help
       <li class="card card--compact">
         <p class="eyebrow eyebrow--muted">Step 01</p>
         <h3 class="heading heading--sm">Free audit</h3>
-        <p class="text text--muted">We review your site, rankings and day-to-day workflow.</p>
+        <p class="text text--muted">Have a site? We run a Scouting Report on it. Starting fresh? We map your local competition.</p>
       </li>
       <li class="card card--compact">
         <p class="eyebrow eyebrow--muted">Step 02</p>
@@ -379,11 +379,11 @@ description: "SEO-focused websites, website management and custom apps that help
 <section class="section">
   <div class="container">
     <div class="cta">
-      <p class="eyebrow eyebrow--on-dark">Free site audit</p>
+      <p class="eyebrow eyebrow--on-dark">Free audit</p>
       <h2 class="heading heading--lg cta__title">Let's talk about your next customer.</h2>
       <p class="lead lead--on-dark cta__text">
-        Send your website. We'll show you where you rank, what's costing you calls, and one place AI could save you time
-        this month.
+        Have a website? We'll run a Scouting Report: your score, the three things costing you calls, and how you stack
+        up against local competitors. No website yet? We'll show you who you're up against on Google.
       </p>
       <p class="cta__person">
         {% image "images/team/jeremy.jpg", "", { class: "cta__avatar", sizes: "3rem" } %}

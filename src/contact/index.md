@@ -85,6 +85,10 @@ eleventyNavigation:
             <legend class="form__legend">What do you need?</legend>
             <div class="cluster">
               <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Free audit" />
+                <span class="button button--light button--small">Free audit</span>
+              </label>
+              <label class="toggle">
                 <input class="toggle__input" type="checkbox" name="needs" value="SEO Growth Starter" />
                 <span class="button button--light button--small">SEO Growth Starter</span>
               </label>
@@ -150,7 +154,7 @@ eleventyNavigation:
           <ol class="numbered-list">
             <li class="numbered-list__item">
               <span class="numbered-list__number">01</span>
-              <span>We review your site and search presence.</span>
+              <span>We run a free Scouting Report on your site, or check your local competition if you're starting fresh.</span>
             </li>
             <li class="numbered-list__item">
               <span class="numbered-list__number">02</span>
@@ -158,7 +162,7 @@ eleventyNavigation:
             </li>
             <li class="numbered-list__item">
               <span class="numbered-list__number">03</span>
-              <span>You get a free audit and a clear proposal.</span>
+              <span>You get your results and a clear proposal.</span>
             </li>
           </ol>
         </div>
