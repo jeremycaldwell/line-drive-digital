@@ -19,7 +19,7 @@ eleventyNavigation:
           Get found on Google with a one-time SEO setup, hand us your whole website, or bring us a problem and we'll
           build the tool that solves it. Every engagement starts with a free audit, whether you have a website or not.
         </p>
-        <div><a href="/contact/" class="button button--primary">Get a free audit</a></div>
+        <div><a href="/contact/?need=free-audit" class="button button--primary">Get a free audit</a></div>
       </div>
     </div>
     <nav class="cluster cluster--spaced" aria-label="On this page">
@@ -50,7 +50,7 @@ eleventyNavigation:
             <strong class="price__value">Free</strong>
             <span class="price__note">· no commitment</span>
           </p>
-          <div><a href="/contact/" class="button button--primary">Get a free audit</a></div>
+          <div><a href="/contact/?need=free-audit" class="button button--primary">Get a free audit</a></div>
         </div>
       </div>
       <div class="card">

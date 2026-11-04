@@ -77,6 +77,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (form) {
     const sent = document.getElementById('sent');
+
+    // Pre-select a "What do you need?" option from the link, e.g.
+    // /contact/?need=free-audit ticks "Free audit" (value lowercased, spaces → -).
+    const need = new URLSearchParams(window.location.search).get('need');
+    form.querySelectorAll('input[name="needs"]').forEach((option) => {
+      if (option.value.toLowerCase().replace(/\s+/g, '-') === need) {
+        option.checked = true;
+      }
+    });
+
     const error = document.getElementById('form-error');
 
     form.addEventListener('submit', async (event) => {
