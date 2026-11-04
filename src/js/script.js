@@ -25,21 +25,35 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Animated mockups (floating circles, rank chart, chat, About illustration):
-   * start their animation when their panel is half in view, by adding
-   * .is-visible to the panel. The panel is observed because the circles are
-   * cropped by it. Chats are armed (hidden) only here, so without JS they show.
+   * Animated mockups (floating circles, rank chart, chat, tool list, About
+   * illustration): start their animation when their panel is half in view,
+   * by adding .is-visible to the panel. The panel is observed because the
+   * circles are cropped by it; the tool list is its own panel, since its
+   * feature can be too tall to ever be half in view on phones. Chats and tool
+   * lists are armed (hidden) only here, so without JS they show.
    */
   const panels = new Set(
     [
-      ...document.querySelectorAll('.decor, .trajectory__sun, .rank, .chat'),
-    ].map((dot) => dot.closest('.card, .feature, .cta') || dot.parentElement),
+      ...document.querySelectorAll(
+        '.decor, .trajectory__sun, .rank, .chat, .tool-list',
+      ),
+    ].map((el) =>
+      el.matches('.tool-list')
+        ? el
+        : el.closest('.card, .feature, .cta') || el.parentElement,
+    ),
   );
 
   if (panels.size && 'IntersectionObserver' in window) {
     document
       .querySelectorAll('.chat')
       .forEach((chat) => chat.classList.add('chat--armed'));
+    document.querySelectorAll('.tool-list').forEach((list) => {
+      list.classList.add('tool-list--armed');
+      list
+        .querySelectorAll('.tool-list__item, .chip')
+        .forEach((el, i) => el.style.setProperty('--i', i));
+    });
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

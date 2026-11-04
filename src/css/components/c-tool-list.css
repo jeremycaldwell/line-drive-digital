@@ -1,5 +1,9 @@
 /* =============================================================================
    TOOL LIST (custom tools examples on dark)
+   With JS, script.js adds .tool-list--armed and an index (--i) to each item
+   and chip, then .is-visible once the list is half in view: the rows rise in
+   one after another, then the tag chips pop in. Plays once. Without JS the
+   list shows; reduced motion jumps to the finished list (reset.css).
    ========================================================================== */
 
 .tool-list {
@@ -30,5 +34,48 @@
     margin: 0;
     font-size: var(--font-size-16);
     letter-spacing: var(--tracking-body);
+  }
+}
+
+.tool-list--armed {
+  .tool-list__item,
+  .chip {
+    opacity: 0;
+  }
+
+  &.is-visible {
+    .tool-list__item {
+      animation: tool-list-rise 0.5s calc(var(--i) * 0.12s) ease-out forwards;
+    }
+
+    /* Chips come last: their --i continues after the six rows */
+    .chip {
+      animation: tool-list-pop 0.4s calc(var(--i) * 0.12s + 0.2s)
+        cubic-bezier(0.3, 1.6, 0.5, 1) forwards;
+    }
+  }
+}
+
+@keyframes tool-list-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes tool-list-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
