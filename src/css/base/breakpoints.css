@@ -3,3 +3,7 @@
    ========================================================================== */
 
 @custom-media --viewport-tablet-down (max-width: 56.25rem);
+
+/* Landscape tablets and small laptops: between phone and full desktop
+   spacing. Never overlaps tablet-down. */
+@custom-media --viewport-medium (min-width: 56.3125rem) and (max-width: 75rem);

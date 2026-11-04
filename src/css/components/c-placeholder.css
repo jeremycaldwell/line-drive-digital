@@ -29,6 +29,14 @@
   &--wide {
     margin-top: var(--space-56);
     aspect-ratio: 21 / 8;
+
+    @media (--viewport-medium) {
+      margin-top: var(--space-40);
+    }
+
+    @media (--viewport-tablet-down) {
+      margin-top: var(--space-32);
+    }
   }
 
   &--landscape {

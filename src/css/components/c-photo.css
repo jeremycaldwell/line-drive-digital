@@ -17,7 +17,16 @@
   /* Full-width banner under a page intro */
   &--banner {
     margin-top: var(--space-56);
+
+    @media (--viewport-medium) {
+      margin-top: var(--space-40);
+    }
+
     aspect-ratio: 21 / 8;
     object-position: 50% 65%;
+
+    @media (--viewport-tablet-down) {
+      margin-top: var(--space-32);
+    }
   }
 }

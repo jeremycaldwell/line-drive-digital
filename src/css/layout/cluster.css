@@ -20,5 +20,13 @@
   /* Space above when following other content */
   &--spaced {
     margin-top: var(--space-48);
+
+    @media (--viewport-medium) {
+      margin-top: var(--space-40);
+    }
+
+    @media (--viewport-tablet-down) {
+      margin-top: var(--space-32);
+    }
   }
 }

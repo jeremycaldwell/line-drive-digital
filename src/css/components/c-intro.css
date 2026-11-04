@@ -8,6 +8,10 @@
   align-items: end;
   gap: var(--space-48);
 
+  @media (--viewport-medium) {
+    gap: var(--space-32);
+  }
+
   @media (--viewport-tablet-down) {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-24);

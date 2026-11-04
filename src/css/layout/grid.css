@@ -33,6 +33,10 @@
 
   &--gap-48 {
     gap: var(--space-48);
+
+    @media (--viewport-medium) {
+      gap: var(--space-40);
+    }
   }
 
   &--rows-40 {
@@ -50,6 +54,11 @@
     &--aside-right,
     &--aside-left {
       grid-template-columns: minmax(0, 1fr);
+    }
+
+    &--gap-48,
+    &--rows-40 {
+      gap: var(--space-32);
     }
   }
 }

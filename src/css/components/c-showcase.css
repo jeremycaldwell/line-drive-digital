@@ -8,8 +8,13 @@
   gap: var(--space-16);
   margin-top: var(--space-56);
 
+  @media (--viewport-medium) {
+    margin-top: var(--space-40);
+  }
+
   @media (--viewport-tablet-down) {
     grid-template-columns: minmax(0, 1fr);
+    margin-top: var(--space-32);
   }
 }
 

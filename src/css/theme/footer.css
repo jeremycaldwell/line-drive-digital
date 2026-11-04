@@ -6,6 +6,14 @@
   border-top: var(--hairline) solid var(--color-oat-line);
   padding: var(--space-64) 0 var(--space-32);
 
+  @media (--viewport-medium) {
+    padding-top: var(--space-56);
+  }
+
+  @media (--viewport-tablet-down) {
+    padding-top: var(--space-48);
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
@@ -63,8 +71,17 @@
     justify-content: space-between;
     gap: var(--space-16);
     margin-top: var(--space-56);
+
+    @media (--viewport-medium) {
+      margin-top: var(--space-40);
+    }
+
     padding-top: var(--space-24);
     border-top: var(--hairline) solid var(--color-oat);
+
+    @media (--viewport-tablet-down) {
+      margin-top: var(--space-32);
+    }
   }
 
   &__legal {

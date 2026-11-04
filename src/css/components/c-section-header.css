@@ -8,6 +8,10 @@
   gap: var(--space-16);
   margin-bottom: var(--space-40);
 
+  @media (--viewport-tablet-down) {
+    margin-bottom: var(--space-32);
+  }
+
   &__title {
     max-width: 51.25rem;
   }

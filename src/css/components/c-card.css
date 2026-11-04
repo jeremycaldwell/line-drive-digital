@@ -13,6 +13,10 @@
   overflow: hidden;
   isolation: isolate;
 
+  @media (--viewport-medium) {
+    padding: var(--space-32);
+  }
+
   @media (--viewport-tablet-down) {
     padding: var(--space-24);
   }
@@ -24,6 +28,10 @@
   &--large {
     padding: var(--space-48);
     border-radius: var(--radius-24);
+
+    @media (--viewport-medium) {
+      padding: var(--space-40);
+    }
 
     @media (--viewport-tablet-down) {
       padding: var(--space-24);

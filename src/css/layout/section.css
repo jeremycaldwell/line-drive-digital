@@ -7,18 +7,47 @@
 .section {
   padding: 0 0 var(--space-64);
 
+  @media (--viewport-medium) {
+    padding-bottom: var(--space-56);
+  }
+
+  /* Phones and small tablets: one step tighter throughout */
+  @media (--viewport-tablet-down) {
+    padding-bottom: var(--space-48);
+  }
+
   /* Page intro at the top of every page */
   &--intro {
     padding: var(--space-64) 0 var(--space-40);
+
+    @media (--viewport-medium) {
+      padding-top: var(--space-48);
+    }
+
+    @media (--viewport-tablet-down) {
+      padding: var(--space-32) 0;
+    }
   }
 
   /* Tighter bands for consecutive feature blocks */
   &--band {
     padding: var(--space-40) 0;
+
+    @media (--viewport-tablet-down) {
+      padding: var(--space-32) 0;
+    }
   }
 
   /* Last band before a regular section */
   &--band-end {
     padding: var(--space-40) 0 var(--space-64);
+
+    @media (--viewport-medium) {
+      padding-bottom: var(--space-56);
+    }
+
+    @media (--viewport-tablet-down) {
+      padding: var(--space-32) 0 var(--space-48);
+    }
   }
 }

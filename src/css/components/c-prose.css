@@ -14,6 +14,10 @@
     font-size: var(--font-size-22);
     font-weight: var(--font-weight-bold);
     line-height: var(--leading-tight);
+
+    @media (--viewport-tablet-down) {
+      margin-top: var(--space-32);
+    }
   }
 
   & p {
