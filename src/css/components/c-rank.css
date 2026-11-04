@@ -1,0 +1,110 @@
+/* =============================================================================
+   RANK (homepage SEO card: search rank climbing to #1)
+   Once its panel scrolls into view (script.js adds .is-visible), the line
+   draws itself, each rank dot pops in as the line reaches it, then the ball
+   lands on #1 and the badge appears. Hidden until then (and without JS).
+   ========================================================================== */
+
+.rank {
+  position: absolute;
+  right: -1.5rem;
+  bottom: -2.5rem;
+  width: 17rem;
+  height: auto;
+  z-index: -1;
+  pointer-events: none;
+  overflow: visible;
+  opacity: 0;
+
+  /* Columns stack on phones and the chart would sit behind text */
+  @media (--viewport-tablet-down) {
+    display: none;
+  }
+
+  &__grid {
+    stroke: var(--color-oat-input);
+    stroke-width: 2;
+    stroke-dasharray: 4 6;
+  }
+
+  &__line {
+    fill: none;
+    stroke: var(--color-accent);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1;
+  }
+
+  &__dot,
+  &__ball,
+  &__badge {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  &__dot {
+    fill: var(--color-accent);
+    stroke: var(--color-oat);
+    stroke-width: 3;
+  }
+
+  &__ball {
+    fill: var(--color-accent);
+    stroke: var(--color-oat);
+    stroke-width: 4;
+  }
+
+  &__badge rect {
+    fill: var(--color-dark);
+  }
+
+  &__badge text {
+    fill: var(--color-white);
+    font: var(--font-weight-bold) 15px / 1 var(--font-display);
+    text-anchor: middle;
+  }
+}
+
+.is-visible .rank {
+  opacity: 1;
+
+  .rank__line {
+    stroke-dashoffset: 1;
+    animation: rank-draw 1.5s 0.2s cubic-bezier(0.5, 0, 0.3, 1) forwards;
+  }
+
+  .rank__dot,
+  .rank__ball,
+  .rank__badge {
+    transform: scale(0);
+    animation: rank-pop 0.4s var(--delay) cubic-bezier(0.3, 1.6, 0.5, 1)
+      forwards;
+  }
+}
+
+@keyframes rank-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rank-pop {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Reduced motion: show the finished chart */
+@media (prefers-reduced-motion: reduce) {
+  .is-visible .rank {
+    .rank__line,
+    .rank__dot,
+    .rank__ball,
+    .rank__badge {
+      animation: none;
+      stroke-dashoffset: 0;
+      transform: none;
+    }
+  }
+}

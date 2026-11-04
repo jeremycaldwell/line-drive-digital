@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
    * to the panel. The panel is observed because the circles are cropped by it.
    */
   const panels = new Set(
-    [...document.querySelectorAll('.decor, .trajectory__sun')].map(
+    [...document.querySelectorAll('.decor, .trajectory__sun, .rank')].map(
       (dot) => dot.closest('.card, .feature, .cta') || dot.parentElement,
     ),
   );

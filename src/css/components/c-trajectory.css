@@ -33,7 +33,9 @@
   }
 
   &__marker {
-    fill: var(--color-on-dark-muted);
+    fill: var(--color-accent);
+    stroke: var(--color-dark);
+    stroke-width: 3;
   }
 
   &__base {

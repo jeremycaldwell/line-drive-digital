@@ -71,8 +71,8 @@ eleventyNavigation:
         <circle class="trajectory__sun" cx="330" cy="150" r="130"></circle>
         <path class="trajectory__path" d="M20 210 L340 60"></path>
         <circle class="trajectory__ball" cx="340" cy="60" r="14"></circle>
-        <circle class="trajectory__marker" cx="120" cy="163" r="5"></circle>
-        <circle class="trajectory__marker" cx="220" cy="116" r="5"></circle>
+        <circle class="trajectory__marker" cx="120" cy="163" r="9"></circle>
+        <circle class="trajectory__marker" cx="220" cy="116" r="9"></circle>
         <rect class="trajectory__base" x="20" y="222" width="70" height="8" rx="2"></rect>
       </svg>
     </div>
