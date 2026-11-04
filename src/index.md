@@ -1,6 +1,6 @@
 ---
 layout: layout.html
-description: "SEO-focused websites, website management and custom apps that help local businesses in Southern Oregon get found, get called and get hired."
+description: "SEO-focused websites, website management and custom apps that help local businesses in Southern Oregon show up first and book the job."
 ---
 
 <section class="section section--intro">
@@ -26,12 +26,8 @@ description: "SEO-focused websites, website management and custom apps that help
       </div>
     </div>
     <div class="showcase">
-      <div
-        class="placeholder placeholder--rounded placeholder--tall"
-        role="img"
-        aria-label="Photo placeholder: business owner taking a customer call on a job site"
-      >
-        [PHOTO: owner taking a customer call on a job site]
+      <div class="showcase__photo">
+        {% image "images/home/hvac-technician.jpg", "HVAC technician inspecting an outdoor AC unit beside a house", { class: "showcase__image", sizes: "(max-width: 56.25rem) calc(100vw - 2rem), 34rem", priority: true } %}
         <div class="toast">
           <svg
             class="toast__icon"
@@ -48,7 +44,7 @@ description: "SEO-focused websites, website management and custom apps that help
           </svg>
           <span>
             <strong class="toast__title">New lead booked</strong>
-            <span class="toast__meta">Water heater repair · Roseburg</span>
+            <span class="toast__meta">AC repair · Roseburg</span>
           </span>
         </div>
       </div>
@@ -72,7 +68,7 @@ description: "SEO-focused websites, website management and custom apps that help
           <li class="inbox__row">
             <span class="inbox__main">
               <strong class="inbox__subject">AC not cooling</strong>
-              <span class="inbox__source">Map pack call · Sutherlin</span>
+              <span class="inbox__source">Google Maps call · Sutherlin</span>
             </span>
             <span class="inbox__time">18 min ago</span>
             <span class="chip chip--warning">
@@ -319,6 +315,22 @@ description: "SEO-focused websites, website management and custom apps that help
 
 <section class="section">
   <div class="container">
+    <div class="section-header section-header--split">
+      <div class="section-header__group">
+        <p class="eyebrow">Recent work</p>
+        <h2 class="heading heading--lg">Built for businesses like yours.</h2>
+      </div>
+      <a href="/work/" class="button button--secondary">All work</a>
+    </div>
+    <div class="grid grid--3 grid--rows-40">
+      {%- set headingTag = "h3" %}
+      {%- for project in projects %}{% if loop.index <= 3 %}{% include "project-card.njk" %}{% endif %}{% endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     <div class="feature feature--dark feature--wide-visual">
       <div class="feature__content">
         <p class="eyebrow eyebrow--on-dark">Custom AI tools &amp; apps</p>
@@ -359,71 +371,6 @@ description: "SEO-focused websites, website management and custom apps that help
           </span>
           <span class="button button--light button--small">Review &amp; send</span>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-header section-header--split">
-      <div class="section-header__group">
-        <p class="eyebrow">Client stories</p>
-        <h2 class="heading heading--lg">Results you can call about.</h2>
-      </div>
-      <a href="/work/" class="button button--secondary">All work</a>
-    </div>
-    <div class="grid grid--3">
-      <figure class="testimonial">
-        <div class="placeholder placeholder--landscape" role="img" aria-label="Client photo placeholder">
-          [CLIENT PHOTO]
-        </div>
-        <p class="eyebrow eyebrow--muted">Vance Fabrication LLC · Kettle Falls, WA</p>
-        <blockquote class="quote quote--small">
-          “[CLIENT TESTIMONIAL — one or two sentences about the result.]”
-        </blockquote>
-      </figure>
-      <figure class="testimonial">
-        <div class="placeholder placeholder--landscape" role="img" aria-label="Client photo placeholder">
-          [CLIENT PHOTO]
-        </div>
-        <p class="eyebrow eyebrow--muted">[HVAC client] · Sutherlin</p>
-        <blockquote class="quote quote--small">
-          “[CLIENT TESTIMONIAL — one or two sentences about the result.]”
-        </blockquote>
-      </figure>
-      <figure class="testimonial">
-        <div class="placeholder placeholder--landscape" role="img" aria-label="Client photo placeholder">
-          [CLIENT PHOTO]
-        </div>
-        <p class="eyebrow eyebrow--muted">[Contractor client] · AI estimate tool</p>
-        <blockquote class="quote quote--small">
-          “[CLIENT TESTIMONIAL — one or two sentences about the result.]”
-        </blockquote>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="grid grid--2 grid--gap-48 grid--center">
-      <div
-        class="placeholder placeholder--rounded placeholder--photo"
-        role="img"
-        aria-label="Founder photo placeholder"
-      >
-        [FOUNDER PHOTO]
-      </div>
-      <div class="stack stack--24">
-        <p class="eyebrow">Who you'll work with</p>
-        <h2 class="heading heading--lg">Advice is easy. We build the thing.</h2>
-        <p class="lead">
-          Line Drive Digital is led by Jeremy, a web developer with 20 years of experience building sites and
-          applications — from enterprise platforms to the shop down the road. You talk directly with the person doing
-          the work.
-        </p>
-        <div><a href="/about/" class="button button--secondary">About us</a></div>
       </div>
     </div>
   </div>
@@ -472,6 +419,10 @@ description: "SEO-focused websites, website management and custom apps that help
       <p class="lead lead--on-dark cta__text">
         Send your website. We'll show you where you rank, what's costing you calls, and one place AI could save you time
         this month.
+      </p>
+      <p class="cta__person">
+        {% image "images/team/jeremy.jpg", "", { class: "cta__avatar", sizes: "3rem" } %}
+        <span>You'll work directly with Jeremy.</span>
       </p>
       <div class="cluster cluster--center cta__actions">
         <a href="/contact/" class="button button--light">Let's talk</a>

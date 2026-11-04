@@ -26,15 +26,6 @@
     color: var(--color-on-dark-muted);
   }
 
-  &--tall {
-    position: relative;
-    min-height: 26.25rem;
-
-    @media (--viewport-tablet-down) {
-      min-height: 20rem;
-    }
-  }
-
   &--wide {
     margin-top: var(--space-56);
     aspect-ratio: 21 / 8;
@@ -42,17 +33,5 @@
 
   &--landscape {
     aspect-ratio: 4 / 3;
-  }
-
-  &--screen {
-    aspect-ratio: 16 / 10;
-  }
-
-  &--photo {
-    aspect-ratio: 5 / 4;
-  }
-
-  &--portrait {
-    aspect-ratio: 4 / 5;
   }
 }

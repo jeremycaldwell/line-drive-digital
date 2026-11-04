@@ -53,58 +53,7 @@ eleventyNavigation:
 <section class="section">
   <div class="container">
     <div class="grid grid--2 grid--rows-40">
-      <article class="stack" data-cat="web">
-        {% image "images/work/vance-fabrication.jpg", "Vance Fabrication LLC general construction services page", { class: "screenshot" } %}
-        <p class="eyebrow eyebrow--muted">SEO website · Kettle Falls, WA</p>
-        <h2 class="heading heading--md">Vance Fabrication LLC</h2>
-        <p class="text text--muted">
-          Service pages for a welding, fencing and construction company in Eastern Washington.
-        </p>
-        <div>
-          <span class="chip chip--success chip--on-light">
-            <span class="chip__dot"></span>
-            [RESULT]
-          </span>
-        </div>
-      </article>
-      <article class="stack" data-cat="web">
-        {% image "images/work/mg-creative-concrete.jpg", "M&amp;G Creative Concrete website services page", { class: "screenshot" } %}
-        <p class="eyebrow eyebrow--muted">Site rebuild + Google Business Profile</p>
-        <h2 class="heading heading--md">M&amp;G Creative Concrete</h2>
-        <p class="text text--muted">Service pages and project galleries for a concrete contractor in Eastern Washington.</p>
-        <div>
-          <span class="chip chip--success chip--on-light">
-            <span class="chip__dot"></span>
-            [RESULT]
-          </span>
-        </div>
-      </article>
-      <article class="stack" data-cat="ai">
-        {% image "images/work/business-finance-tracker.jpg", "Business Finance Tracker app dashboard", { class: "screenshot" } %}
-        <p class="eyebrow eyebrow--muted">Custom finance dashboard</p>
-        <h2 class="heading heading--md">Business Finance Tracker</h2>
-        <p class="text text--muted">
-          Clients, invoicing, timesheets and projections in one place.
-        </p>
-        <div>
-          <span class="chip chip--success chip--on-light">
-            <span class="chip__dot"></span>
-            [RESULT]
-          </span>
-        </div>
-      </article>
-      <article class="stack" data-cat="ai">
-        {% image "images/work/scripture-study.jpg", "Scripture Study app, Old Testament reading progress", { class: "screenshot" } %}
-        <p class="eyebrow eyebrow--muted">Scripture reading tracker</p>
-        <h2 class="heading heading--md">Scripture Study</h2>
-        <p class="text text--muted">Read, search and bookmark scriptures, with chapter-by-chapter progress.</p>
-        <div>
-          <span class="chip chip--success chip--on-light">
-            <span class="chip__dot"></span>
-            [RESULT]
-          </span>
-        </div>
-      </article>
+      {%- for project in projects %}{% include "project-card.njk" %}{% endfor -%}
     </div>
   </div>
 </section>

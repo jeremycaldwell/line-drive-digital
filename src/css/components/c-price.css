@@ -18,10 +18,4 @@
   &--on-dark .price__note {
     color: var(--color-on-dark-muted);
   }
-
-  /* Pinned to the bottom of a card */
-  &--end {
-    margin: auto 0 0;
-    padding-top: var(--space-16);
-  }
 }

@@ -37,6 +37,8 @@ The contact form uses Netlify Forms (`data-netlify="true"`, honeypot `bot-field`
 - `src/js/script.js` – all page JS (work filters, contact form demo)
 - `src/fonts/` – self-hosted Latin woff2 (Inter, Outfit, IBM Plex Mono, Adamina)
 - `src/_data/site.json` – site name, URL, description
+- `src/_data/projects.js` – Work page projects (the first three also show on the homepage); card markup is `src/_includes/project-card.njk`
+- `lib/image.js` – responsive image helper used by `{% image %}` and by data files (async shortcodes can't run inside Nunjucks loops)
 - `_src/` – original static design export and logo SVGs, kept for reference
 
 New top-level pages need `eleventyNavigation` front matter (`key`, `order`) to show in the nav.

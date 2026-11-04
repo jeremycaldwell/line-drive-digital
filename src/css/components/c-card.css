@@ -45,10 +45,6 @@
     color: var(--color-on-dark);
   }
 
-  &--white {
-    background: var(--color-white);
-  }
-
   /* Fill remaining height in a flex column */
   &--grow {
     flex: 1;

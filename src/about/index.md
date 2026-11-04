@@ -31,15 +31,9 @@ eleventyNavigation:
 
 <section class="section section--band-end">
   <div class="container">
-    <div class="grid grid--2 grid--gap-48 grid--center">
+    <div class="grid grid--aside-left grid--gap-48 grid--center">
       <figure class="stack">
-        <div
-          class="placeholder placeholder--rounded placeholder--portrait"
-          role="img"
-          aria-label="Founder photo placeholder"
-        >
-          [FOUNDER PHOTO]
-        </div>
+        {% image "images/team/jeremy.jpg", "Jeremy Caldwell, founder of Line Drive Digital", { class: "photo photo--square", sizes: "(max-width: 56.25rem) calc(100vw - 2rem), 31rem" } %}
         <figcaption class="eyebrow eyebrow--muted">Jeremy · Founder &amp; lead developer</figcaption>
       </figure>
       <div class="stack stack--24">

@@ -43,7 +43,10 @@
 
   &__row {
     display: grid;
-    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) auto;
+
+    /* Fixed equal columns so subject, time and status line up across rows
+       (an auto-width status column made every row's time sit differently) */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: center;
     gap: var(--space-16);
     padding: var(--space-16);
@@ -59,6 +62,10 @@
         'time status';
       gap: var(--space-4) var(--space-16);
     }
+  }
+
+  &__row .chip {
+    justify-self: end;
   }
 
   @media (--viewport-tablet-down) {
