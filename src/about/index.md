@@ -53,6 +53,10 @@ eleventyNavigation:
         <p class="lead">
           You talk directly with the person building your site or tool. No account managers, no handoffs, no jargon.
         </p>
+        <div class="cluster">
+          <a href="/work/" class="button button--secondary">See our work</a>
+          <a href="/services/" class="button button--secondary">Services &amp; pricing</a>
+        </div>
       </div>
     </div>
   </div>
@@ -101,7 +105,7 @@ eleventyNavigation:
       <li class="card">
         <p class="eyebrow eyebrow--muted">02</p>
         <h3 class="heading heading--sm">Measured</h3>
-        <p class="text text--muted">Calls, forms and rankings tracked from launch day.</p>
+        <p class="text text--muted">Google Analytics and Search Console set up from day one, so you can see what's working.</p>
       </li>
       <li class="card">
         <p class="eyebrow eyebrow--muted">03</p>

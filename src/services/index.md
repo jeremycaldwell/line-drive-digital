@@ -164,6 +164,10 @@ eleventyNavigation:
         <p class="plan__note">
           Add-on: updates to your Facebook, Instagram, Yelp, Angi and other profiles, for an additional fee.
         </p>
+        <p class="plan__note">
+          Need a new website too?
+          <a href="#websites" class="link">See Full-Service Website Management <span class="link__arrow" aria-hidden="true">→</span></a>
+        </p>
       </div>
     </div>
   </div>
@@ -272,7 +276,10 @@ eleventyNavigation:
             </span>
           </li>
         </ul>
-        <div><a href="/contact/" class="button button--primary">Talk about your site</a></div>
+        <div class="cluster">
+          <a href="/contact/" class="button button--primary">Talk about your site</a>
+          <a href="/work/" class="button button--secondary">See sites we've built</a>
+        </div>
       </div>
       <div class="stack">
         <div class="plan">
@@ -529,7 +536,10 @@ eleventyNavigation:
           <span class="price__note">Hosting &amp; support for your tools ·</span>
           <strong class="price__value">from $50 / month</strong>
         </p>
-        <div><a href="/contact/" class="button button--light">Describe your idea</a></div>
+        <div class="cluster">
+          <a href="/contact/" class="button button--light">Describe your idea</a>
+          <a href="/work/" class="button button--ghost">See apps we've built</a>
+        </div>
       </div>
       <ul class="tool-list">
         <li class="tool-list__item">
@@ -585,8 +595,9 @@ eleventyNavigation:
             <span class="faq__icon" aria-hidden="true"></span>
           </summary>
           <p class="faq__answer">
-            Not always. The free audit tells you whether your current site can be fixed or whether a rebuild will pay
-            off faster.
+            Not always. If your site is solid, the <a href="#seo" class="link">SEO Growth Starter</a> may be all you
+            need. The free audit tells you whether your current site can be fixed or whether a rebuild will pay off
+            faster.
           </p>
         </details>
         <details class="faq__item">

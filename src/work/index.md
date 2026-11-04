@@ -144,7 +144,10 @@ eleventyNavigation:
       <p class="lead cta__text">
         Tell us what you do and where you do it. We'll show you what's possible before you spend a dollar.
       </p>
-      <div class="cta__actions"><a href="/contact/" class="button button--primary">Let's talk</a></div>
+      <div class="cluster cluster--center cta__actions">
+        <a href="/contact/" class="button button--primary">Let's talk</a>
+        <a href="/services/" class="button button--secondary">Services &amp; pricing</a>
+      </div>
     </div>
   </div>
 </section>

@@ -1,13 +1,13 @@
 ---
 layout: layout.html
-description: "SEO-focused websites, AI consulting and custom tools that help local businesses in Southern Oregon get found, get called and get hired."
+description: "SEO-focused websites, website management and custom apps that help local businesses in Southern Oregon get found, get called and get hired."
 ---
 
 <section class="section section--intro">
   <div class="container">
     <div class="intro">
       <div>
-        <p class="eyebrow intro__eyebrow">Local SEO websites · AI consulting · Custom tools</p>
+        <p class="eyebrow intro__eyebrow">Local SEO · Website management · Custom apps &amp; AI</p>
         <h1 class="heading heading--xl">
           Show up first.
           <br />
@@ -116,7 +116,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
       <h2 class="heading heading--lg section-header__title">Everything between a search and a signed job.</h2>
     </div>
     <div class="service-grid">
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#seo" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -131,7 +131,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </svg>
         Local SEO
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#seo" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -146,7 +146,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </svg>
         Google Business Profile
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#websites" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -161,7 +161,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </svg>
         Website design
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#websites" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -176,7 +176,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </svg>
         Lead capture
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#websites" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -190,7 +190,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </svg>
         Call tracking
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#apps" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -202,9 +202,9 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         >
           <path d="M4 5h16v11H9l-5 4z"></path>
         </svg>
-        AI consulting
+        Workflow reviews
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#apps" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -218,7 +218,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </svg>
         AI assistants
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#apps" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -233,7 +233,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </svg>
         Custom apps
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#apps" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -250,7 +250,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         </svg>
         Automations
       </a>
-      <a href="/services/" class="service-grid__item">
+      <a href="/services/#websites" class="service-grid__item">
         <svg
           width="24"
           height="24"
@@ -262,14 +262,14 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         >
           <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path>
         </svg>
-        Care &amp; hosting
+        Hosting &amp; updates
       </a>
     </div>
     <div class="grid grid--2">
       <div class="card">
-        <p class="eyebrow">SEO websites</p>
+        <p class="eyebrow">SEO &amp; websites</p>
         <h3 class="heading heading--md">Rank in the towns you actually serve.</h3>
-        <a href="/services/" class="link">Explore SEO websites <span class="link__arrow" aria-hidden="true">→</span></a>
+        <a href="/services/#seo" class="link">See SEO &amp; website plans <span class="link__arrow" aria-hidden="true">→</span></a>
         <div class="card__visual">
           <div class="decor decor--shot" aria-hidden="true"></div>
           <div class="serp">
@@ -301,7 +301,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
       <div class="card">
         <p class="eyebrow">AI for small business</p>
         <h3 class="heading heading--md">Put AI to work on the parts of the job nobody enjoys.</h3>
-        <a href="/services/" class="link">Explore AI consulting <span class="link__arrow" aria-hidden="true">→</span></a>
+        <a href="/services/#apps" class="link">Explore custom apps &amp; AI <span class="link__arrow" aria-hidden="true">→</span></a>
         <div class="card__visual">
           <div class="decor decor--small decor--bottom-left" aria-hidden="true"></div>
           <div class="chat">
@@ -327,7 +327,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
           When off-the-shelf software doesn't fit, we build the tool that does — estimators, intake assistants,
           dashboards — connected to what you already use.
         </p>
-        <div><a href="/services/" class="button button--light">See custom builds</a></div>
+        <div><a href="/services/#apps" class="button button--light">See custom builds &amp; pricing</a></div>
       </div>
       <div class="estimate">
         <p class="label label--on-dark">Estimate builder · sample</p>
@@ -337,19 +337,19 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
         <dl class="estimate__lines">
           <div class="estimate__line">
             <dt>50-gal water heater, installed</dt>
-            <dd>[PRICE]</dd>
+            <dd>$1,850</dd>
           </div>
           <div class="estimate__line">
             <dt>Expansion tank</dt>
-            <dd>[PRICE]</dd>
+            <dd>$185</dd>
           </div>
           <div class="estimate__line">
             <dt>Haul-away &amp; disposal</dt>
-            <dd>[PRICE]</dd>
+            <dd>$125</dd>
           </div>
           <div class="estimate__line estimate__line--total">
             <dt>Total</dt>
-            <dd>[TOTAL]</dd>
+            <dd>$2,160</dd>
           </div>
         </dl>
         <div class="cluster cluster--between">
@@ -434,6 +434,10 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
     <div class="section-header">
       <p class="eyebrow">How we work</p>
       <h2 class="heading heading--lg section-header__title">Clear scope. Fixed price. No surprises.</h2>
+      <p class="lead section-header__lead">
+        Every price is on the page, from a $500 SEO setup to full website management.
+        <a href="/services/" class="link">See services &amp; pricing <span class="link__arrow" aria-hidden="true">→</span></a>
+      </p>
     </div>
     <ol class="grid grid--4 list-reset">
       <li class="card card--compact">
@@ -454,7 +458,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
       <li class="card card--compact">
         <p class="eyebrow eyebrow--muted">Step 04</p>
         <h3 class="heading heading--sm">Launch &amp; grow</h3>
-        <p class="text text--muted">Tracking from day one and a plain-English monthly report.</p>
+        <p class="text text--muted">Tracking from day one, and ongoing help on a monthly plan if you want it.</p>
       </li>
     </ol>
   </div>
@@ -471,7 +475,7 @@ description: "SEO-focused websites, AI consulting and custom tools that help loc
       </p>
       <div class="cluster cluster--center cta__actions">
         <a href="/contact/" class="button button--light">Let's talk</a>
-        <a href="/services/" class="button button--ghost">View services</a>
+        <a href="/services/" class="button button--ghost">Services &amp; pricing</a>
       </div>
     </div>
   </div>

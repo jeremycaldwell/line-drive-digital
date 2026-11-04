@@ -15,7 +15,8 @@ eleventyNavigation:
         <h1 class="heading heading--xl">Let's talk about your next customer.</h1>
       </div>
       <p class="lead">
-        Tell us a little about your business. We'll reply within [RESPONSE TIME] with next steps and your free audit.
+        Tell us a little about your business. We'll reply within one business day with next steps and your free audit.
+          Want to see pricing first? <a href="/services/" class="link">See services &amp; pricing</a>.
       </p>
     </div>
   </div>
@@ -101,6 +102,10 @@ eleventyNavigation:
               <label class="toggle">
                 <input class="toggle__input" type="checkbox" name="needs" value="Custom tool / app" />
                 <span class="button button--light button--small">Custom tool / app</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Not sure yet" />
+                <span class="button button--light button--small">Not sure yet</span>
               </label>
             </div>
           </fieldset>
