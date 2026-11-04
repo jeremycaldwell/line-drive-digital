@@ -1,5 +1,6 @@
 ---
 layout: layout.html
+seoTitle: "Line Drive Digital | Websites, SEO & Custom Apps in Sutherlin, OR"
 description: "SEO-focused websites, website management and custom apps that help local businesses in Southern Oregon show up first and book the job."
 ---
 

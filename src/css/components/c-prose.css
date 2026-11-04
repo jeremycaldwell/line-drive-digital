@@ -1,0 +1,23 @@
+/* =============================================================================
+   PROSE (long-form text pages: privacy, terms)
+   ========================================================================== */
+
+.prose {
+  max-width: 45rem;
+  font-size: var(--font-size-16);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-body);
+
+  & h2 {
+    margin: var(--space-40) 0 var(--space-8);
+    font-family: var(--font-display);
+    font-size: var(--font-size-22);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--leading-tight);
+  }
+
+  & p {
+    margin: 0 0 var(--space-16);
+    color: var(--color-text-muted);
+  }
+}

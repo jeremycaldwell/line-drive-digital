@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+    <title>{% if seoTitle %}{{ seoTitle }}{% elsif title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <meta name="robots" content="{% if noindex %}noindex, nofollow{% else %}index, follow{% endif %}" />
     <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}" />
+    <meta property="og:title" content="{% if seoTitle %}{{ seoTitle }}{% elsif title %}{{ title }}{% else %}{{ site.name }}{% endif %}" />
     <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:locale" content="{{ site.language }}">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -101,8 +101,8 @@
           <div class="footer__bottom">
             <p class="label">&copy; {% year %} {{ site.businessname }}</p>
             <div class="footer__legal">
-              <a href="#" class="footer__legal-link">Privacy</a>
-              <a href="#" class="footer__legal-link">Terms</a>
+              <a href="/privacy/" class="footer__legal-link">Privacy</a>
+              <a href="/terms/" class="footer__legal-link">Terms</a>
             </div>
           </div>
         </div>
