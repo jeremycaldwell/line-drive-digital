@@ -541,7 +541,7 @@ eleventyNavigation:
           <a href="/work/" class="button button--ghost">See apps we've built</a>
         </div>
       </div>
-      <ul class="tool-list">
+      <ul class="tool-list reveal">
         <li class="tool-list__item">
           <p class="label label--on-dark">Estimate builder</p>
           <p class="tool-list__text">Job notes in, a clean branded estimate out.</p>

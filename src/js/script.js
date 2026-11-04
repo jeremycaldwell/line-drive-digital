@@ -25,22 +25,21 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Animated mockups (floating circles, rank chart, chat, tool list, About
-   * illustration) and .reveal groups: start their animation when their panel
-   * is half in view, by adding .is-visible to the panel. The panel is
-   * observed because the circles are cropped by it; tool lists and reveal
-   * groups are their own panel, since their section can be too tall to ever
-   * be half in view on phones. Chats, tool lists and reveal groups are armed
-   * (hidden) only here, so without JS they show. Each animated child gets an
-   * index (--i) for its stagger.
+   * Animated mockups (floating circles, rank chart, chat, About illustration)
+   * and .reveal groups: start their animation when their panel is half in
+   * view, by adding .is-visible to the panel. The panel is observed because
+   * the circles are cropped by it; reveal groups are their own panel, since
+   * their section can be too tall to ever be half in view on phones. Rank
+   * charts, chats and reveal groups are armed (hidden) only here, so without
+   * JS they show. Each reveal child gets an index (--i) for its stagger.
    */
   const panels = new Set(
     [
       ...document.querySelectorAll(
-        '.decor, .trajectory__sun, .rank, .chat, .tool-list, .reveal',
+        '.decor, .trajectory__sun, .rank, .chat, .reveal',
       ),
     ].map((el) =>
-      el.matches('.tool-list, .reveal')
+      el.matches('.reveal')
         ? el
         : el.closest('.card, .feature, .cta') || el.parentElement,
     ),
@@ -48,14 +47,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (panels.size && 'IntersectionObserver' in window) {
     document
+      .querySelectorAll('.rank')
+      .forEach((rank) => rank.classList.add('rank--armed'));
+    document
       .querySelectorAll('.chat')
       .forEach((chat) => chat.classList.add('chat--armed'));
-    document.querySelectorAll('.tool-list').forEach((list) => {
-      list.classList.add('tool-list--armed');
-      list
-        .querySelectorAll('.tool-list__item, .chip')
-        .forEach((el, i) => el.style.setProperty('--i', i));
-    });
     document.querySelectorAll('.reveal').forEach((group) => {
       group.classList.add('reveal--armed');
       [...group.children]
@@ -86,7 +82,8 @@ window.addEventListener('DOMContentLoaded', () => {
    */
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const canAnimate = !reduceMotion.matches && 'animate' in Element.prototype;
-  const easing = 'cubic-bezier(0.3, 0, 0.2, 1)';
+  // Mirror --motion-ease-out and --motion-ease-pop (variables.css)
+  const easing = 'cubic-bezier(0.2, 0.7, 0.3, 1)';
   const pop = 'cubic-bezier(0.3, 1.6, 0.5, 1)';
 
   const liveFeed = (root, name, delay, start) => {
@@ -140,9 +137,9 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   /**
-   * Hero lead inbox: after the headline settles (about 1.55s, typography.css),
-   * a new lead arrives at the top every 6s, the others slide down, the oldest
-   * drops off, and the new lead's status moves from new, to drafted, to its
+   * Hero lead inbox: after the headline and logo hit (3.8s, see the timing
+   * map in variables.css), a new lead arrives at the top every 6s, the others
+   * slide down, the oldest drops off, and the new lead's status moves from new, to drafted, to its
    * outcome. Booked leads also replace the toast on the hero photo.
    */
   const inbox = document.querySelector('.inbox');
@@ -178,7 +175,7 @@ window.addEventListener('DOMContentLoaded', () => {
     ];
     let next = 0;
 
-    liveFeed(inbox, 'live inbox', 2050, (later, toggle) => {
+    liveFeed(inbox, 'live inbox', 3800, (later, toggle) => {
       inbox.querySelector('.inbox__period').replaceWith(toggle);
 
       // The "New lead booked" toast on the hero photo follows the inbox: when

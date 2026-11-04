@@ -9,7 +9,7 @@ description: "SEO-focused websites, website management and custom apps that help
     <div class="intro">
       <div>
         <p class="eyebrow intro__eyebrow">Local SEO · Website management · Custom apps &amp; AI</p>
-        <h1 class="heading heading--xl heading--reveal">
+        <h1 class="heading heading--xl heading--enter">
           <span class="heading__line">Show up first<span class="heading__dot">.</span></span>
           <span class="heading__line">Book the job<span class="heading__dot">.</span></span>
         </h1>
@@ -237,12 +237,12 @@ description: "SEO-focused websites, website management and custom apps that help
           <svg class="rank" viewBox="0 0 272 200" aria-hidden="true">
             <path class="rank__grid" d="M0 40H272M0 90H272M0 140H272M0 190H272"></path>
             <path class="rank__line" pathLength="1" d="M14 186L70 150L118 164L170 104L214 82L250 34"></path>
-            <circle class="rank__dot" style="--delay: 0.45s" cx="70" cy="150" r="7"></circle>
-            <circle class="rank__dot" style="--delay: 0.75s" cx="118" cy="164" r="7"></circle>
-            <circle class="rank__dot" style="--delay: 1.05s" cx="170" cy="104" r="7"></circle>
-            <circle class="rank__dot" style="--delay: 1.3s" cx="214" cy="82" r="7"></circle>
-            <circle class="rank__ball" style="--delay: 1.65s" cx="250" cy="34" r="13"></circle>
-            <g class="rank__badge" style="--delay: 1.9s">
+            <circle class="rank__dot" style="--i: 0" cx="70" cy="150" r="7"></circle>
+            <circle class="rank__dot" style="--i: 1" cx="118" cy="164" r="7"></circle>
+            <circle class="rank__dot" style="--i: 2" cx="170" cy="104" r="7"></circle>
+            <circle class="rank__dot" style="--i: 3" cx="214" cy="82" r="7"></circle>
+            <circle class="rank__ball" style="--i: 4" cx="250" cy="34" r="13"></circle>
+            <g class="rank__badge" style="--i: 5">
               <rect x="194" y="2" width="40" height="26" rx="13"></rect>
               <text x="214" y="20">#1</text>
             </g>

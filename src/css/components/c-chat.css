@@ -91,8 +91,8 @@
 
 .is-visible .chat--armed {
   /* Side by side with the rank chart on desktop: wait for it to finish
-     (about 2.3s) so the two tell one story. Phones hide the chart, so no wait. */
-  --chat-start: 2.3s;
+     (about 2.4s) so the two tell one story. Phones hide the chart, so no wait. */
+  --chat-start: 2.4s;
 
   @media (--viewport-tablet-down) {
     --chat-start: 0s;
@@ -100,7 +100,8 @@
 
   .chat__time,
   .chat__bubble--incoming {
-    animation: chat-in 0.4s calc(var(--chat-start) + 0.2s) ease-out forwards;
+    animation: rise 0.4s calc(var(--chat-start) + 0.2s) var(--motion-ease-out)
+      forwards;
   }
 
   .chat__typing {
@@ -120,24 +121,13 @@
   }
 
   .chat__bubble--reply {
-    animation: chat-in 0.4s calc(var(--chat-start) + 2.3s) ease-out forwards;
+    animation: rise 0.4s calc(var(--chat-start) + 2.3s) var(--motion-ease-out)
+      forwards;
   }
 
   .chat__status {
-    animation: chat-pop 0.45s calc(var(--chat-start) + 3.1s)
-      cubic-bezier(0.3, 1.6, 0.5, 1) forwards;
-  }
-}
-
-@keyframes chat-in {
-  from {
-    opacity: 0;
-    transform: translateY(0.75rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
+    animation: pop 0.45s calc(var(--chat-start) + 3.1s) var(--motion-ease-pop)
+      forwards;
   }
 }
 
@@ -157,17 +147,5 @@
   to {
     transform: translateY(-0.25rem);
     opacity: 0.4;
-  }
-}
-
-@keyframes chat-pop {
-  from {
-    opacity: 0;
-    transform: scale(0.6);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
   }
 }

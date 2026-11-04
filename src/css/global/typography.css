@@ -58,15 +58,15 @@
 
   /* Homepage hero: "Show up first." slides in from the left, then "Book the
      job." rises into focus. Plays once on load; CSS only. */
-  &--reveal {
+  &--enter {
     .heading__line {
       display: block;
-      animation: heading-line 0.6s 0s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+      animation: heading-line 0.6s 0s var(--motion-ease-out) both;
 
       /* Second line answers the first: it rises into place and comes into
          focus, rather than travelling in from the side again */
       + .heading__line {
-        animation: heading-settle 0.7s 0.85s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+        animation: heading-settle 0.7s 0.85s var(--motion-ease-out) both;
       }
     }
   }
