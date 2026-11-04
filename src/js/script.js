@@ -26,19 +26,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
   /**
    * Animated mockups (floating circles, rank chart, chat, tool list, About
-   * illustration): start their animation when their panel is half in view,
-   * by adding .is-visible to the panel. The panel is observed because the
-   * circles are cropped by it; the tool list is its own panel, since its
-   * feature can be too tall to ever be half in view on phones. Chats and tool
-   * lists are armed (hidden) only here, so without JS they show.
+   * illustration) and .reveal groups: start their animation when their panel
+   * is half in view, by adding .is-visible to the panel. The panel is
+   * observed because the circles are cropped by it; tool lists and reveal
+   * groups are their own panel, since their section can be too tall to ever
+   * be half in view on phones. Chats, tool lists and reveal groups are armed
+   * (hidden) only here, so without JS they show. Each animated child gets an
+   * index (--i) for its stagger.
    */
   const panels = new Set(
     [
       ...document.querySelectorAll(
-        '.decor, .trajectory__sun, .rank, .chat, .tool-list',
+        '.decor, .trajectory__sun, .rank, .chat, .tool-list, .reveal',
       ),
     ].map((el) =>
-      el.matches('.tool-list')
+      el.matches('.tool-list, .reveal')
         ? el
         : el.closest('.card, .feature, .cta') || el.parentElement,
     ),
@@ -52,6 +54,12 @@ window.addEventListener('DOMContentLoaded', () => {
       list.classList.add('tool-list--armed');
       list
         .querySelectorAll('.tool-list__item, .chip')
+        .forEach((el, i) => el.style.setProperty('--i', i));
+    });
+    document.querySelectorAll('.reveal').forEach((group) => {
+      group.classList.add('reveal--armed');
+      [...group.children]
+        .filter((el) => !el.matches('.decor'))
         .forEach((el, i) => el.style.setProperty('--i', i));
     });
     const observer = new IntersectionObserver(

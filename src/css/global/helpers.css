@@ -39,3 +39,33 @@
     transform: translateY(calc(-1 * var(--motion-float-distance)));
   }
 }
+
+/* Shared rise-in motion (tool list, .reveal). --rise sets the travel. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(var(--rise, 0.75rem));
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Scroll reveal: a group's children rise in one after another, once, when
+   the group is half in view (script.js arms it and adds .is-visible, so
+   without JS it shows). Reduced motion: shown finished (reset.css). */
+.reveal--armed {
+  --rise: 1.5rem;
+
+  /* Decor circles keep their own float, so they're left out */
+  > :not(.decor) {
+    opacity: 0;
+  }
+
+  &.is-visible > :not(.decor) {
+    animation: rise 0.6s calc(var(--i) * 0.15s) cubic-bezier(0.2, 0.7, 0.3, 1)
+      forwards;
+  }
+}

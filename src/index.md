@@ -313,7 +313,7 @@ description: "SEO-focused websites, website management and custom apps that help
       </div>
       <a href="/work/" class="button button--secondary">All work</a>
     </div>
-    <div class="grid grid--3 grid--rows-40">
+    <div class="grid grid--3 grid--rows-40 reveal">
       {%- set headingTag = "h3" %}
       {%- for project in projects %}{% if loop.index <= 3 %}{% include "project-card.njk" %}{% endif %}{% endfor -%}
     </div>
@@ -379,7 +379,7 @@ description: "SEO-focused websites, website management and custom apps that help
         <a href="/services/" class="link">See services &amp; pricing <span class="link__arrow" aria-hidden="true">→</span></a>
       </p>
     </div>
-    <ol class="grid grid--4 list-reset">
+    <ol class="grid grid--4 list-reset reveal">
       <li class="card card--compact">
         <p class="eyebrow eyebrow--muted">Step 01</p>
         <h3 class="heading heading--sm">Free audit</h3>
@@ -406,7 +406,7 @@ description: "SEO-focused websites, website management and custom apps that help
 
 <section class="section">
   <div class="container">
-    <div class="cta">
+    <div class="cta reveal">
       <p class="eyebrow eyebrow--on-dark">Free audit</p>
       <h2 class="heading heading--lg cta__title">Let's talk about your next customer.</h2>
       <p class="lead lead--on-dark cta__text">

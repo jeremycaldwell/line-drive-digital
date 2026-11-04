@@ -88,126 +88,128 @@ eleventyNavigation:
         </p>
         <div><a href="/contact/" class="button button--primary">Get started</a></div>
       </div>
-      <div class="plan">
-        <p class="eyebrow eyebrow--muted">One-time setup</p>
-        <p class="plan__price">
-          <strong class="plan__amount">$500</strong>
-          <span class="plan__unit">one-time fee</span>
-        </p>
-        <ul class="checklist">
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon icon icon--bold"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">Scorecard audit</strong>
-              — a page-by-page review of your site (or your top local competitors if you're starting fresh) with a prioritized fix list
-            </span>
-          </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon icon icon--bold"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">Google Business Profile</strong>
-              — created and set up so you show up on Maps and local search
-            </span>
-          </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon icon icon--bold"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">Google Analytics &amp; Search Console</strong>
-              — see who finds you, and how
-            </span>
-          </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon icon icon--bold"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">Google Ads account</strong>
-              — set up and ready whenever you want to run ads
-            </span>
-          </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon icon icon--bold"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">Keyword research</strong>
-              — the words your customers actually search
-            </span>
-          </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon icon icon--bold"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">Competitor analysis</strong>
-              — who shows up today, and why
-            </span>
-          </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon icon icon--bold"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">SEO roadmap</strong>
-              — a clear, prioritized plan for what comes next
-            </span>
-          </li>
-        </ul>
-        <p class="plan__note">
-          Add-on: updates to your Facebook, Instagram, Yelp, Angi and other profiles, for an additional fee.
-        </p>
-        <p class="plan__note">
-          Need a new website too?
-          <a href="#websites" class="link">See Full-Service Website Management <span class="link__arrow" aria-hidden="true">→</span></a>
-        </p>
+      <div class="reveal">
+        <div class="plan">
+          <p class="eyebrow eyebrow--muted">One-time setup</p>
+          <p class="plan__price">
+            <strong class="plan__amount">$500</strong>
+            <span class="plan__unit">one-time fee</span>
+          </p>
+          <ul class="checklist">
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Scorecard audit</strong>
+                — a page-by-page review of your site (or your top local competitors if you're starting fresh) with a prioritized fix list
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Google Business Profile</strong>
+                — created and set up so you show up on Maps and local search
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Google Analytics &amp; Search Console</strong>
+                — see who finds you, and how
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Google Ads account</strong>
+                — set up and ready whenever you want to run ads
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Keyword research</strong>
+                — the words your customers actually search
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Competitor analysis</strong>
+                — who shows up today, and why
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">SEO roadmap</strong>
+                — a clear, prioritized plan for what comes next
+              </span>
+            </li>
+          </ul>
+          <p class="plan__note">
+            Add-on: updates to your Facebook, Instagram, Yelp, Angi and other profiles, for an additional fee.
+          </p>
+          <p class="plan__note">
+            Need a new website too?
+            <a href="#websites" class="link">See Full-Service Website Management <span class="link__arrow" aria-hidden="true">→</span></a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -306,7 +308,7 @@ eleventyNavigation:
           <a href="/work/" class="button button--secondary">See sites we've built</a>
         </div>
       </div>
-      <div class="stack">
+      <div class="stack reveal">
         <div class="plan">
           <p class="eyebrow eyebrow--muted">Monthly subscription</p>
           <p class="plan__price">
@@ -344,7 +346,7 @@ eleventyNavigation:
         time and plain software where that's the better fit.
       </p>
     </div>
-    <div class="grid grid--3">
+    <div class="grid grid--3 reveal">
       <div class="plan plan--oat">
         <p class="eyebrow eyebrow--muted">Start here</p>
         <h3 class="heading heading--sm">Workflow review</h3>
@@ -646,7 +648,7 @@ eleventyNavigation:
 
 <section class="section">
   <div class="container">
-    <div class="cta">
+    <div class="cta reveal">
       <p class="eyebrow eyebrow--on-dark">Not sure where to start?</p>
       <h2 class="heading heading--lg cta__title">Start with a free audit.</h2>
       <p class="lead lead--on-dark cta__text">

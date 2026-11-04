@@ -61,7 +61,7 @@ eleventyNavigation:
 
 <section class="section">
   <div class="container">
-    <div class="cta cta--light">
+    <div class="cta cta--light reveal">
       <div class="decor decor--large decor--bottom-left" aria-hidden="true"></div>
       <p class="eyebrow">Your project</p>
       <h2 class="heading heading--lg cta__title">Your business could be next.</h2>
