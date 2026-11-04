@@ -278,10 +278,25 @@ description: "SEO-focused websites, website management and custom apps that help
         <div class="card__visual">
           <div class="decor decor--small decor--bottom-left" aria-hidden="true"></div>
           <div class="chat">
+            <p class="label chat__time">Tue · 11:48 pm</p>
             <div class="chat__bubble chat__bubble--incoming">Can you come look at my furnace Saturday?</div>
-            <div class="chat__bubble chat__bubble--reply">
-              Happy to help. I have Saturday 9–11am open in Sutherlin — want me to book it?
+            <div class="chat__slot">
+              <div class="chat__typing" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="chat__bubble chat__bubble--reply">
+                Happy to help. I have Saturday 9–11am open in Sutherlin — want me to book it?
+              </div>
             </div>
+            <p class="chat__status">
+              <svg class="icon icon--bold icon--round"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              You approved · Booked Sat 9–11am
+            </p>
             <p class="label">After-hours assistant · drafted for your approval</p>
           </div>
         </div>

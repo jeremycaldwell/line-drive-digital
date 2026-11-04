@@ -25,17 +25,21 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Decorative dots (floating circles, shot ball, About illustration): start
-   * their animation when their panel is half in view, by adding .is-visible
-   * to the panel. The panel is observed because the circles are cropped by it.
+   * Animated mockups (floating circles, rank chart, chat, About illustration):
+   * start their animation when their panel is half in view, by adding
+   * .is-visible to the panel. The panel is observed because the circles are
+   * cropped by it. Chats are armed (hidden) only here, so without JS they show.
    */
   const panels = new Set(
-    [...document.querySelectorAll('.decor, .trajectory__sun, .rank')].map(
-      (dot) => dot.closest('.card, .feature, .cta') || dot.parentElement,
-    ),
+    [
+      ...document.querySelectorAll('.decor, .trajectory__sun, .rank, .chat'),
+    ].map((dot) => dot.closest('.card, .feature, .cta') || dot.parentElement),
   );
 
   if (panels.size && 'IntersectionObserver' in window) {
+    document
+      .querySelectorAll('.chat')
+      .forEach((chat) => chat.classList.add('chat--armed'));
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

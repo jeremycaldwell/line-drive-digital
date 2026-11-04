@@ -1,5 +1,9 @@
 /* =============================================================================
    CHAT (message bubbles mockup)
+   With JS, script.js adds .chat--armed, then .is-visible to the card once it
+   scrolls into view: after the rank chart beside it finishes, the late-night message arrives, the assistant types,
+   replies, and the booking is confirmed. Without JS (or with reduced motion)
+   the finished conversation shows.
    ========================================================================== */
 
 .chat {
@@ -10,6 +14,11 @@
   margin-left: auto;
   font-size: var(--font-size-14);
   letter-spacing: var(--tracking-body);
+
+  &__time {
+    align-self: flex-end;
+    color: var(--color-text-muted);
+  }
 
   &__bubble {
     padding: var(--space-16);
@@ -25,6 +34,156 @@
       border-bottom-left-radius: var(--radius-4);
       background: var(--color-dark);
       color: var(--color-on-dark);
+    }
+  }
+
+  /* Typing dots and reply share one spot, so the layout never jumps */
+  &__slot {
+    display: grid;
+
+    > * {
+      grid-area: 1 / 1;
+    }
+  }
+
+  &__typing {
+    display: flex;
+    gap: var(--space-4);
+    align-self: start;
+    justify-self: start;
+    padding: var(--space-16);
+    border-radius: var(--radius-12);
+    border-bottom-left-radius: var(--radius-4);
+    background: var(--color-dark);
+    opacity: 0;
+
+    span {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: var(--radius-round);
+      background: var(--color-accent);
+    }
+  }
+
+  &__status {
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: var(--space-8);
+    margin: 0;
+    padding: var(--space-8) var(--space-16);
+    border-radius: var(--radius-pill);
+    background: var(--color-white);
+    color: var(--color-success);
+    font-size: var(--font-size-13);
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+/* Hidden until the card is in view */
+.chat--armed {
+  .chat__time,
+  .chat__bubble,
+  .chat__status {
+    opacity: 0;
+  }
+}
+
+.is-visible .chat--armed {
+  /* Side by side with the rank chart on desktop: wait for it to finish
+     (about 2.3s) so the two tell one story. Phones hide the chart, so no wait. */
+  --chat-start: 2.3s;
+
+  @media (--viewport-tablet-down) {
+    --chat-start: 0s;
+  }
+
+  .chat__time,
+  .chat__bubble--incoming {
+    animation: chat-in 0.4s calc(var(--chat-start) + 0.2s) ease-out forwards;
+  }
+
+  .chat__typing {
+    animation: chat-typing 1.4s calc(var(--chat-start) + 0.9s) forwards;
+
+    span {
+      animation: chat-dot 0.6s ease-in-out infinite alternate;
+
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+    }
+  }
+
+  .chat__bubble--reply {
+    animation: chat-in 0.4s calc(var(--chat-start) + 2.3s) ease-out forwards;
+  }
+
+  .chat__status {
+    animation: chat-pop 0.45s calc(var(--chat-start) + 3.1s)
+      cubic-bezier(0.3, 1.6, 0.5, 1) forwards;
+  }
+}
+
+@keyframes chat-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes chat-typing {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+  }
+}
+
+@keyframes chat-dot {
+  to {
+    transform: translateY(-0.25rem);
+    opacity: 0.4;
+  }
+}
+
+@keyframes chat-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Reduced motion: show the finished conversation */
+@media (prefers-reduced-motion: reduce) {
+  .chat--armed {
+    .chat__time,
+    .chat__bubble,
+    .chat__status {
+      opacity: 1;
+      animation: none !important;
+    }
+
+    .chat__typing {
+      display: none;
     }
   }
 }
