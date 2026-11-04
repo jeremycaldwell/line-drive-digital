@@ -13,4 +13,11 @@
   &--square {
     aspect-ratio: 1;
   }
+
+  /* Full-width banner under a page intro */
+  &--banner {
+    margin-top: var(--space-56);
+    aspect-ratio: 21 / 8;
+    object-position: 50% 65%;
+  }
 }

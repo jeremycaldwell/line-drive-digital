@@ -19,13 +19,7 @@ eleventyNavigation:
         plumbers, roofers, shops and service businesses that keep our towns running.
       </p>
     </div>
-    <div
-      class="placeholder placeholder--rounded placeholder--wide"
-      role="img"
-      aria-label="Photo placeholder: Southern Oregon main street or job site"
-    >
-      [PHOTO: Southern Oregon main street or local job site]
-    </div>
+    {% image "images/about/southern-oregon.jpg", "River winding past a Christmas tree farm and forested hills under a cloudy sky in Oakland, Oregon", { class: "photo photo--banner", sizes: "(max-width: 56.25rem) calc(100vw - 2rem), 76rem", priority: true } %}
   </div>
 </section>
 

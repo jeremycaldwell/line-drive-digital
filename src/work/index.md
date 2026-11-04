@@ -60,32 +60,6 @@ eleventyNavigation:
 
 <section class="section">
   <div class="container">
-    <div class="feature feature--dark">
-      <div
-        class="placeholder placeholder--dark placeholder--landscape"
-        role="img"
-        aria-label="Client photo placeholder"
-      >
-        [FEATURED CLIENT PHOTO]
-      </div>
-      <figure class="feature__content">
-        <p class="eyebrow eyebrow--on-dark">Featured story · [Client] · [Town]</p>
-        <blockquote class="quote">“[CLIENT TESTIMONIAL — the problem, what we built, and what changed.]”</blockquote>
-        <figcaption class="text text--on-dark-muted">[Client name], [Role]</figcaption>
-        <div class="cluster">
-          <span class="chip chip--success">
-            <span class="chip__dot"></span>
-            [KEY RESULT]
-          </span>
-          <span class="chip">SEO website + AI intake</span>
-        </div>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
     <div class="cta cta--light">
       <div class="decor decor--large decor--bottom-left" aria-hidden="true"></div>
       <p class="eyebrow">Your project</p>
