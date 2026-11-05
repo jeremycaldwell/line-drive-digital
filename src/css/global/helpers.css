@@ -98,3 +98,21 @@
     animation: none;
   }
 }
+
+/* Small text links get a 44px-tall tap area (AA+ target size) without
+   moving anything: an invisible box around the link takes the clicks.
+   1.1em above and below lifts a 16-20px link to 44px or more; 0.4em at the
+   sides keeps neighbors (Privacy / Terms, 24px apart) from overlapping.
+   Links inside sentences are exempt and keep their normal size. */
+.nav__link,
+.logo,
+.footer__legal-link,
+.card > .link {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -1.1em -0.4em;
+  }
+}

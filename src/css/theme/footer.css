@@ -61,6 +61,18 @@
     color: var(--color-text-muted);
   }
 
+  /* Touch screens: stacked footer links get 44px+ tap targets. They are
+     too close together for an invisible tap area, so they space out. */
+  @media (pointer: coarse) {
+    &__column {
+      gap: 0;
+    }
+
+    &__link {
+      padding: var(--space-16) 0;
+    }
+  }
+
   &__text {
     color: var(--color-text-muted);
   }
