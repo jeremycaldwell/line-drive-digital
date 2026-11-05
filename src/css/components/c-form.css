@@ -34,10 +34,17 @@
     gap: var(--space-16);
   }
 
+  /* The heading takes focus only so screen readers announce it; it isn't a
+     control, so it needs no focus ring */
+  &__success > h2:focus {
+    outline: none;
+  }
+
   &__success-icon {
     color: var(--color-success);
 
-    /* Check draws itself when the message appears: circle, then tick */
+    /* Check draws itself when the message appears: circle, then tick. The
+       message is a .reveal group, so its parts also rise in. */
     circle,
     path {
       stroke-dasharray: 1;
@@ -47,23 +54,6 @@
 
     path {
       animation-delay: 0.4s;
-    }
-  }
-
-  /* Heading, text and button rise in after the check */
-  &__success > :not(svg) {
-    animation: rise 0.5s var(--motion-ease-out) both;
-
-    &:nth-child(2) {
-      animation-delay: 0.6s;
-    }
-
-    &:nth-child(3) {
-      animation-delay: 0.7s;
-    }
-
-    &:nth-child(4) {
-      animation-delay: 0.8s;
     }
   }
 }

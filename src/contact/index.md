@@ -24,7 +24,7 @@ description: "Get a free site audit from Line Drive Digital."
   <div class="container">
     <div class="grid grid--aside-right">
       <div class="card card--large">
-        <div id="sent" class="form__success" hidden>
+        <div id="sent" class="form__success reveal" hidden>
           <svg
             class="form__success-icon icon"
             width="40"
