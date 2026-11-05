@@ -90,4 +90,11 @@
   &.is-visible > :not(.decor) {
     animation: rise 0.6s calc(var(--i) * 0.15s) var(--motion-ease-out) forwards;
   }
+
+  /* Keyboard focus landed on a link or button that hasn't risen in yet:
+     show it at once, so the focus indicator is always visible */
+  > :not(.decor):focus-within {
+    opacity: 1;
+    animation: none;
+  }
 }

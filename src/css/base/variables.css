@@ -111,9 +111,11 @@
   --radius-pill: 624.9375rem;
   --radius-round: 50%;
 
-  /* Motion: shared float for every decorative dot */
+  /* Motion: shared float for every decorative dot. It floats up and back
+     down once (2 x 2.4s) and settles, so it stops within 5s (AA+: automatic
+     movement stops after 5 seconds). */
   --motion-float-distance: 1rem;
-  --motion-float-duration: 4s;
+  --motion-float-duration: 2.4s;
   --motion-float-easing: ease-in-out;
 
   /* Motion: shared easings (script.js mirrors these as `easing` and `pop`,

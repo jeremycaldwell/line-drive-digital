@@ -239,10 +239,9 @@ window.addEventListener('DOMContentLoaded', () => {
           list.style.height = '';
         });
         later(1600, () => setChip(chip, 'AI reply drafted', 'warning'));
-        later(3400, () => {
-          setChip(chip, outcome, tone);
-          if (outcome === 'Booked') showToast(subject, source);
-        });
+        later(3400, () => setChip(chip, outcome, tone));
+        // The toast follows half a second later, so the two don't move at once
+        if (outcome === 'Booked') later(3900, () => showToast(subject, source));
         later(6000, addLead);
       };
 

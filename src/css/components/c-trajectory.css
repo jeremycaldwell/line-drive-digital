@@ -18,8 +18,8 @@
   }
 
   .is-visible &__sun {
-    animation: float var(--motion-float-duration) var(--motion-float-easing)
-      infinite alternate;
+    animation: float var(--motion-float-duration) var(--motion-float-easing) 2
+      alternate;
 
     @media (prefers-reduced-motion: reduce) {
       animation: none;

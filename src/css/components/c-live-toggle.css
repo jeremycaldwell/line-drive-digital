@@ -6,6 +6,7 @@
    ========================================================================== */
 
 .live-toggle {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: var(--space-8);
@@ -18,6 +19,14 @@
   font: inherit;
   font-size: var(--font-size-13);
   cursor: pointer;
+
+  /* Enlarge the click/tap area to at least 44px tall without changing the
+     layout (AA+ target size) */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -0.8em 0; /* 24px button + 2 x ~10px = 44px */
+  }
 
   &:focus-visible {
     outline: 2px solid var(--color-accent);

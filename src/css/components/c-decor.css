@@ -1,7 +1,7 @@
 /* =============================================================================
    DECOR (orange circle cropped by its panel)
-   Every circle floats (--motion-float-* tokens) once its panel scrolls into
-   view; script.js adds .is-visible to the panel.
+   Every circle floats up and back once (--motion-float-* tokens) when its
+   panel scrolls into view, then settles; script.js adds .is-visible.
    Parent needs position: relative, overflow: hidden and isolation: isolate
    (so z-index: -1 sits above the parent's background, below its content).
    ========================================================================== */
@@ -47,8 +47,8 @@
 }
 
 .is-visible .decor {
-  animation: float var(--motion-float-duration) var(--motion-float-easing)
-    infinite alternate;
+  animation: float var(--motion-float-duration) var(--motion-float-easing) 2
+    alternate;
 }
 
 /* Reduced motion: no movement */
