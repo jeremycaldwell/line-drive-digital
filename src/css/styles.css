@@ -29,7 +29,6 @@
 @import url('./components/c-chip.css');
 @import url('./components/c-card.css');
 @import url('./components/c-decor.css');
-@import url('./components/c-placeholder.css');
 @import url('./components/c-screenshot.css');
 @import url('./components/c-photo.css');
 @import url('./components/c-intro.css');
@@ -44,7 +43,6 @@
 @import url('./components/c-serp.css');
 @import url('./components/c-chat.css');
 @import url('./components/c-estimate.css');
-@import url('./components/c-quote.css');
 @import url('./components/c-rank.css');
 @import url('./components/c-prose.css');
 @import url('./components/c-checklist.css');

@@ -3,9 +3,6 @@ layout: layout.html
 seoTitle: "Free Website Audit | Contact Line Drive Digital"
 title: Contact
 description: "Get a free site audit from Line Drive Digital."
-eleventyNavigation:
-  key: Contact
-  order: 4
 ---
 
 <section class="section section--intro">

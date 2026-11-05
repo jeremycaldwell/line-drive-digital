@@ -4,25 +4,20 @@
   "description": "Eleventy site for Line Drive Digital.",
   "private": true,
   "scripts": {
-    "start": "concurrently -n eleventy,lint-css,lint-js -c blue,magenta,green \"eleventy --serve\" \"npm run watch:lint:css\" \"npm run watch:lint:js\"",
+    "start": "eleventy --serve",
     "build": "eleventy",
     "format:css": "prettier --write \"src/css/**/*.css\"",
     "format:js": "prettier --write \"src/js/**/*.js\"",
     "format": "npm run format:css && npm run format:js",
     "lint:css": "prettier --check \"src/css/**/*.css\" && stylelint \"src/css/**/*.css\"",
     "lint:js": "prettier --check \"src/js/**/*.js\" && eslint src/js",
-    "lint": "npm run lint:css && npm run lint:js",
-    "watch:lint:css": "chokidar \"src/css/**/*.css\" --initial -c \"prettier --write {path} && stylelint --fix {path}\"",
-    "watch:lint:js": "chokidar \"src/js/**/*.js\" --initial -c \"prettier --write {path} && eslint --fix {path}\""
+    "lint": "npm run lint:css && npm run lint:js"
   },
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
-    "@11ty/eleventy-navigation": "^1.0.5",
     "@eslint/js": "^10.0.1",
     "autoprefixer": "^10.5.0",
-    "chokidar-cli": "^3.0.0",
-    "concurrently": "^9.2.4",
     "cssnano": "^8.0.1",
     "eslint": "^10.8.0",
     "globals": "^17.7.0",
@@ -30,7 +25,6 @@
     "postcss-custom-media": "^12.0.1",
     "postcss-import": "^16.1.1",
     "postcss-nested": "^7.0.2",
-    "postcss-pxtorem": "^6.1.0",
     "prettier": "^3.9.6",
     "stylelint": "^17.14.1",
     "stylelint-config-standard": "^40.0.0"

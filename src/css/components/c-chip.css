@@ -37,9 +37,4 @@
   &--danger {
     color: var(--color-danger);
   }
-
-  /* On white backgrounds */
-  &--on-light {
-    background: var(--color-oat);
-  }
 }

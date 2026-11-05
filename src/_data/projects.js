@@ -1,6 +1,5 @@
 // Work page projects (also the first three on the homepage).
-// Edit this list to add projects. image is relative to src/. A result chip
-// shows on the card only when result is set.
+// Edit this list to add projects. image is relative to src/.
 const imageHtml = require('../../lib/image.js');
 
 const projects = [
@@ -12,7 +11,6 @@ const projects = [
     image: 'images/work/vance-fabrication.jpg',
     alt: 'Vance Fabrication LLC general construction services page',
     category: 'web',
-    result: '',
   },
   {
     name: 'M&G Creative Concrete',
@@ -22,7 +20,6 @@ const projects = [
     image: 'images/work/mg-creative-concrete.jpg',
     alt: 'M&G Creative Concrete website services page',
     category: 'web',
-    result: '',
   },
   {
     name: 'Business Finance Tracker',
@@ -31,7 +28,6 @@ const projects = [
     image: 'images/work/business-finance-tracker.jpg',
     alt: 'Business Finance Tracker app dashboard',
     category: 'ai',
-    result: '',
   },
   {
     name: 'Scripture Study',
@@ -41,7 +37,6 @@ const projects = [
     image: 'images/work/scripture-study.jpg',
     alt: 'Scripture Study app, Old Testament reading progress',
     category: 'ai',
-    result: '',
   },
 ];
 

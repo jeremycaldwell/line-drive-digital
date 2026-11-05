@@ -1,4 +1,3 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const imageHtml = require("./lib/image.js");
 const path = require("path");
 const postcss = require("postcss");
@@ -35,12 +34,9 @@ module.exports = function(eleventyConfig) {
   // 📦 RESPONSIVE IMAGE SHORTCODE
   // {% image "images/photo.jpg", "Alt text" %} — src is relative to src/.
   // {% image "images/photo.jpg", "Alt text", { class: "css-class" } %} adds a class.
-  // Pass { hero: true, isFirstHero: true } for the above-the-fold image.
+  // Pass { priority: true } for the above-the-fold image.
   // ==========================================
   eleventyConfig.addAsyncShortcode("image", imageHtml);
-
-  // Plugins.
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Server options.
   eleventyConfig.setServerOptions({

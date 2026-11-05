@@ -64,14 +64,10 @@
             Menu
           </button>
           <nav class="nav" id="primary-nav" aria-label="Main">
-            {%- assign navPages = collections.all | eleventyNavigation %}
-            {%- for entry in navPages %}
-              {%- if entry.url == '/contact/' %}
-            <a href="{{ entry.url }}" class="button button--primary button--small"{% if entry.url == page.url %} aria-current="page"{% endif %}>Let's talk</a>
-              {%- else %}
-            <a href="{{ entry.url }}" class="nav__link"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
-              {%- endif %}
-            {%- endfor %}
+            <a href="/services/" class="nav__link"{% if page.url == '/services/' %} aria-current="page"{% endif %}>Services</a>
+            <a href="/work/" class="nav__link"{% if page.url == '/work/' %} aria-current="page"{% endif %}>Work</a>
+            <a href="/about/" class="nav__link"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+            <a href="/contact/" class="button button--primary button--small"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Let's talk</a>
           </nav>
         </div>
       </header>
