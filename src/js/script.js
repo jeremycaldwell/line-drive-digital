@@ -451,6 +451,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (!response.ok) throw new Error(response.statusText);
         form.hidden = true;
         sent.hidden = false;
+        // The Send button just disappeared: move focus to the confirmation so
+        // keyboard and screen reader users land on it (and hear it)
+        document.getElementById('sent-heading').focus();
       } catch {
         error.hidden = false;
       }
@@ -460,6 +463,7 @@ window.addEventListener('DOMContentLoaded', () => {
       form.reset();
       sent.hidden = true;
       form.hidden = false;
+      form.querySelector('input').focus();
     });
   }
 });

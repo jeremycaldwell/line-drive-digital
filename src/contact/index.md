@@ -32,10 +32,10 @@ description: "Get a free site audit from Line Drive Digital."
             viewBox="0 0 24 24"
             aria-hidden="true"
           >
-            <circle cx="12" cy="12" r="9"></circle>
-            <path d="M8 12.5l2.5 2.5L16 9.5"></path>
+            <circle pathLength="1" cx="12" cy="12" r="9"></circle>
+            <path pathLength="1" d="M8 12.5l2.5 2.5L16 9.5"></path>
           </svg>
-          <p class="heading heading--md">Message sent.</p>
+          <h2 class="heading heading--md" id="sent-heading" tabindex="-1">Message sent.</h2>
           <p class="lead">Thanks — we'll be in touch shortly with next steps.</p>
           <button type="button" id="send-another" class="button button--light">Send another</button>
         </div>
@@ -120,7 +120,7 @@ description: "Get a free site audit from Line Drive Digital."
           <div><button type="submit" class="button button--primary">Send message</button></div>
         </form>
       </div>
-      <div class="stack">
+      <div class="stack reveal">
         <div class="card card--dark card--rounded">
           <p class="eyebrow eyebrow--on-dark">Reach us directly</p>
           <dl class="contact-list">
