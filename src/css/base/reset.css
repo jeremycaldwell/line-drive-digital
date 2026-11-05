@@ -24,6 +24,18 @@ a {
   }
 }
 
+/* Quick repeat taps on controls (menu button, filters, toggles) shouldn't trigger
+   double-tap zoom on phones. Pinch-to-zoom still works. */
+a,
+button,
+summary,
+label,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
 figure,
 blockquote,
 dd {
