@@ -91,9 +91,10 @@
 }
 
 .is-visible .chat.is-armed {
-  /* Side by side with the rank chart on desktop: wait for it to finish
-     (about 2.4s) so the two tell one story. Phones hide the chart, so no wait. */
-  --chat-start: 2.4s;
+  /* Side by side with the search + rank card on desktop: wait for both to
+     finish (about 4.8s) so the cards play in turn. Phones stack the cards and
+     hide the chart, so no wait. */
+  --chat-start: 4.8s;
 
   @media (--viewport-tablet-down) {
     --chat-start: 0s;
