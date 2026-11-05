@@ -258,7 +258,7 @@ description: "SEO-focused websites, website management and custom apps that help
                 <circle cx="11" cy="11" r="6"></circle>
                 <path d="M20 20l-4.5-4.5"></path>
               </svg>
-              plumber near me
+              <span class="serp__text">plumber near me</span>
             </div>
             <div>
               <strong class="serp__title">Your Business — Plumbing &amp; Drains</strong>

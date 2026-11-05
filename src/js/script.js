@@ -398,6 +398,44 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
+   * Homepage search mockup: once its card is half in view (with the rank
+   * chart behind it), the query types itself in, then the result rises in.
+   * Plays once. Without JS or with reduced motion the finished search shows.
+   */
+  const serp = document.querySelector('.serp');
+
+  if (serp && canAnimate && 'IntersectionObserver' in window) {
+    const text = serp.querySelector('.serp__text');
+    const query = text.textContent;
+    text.textContent = '';
+    serp.classList.add('is-armed', 'is-typing');
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        let typed = 0;
+        const type = () => {
+          typed += 1;
+          text.textContent = query.slice(0, typed);
+          if (typed < query.length) {
+            setTimeout(type, 70);
+            return;
+          }
+          // A short pause after the last letter, as if pressing Enter
+          setTimeout(() => {
+            serp.classList.remove('is-typing');
+            serp.classList.add('is-visible');
+          }, 350);
+        };
+        setTimeout(type, 300);
+      },
+      { threshold: 0.5 },
+    );
+    observer.observe(serp.closest('.card') || serp);
+  }
+
+  /**
    * Work page filters: toggle buttons (aria-pressed) that show one category.
    * Where the browser supports View Transitions (and reduced motion is off),
    * hidden cards fade out and the rest glide into their new places; each

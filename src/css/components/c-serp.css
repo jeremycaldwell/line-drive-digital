@@ -1,5 +1,8 @@
 /* =============================================================================
    SERP (search result mockup)
+   With JS, script.js arms it: the query types in with a blinking caret once
+   the card is half in view, then the result rises in (.is-visible). Without
+   JS or with reduced motion the finished search shows.
    ========================================================================== */
 
 .serp {
@@ -21,6 +24,42 @@
     border-radius: var(--radius-pill);
     background: var(--color-oat);
     color: var(--color-text-muted);
+  }
+
+  /* Holds one line's height while the query is still empty */
+  &__text {
+    min-height: 1lh;
+  }
+
+  /* Blinking caret while typing */
+  &.is-typing &__text::after {
+    content: '';
+    display: inline-block;
+    width: 0.0625rem;
+    height: 1em;
+    margin-left: var(--space-2);
+    vertical-align: text-bottom;
+    background: var(--color-text);
+    animation: serp-caret 1s steps(1) infinite;
+  }
+
+  /* Result and placeholder lines wait for the search, then rise in */
+  &.is-armed > :not(.serp__query) {
+    opacity: 0;
+  }
+
+  &.is-armed.is-visible > :not(.serp__query) {
+    --rise: 0.5rem;
+
+    animation: rise 0.5s var(--motion-ease-out) forwards;
+
+    &:nth-child(3) {
+      animation-delay: 0.12s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 0.24s;
+    }
   }
 
   &__title {
@@ -47,5 +86,11 @@
     &--short {
       width: 55%;
     }
+  }
+}
+
+@keyframes serp-caret {
+  50% {
+    opacity: 0;
   }
 }
