@@ -281,9 +281,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const total = lines[3].querySelector('dd');
     const chip = estimate.querySelector('.chip');
     const send = estimate.querySelector('.estimate__send');
-    const sendLabel = [...send.childNodes].findLast(
+    // Wrap the button's text in a span so it can fade on its own
+    const sendLabel = document.createElement('span');
+    const sendText = [...send.childNodes].findLast(
       (n) => n.nodeType === 3 && n.textContent.trim(),
     );
+    sendLabel.textContent = sendText.textContent.trim();
+    sendText.replaceWith(sendLabel);
     const money = (n) => `$${Math.round(n).toLocaleString('en-US')}`;
     const jobs = [
       [
@@ -361,7 +365,7 @@ window.addEventListener('DOMContentLoaded', () => {
           notes.getAnimations().forEach((a) => a.cancel());
           lines[3].getAnimations().forEach((a) => a.cancel());
           chip.getAnimations().forEach((a) => a.cancel());
-          sendLabel.textContent = ' Review & send ';
+          sendLabel.textContent = 'Review & send';
           notes.textContent = '';
           total.textContent = money(0);
           setChip(chip, 'Writing estimate…', '');
@@ -395,15 +399,17 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         // Draft ready, then reviewed and sent
-        later((at += 1200), () => {
-          setChip(chip, 'Draft — needs your review', 'warning');
+        later((at += 1200), () =>
+          setChip(chip, 'Draft — needs your review', 'warning'),
+        );
+        later((at += 1000), () => {
           send.getAnimations().forEach((a) => a.cancel());
           send.animate(
             { opacity: [0, 1], transform: ['translateY(0.25rem)', 'none'] },
             { duration: 350, easing },
           );
         });
-        later((at += 3500), () => {
+        later((at += 2500), () => {
           send.animate(
             { transform: ['none', 'scale(0.92)', 'none'] },
             { duration: 300, easing },
@@ -411,15 +417,33 @@ window.addEventListener('DOMContentLoaded', () => {
         });
         // Once the press lands: button reads "Sent", draft status fades out
         later((at += 500), () => {
-          sendLabel.textContent = ' Sent ';
+          sendLabel.animate(
+            { opacity: [1, 0] },
+            { duration: 150, fill: 'forwards' },
+          );
           chip.animate(
             { opacity: [1, 0] },
             { duration: 250, fill: 'forwards' },
           );
         });
+        // Label swaps while hidden; button narrows to fit, then "Sent" fades in
+        later((at += 150), () => {
+          const from = send.offsetWidth;
+          sendLabel.textContent = 'Sent';
+          const to = send.offsetWidth;
+          send.animate(
+            { width: [`${from}px`, `${to}px`] },
+            { duration: 300, easing },
+          );
+          sendLabel.getAnimations().forEach((a) => a.cancel());
+          sendLabel.animate(
+            { opacity: [0, 1], transform: ['translateY(0.25rem)', 'none'] },
+            { duration: 250, delay: 100, easing, fill: 'backwards' },
+          );
+        });
 
         // Done: swap Pause for Replay (keeping focus on the control)
-        later((at += 1500), () => {
+        later((at += 1350), () => {
           const hadFocus = document.activeElement === toggle;
           toggle.replaceWith(replay);
           if (hadFocus) replay.focus();

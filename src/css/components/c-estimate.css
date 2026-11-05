@@ -54,6 +54,7 @@
   /* The app's own send button: compact and squared-off, so it reads as part
      of the mockup rather than one of the site's pill buttons */
   &__send {
+    box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     gap: var(--space-8);
