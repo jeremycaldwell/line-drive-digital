@@ -35,7 +35,7 @@ The contact form uses Netlify Forms (`data-netlify="true"`, honeypot `bot-field`
 - **No inline styles** in templates; add or extend a component instead.
 - **Linting:** `npm run lint` runs stylelint, which enforces BEM class names, bans raw hex/rgb colors outside the tokens file, and requires tokens for spacing, font family, size and weight.
 - `src/js/script.js` – all page JS (menu, animations and live mockups, work filters, contact form)
-- `src/fonts/` – self-hosted Latin woff2 (Inter, Outfit, IBM Plex Mono, Adamina)
+- `src/fonts/` – self-hosted Latin woff2 (Inter, Outfit, IBM Plex Mono)
 - `src/_data/site.json` – site name, URL, description
 - `src/_data/projects.js` – Work page projects (the first three also show on the homepage); card markup is `src/_includes/project-card.njk`
 - `lib/image.js` – responsive image helper used by `{% image %}` and by data files (async shortcodes can't run inside Nunjucks loops)

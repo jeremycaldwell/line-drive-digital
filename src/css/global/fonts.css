@@ -35,11 +35,3 @@
   font-display: swap;
   src: url('/fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2');
 }
-
-@font-face {
-  font-family: Adamina;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/adamina-latin-400-normal.woff2') format('woff2');
-}

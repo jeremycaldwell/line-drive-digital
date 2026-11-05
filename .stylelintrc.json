@@ -19,7 +19,7 @@
         "/^(margin|padding|gap|row-gap|column-gap|inset)/": [
           "/^((-?var\\(--(space|hairline)[a-z0-9-]*\\)|0|auto|-?[0-9.]+em)\\s*)+$/"
         ],
-        "font-family": ["/^var\\(--font-(sans|display|mono|serif)\\)$/", "inherit"],
+        "font-family": ["/^var\\(--font-(sans|display|mono)\\)$/", "inherit"],
         "font-size": ["/^var\\(--font-size-[0-9]+\\)$/", "inherit", "/em$/"],
         "font-weight": ["/^var\\(--font-weight-[a-z]+\\)$/", "inherit"]
       },

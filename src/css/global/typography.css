@@ -127,10 +127,6 @@
   &--muted {
     color: var(--color-text-muted);
   }
-
-  &--on-dark-muted {
-    color: var(--color-on-dark-muted);
-  }
 }
 
 .link {
