@@ -140,7 +140,7 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   /**
-   * Hero lead inbox: after the headline and logo hit (3.8s, see the timing
+   * Hero lead inbox: after the headline and logo hit (4.1s, see the timing
    * map in variables.css), a new lead arrives at the top every 6s, the others
    * slide down, the oldest drops off, and the new lead's status moves from new, to drafted, to its
    * outcome. Booked leads also replace the toast on the hero photo.
@@ -178,7 +178,7 @@ window.addEventListener('DOMContentLoaded', () => {
     ];
     let next = 0;
 
-    liveFeed(inbox, 'live inbox', 3800, (later, toggle) => {
+    liveFeed(inbox, 'live inbox', 4100, (later, toggle) => {
       inbox.querySelector('.inbox__period').replaceWith(toggle);
 
       // The "New lead booked" toast on the hero photo follows the inbox: when
