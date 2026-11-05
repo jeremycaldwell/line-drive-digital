@@ -28,4 +28,10 @@
     display: block;
     color: var(--color-on-dark-subtle);
   }
+
+  /* Hidden until the inbox books its first lead (script.js arms it, so
+     without JS or with reduced motion the toast just shows) */
+  &.is-armed {
+    opacity: 0;
+  }
 }

@@ -143,7 +143,8 @@ window.addEventListener('DOMContentLoaded', () => {
    * Hero lead inbox: after the headline and logo hit (4.1s, see the timing
    * map in variables.css), a new lead arrives at the top every 6s, the others
    * slide down, the oldest drops off, and the new lead's status moves from new, to drafted, to its
-   * outcome. Booked leads also replace the toast on the hero photo.
+   * outcome. Booked leads also show in the toast on the hero photo, which
+   * stays hidden until the first lead is booked.
    */
   const inbox = document.querySelector('.inbox');
 
@@ -178,28 +179,39 @@ window.addEventListener('DOMContentLoaded', () => {
     ];
     let next = 0;
 
+    // Hidden until the first booking (without JS or with reduced motion it
+    // just shows)
+    const toast = document.querySelector('.toast');
+    toast?.classList.add('is-armed');
+
     liveFeed(inbox, 'live inbox', 4100, (later, toggle) => {
       inbox.querySelector('.inbox__period').replaceWith(toggle);
 
-      // The "New lead booked" toast on the hero photo follows the inbox: when
-      // a lead is booked, the old toast drops away and the new one pops up.
-      const toast = document.querySelector('.toast');
+      // The "New lead booked" toast on the hero photo follows the inbox: the
+      // first booking fades it in; after that, the old toast drops away and
+      // the new one pops up.
       const showToast = (subject, source) => {
         if (!toast) return;
-        toast.animate(
-          { opacity: [1, 0], transform: ['none', 'translateY(0.5rem)'] },
-          { duration: 200, easing, fill: 'forwards' },
-        );
-        later(300, () => {
+        const popIn = () => {
           toast.getAnimations().forEach((a) => a.cancel());
           toast.querySelector('.toast__title').textContent = 'New lead booked';
           toast.querySelector('.toast__meta').textContent =
             `${subject} · ${source.split(' · ')[1]}`;
+          toast.classList.remove('is-armed');
           toast.animate(
             { opacity: [0, 1], transform: ['translateY(0.75rem)', 'none'] },
             { duration: 400, easing: pop },
           );
-        });
+        };
+        if (toast.classList.contains('is-armed')) {
+          popIn();
+          return;
+        }
+        toast.animate(
+          { opacity: [1, 0], transform: ['none', 'translateY(0.5rem)'] },
+          { duration: 200, easing, fill: 'forwards' },
+        );
+        later(300, popIn);
       };
 
       const addLead = () => {
@@ -239,9 +251,11 @@ window.addEventListener('DOMContentLoaded', () => {
           list.style.height = '';
         });
         later(1600, () => setChip(chip, 'AI reply drafted', 'warning'));
-        later(3400, () => setChip(chip, outcome, tone));
-        // The toast follows half a second later, so the two don't move at once
-        if (outcome === 'Booked') later(3900, () => showToast(subject, source));
+        later(3400, () => {
+          setChip(chip, outcome, tone);
+          // The toast shows the booking at the same moment as the chip
+          if (outcome === 'Booked') showToast(subject, source);
+        });
         later(6000, addLead);
       };
 
