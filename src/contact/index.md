@@ -48,7 +48,7 @@ description: "Get a free site audit from Line Drive Digital."
           netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <p class="visually-hidden">
+          <p hidden>
             <label>
               Don't fill this out:
               <input name="bot-field" tabindex="-1" autocomplete="off" />
@@ -56,7 +56,7 @@ description: "Get a free site audit from Line Drive Digital."
           </p>
           <div class="grid grid--2">
             <div class="field">
-              <label class="field__label" for="c-name">Name</label>
+              <label class="field__label" for="c-name">Name <span class="field__hint">(required)</span></label>
               <input class="field__input" id="c-name" name="name" required type="text" autocomplete="name" />
             </div>
             <div class="field">
@@ -64,7 +64,7 @@ description: "Get a free site audit from Line Drive Digital."
               <input class="field__input" id="c-biz" name="business" type="text" autocomplete="organization" />
             </div>
             <div class="field">
-              <label class="field__label" for="c-email">Email</label>
+              <label class="field__label" for="c-email">Email <span class="field__hint">(required)</span></label>
               <input class="field__input" id="c-email" name="email" required type="email" autocomplete="email" />
             </div>
             <div class="field">
@@ -73,10 +73,7 @@ description: "Get a free site audit from Line Drive Digital."
             </div>
           </div>
           <div class="field">
-            <label class="field__label" for="c-site">
-              Current website
-              <span class="field__hint">(optional)</span>
-            </label>
+            <label class="field__label" for="c-site">Current website</label>
             <input class="field__input" id="c-site" name="website" type="url" placeholder="yourbusiness.com" />
           </div>
           <fieldset class="form__fieldset">

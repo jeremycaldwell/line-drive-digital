@@ -129,14 +129,16 @@
   }
 }
 
+/* Always underlined, so links inside sentences don't rely on color alone */
 .link {
   font-weight: var(--font-weight-medium);
   color: var(--color-link);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 0.0625em;
+  text-underline-offset: 0.2em;
 
   &:hover {
     color: var(--color-link-hover);
-    text-decoration: underline;
   }
 
   /* Trailing arrow nudges right on hover/focus */

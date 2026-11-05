@@ -39,7 +39,7 @@
   /* Color: brand accent */
   --color-accent: #d66733;
   --color-accent-text: #a64f12; /* accent hue, dark enough for small text on white and oat (AA) */
-  --color-link: #b85a16;
+  --color-link: var(--color-accent-text); /* 5.6:1 on white, 5.1:1 on oat */
   --color-link-hover: #8f430f;
 
   /* Color: status */
