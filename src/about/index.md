@@ -23,9 +23,9 @@ description: "Line Drive Digital is a Sutherlin, Oregon studio with 20 years of 
 
 <section class="section section--band-end">
   <div class="container">
-    <div class="grid grid--aside-left grid--gap-48 grid--center reveal">
-      <figure class="stack">
-        {% image "images/team/jeremy.jpg", "Jeremy Caldwell, founder of Line Drive Digital", { class: "photo photo--square", sizes: "(max-width: 56.25rem) calc(100vw - 2rem), 31rem" } %}
+    <div class="founder reveal">
+      <figure class="founder__figure">
+        {% image "images/team/jeremy.jpg", "Jeremy Caldwell, founder of Line Drive Digital", { class: "photo photo--square founder__photo", sizes: "(max-width: 37.5rem) 6rem, (max-width: 56.25rem) 15rem, 31rem" } %}
         <figcaption class="eyebrow eyebrow--muted">Jeremy · Founder &amp; lead developer</figcaption>
       </figure>
       <div class="stack stack--24">

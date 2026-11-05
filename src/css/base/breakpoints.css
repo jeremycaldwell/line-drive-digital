@@ -7,3 +7,6 @@
 /* Landscape tablets and small laptops: between phone and full desktop
    spacing. Never overlaps tablet-down. */
 @custom-media --viewport-medium (min-width: 56.3125rem) and (max-width: 75rem);
+
+/* Phones: the narrowest layouts inside tablet-down. */
+@custom-media --viewport-phone (max-width: 37.5rem);

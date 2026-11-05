@@ -1,0 +1,44 @@
+/* =============================================================================
+   FOUNDER (About page: portrait beside the "who you'll work with" copy)
+   Desktop: portrait column beside the copy. Tablet: a narrower portrait
+   column, top-aligned. Phone: a small portrait with the caption beside it,
+   copy below, so the photo never fills the screen.
+   ========================================================================== */
+
+.founder {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  align-items: center;
+  gap: var(--space-48);
+
+  @media (--viewport-medium) {
+    gap: var(--space-40);
+  }
+
+  @media (--viewport-tablet-down) {
+    grid-template-columns: 15rem minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-32);
+  }
+
+  @media (--viewport-phone) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-24);
+  }
+
+  &__figure {
+    display: grid;
+    gap: var(--space-16);
+
+    @media (--viewport-phone) {
+      grid-template-columns: 6rem minmax(0, 1fr);
+      align-items: center;
+    }
+  }
+
+  &__photo {
+    @media (--viewport-phone) {
+      border-radius: var(--radius-16);
+    }
+  }
+}
