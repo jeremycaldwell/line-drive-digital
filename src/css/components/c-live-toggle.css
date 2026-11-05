@@ -46,6 +46,12 @@
     background: var(--color-on-dark-subtle);
     animation: none;
   }
+
+  /* Replay (estimate builder, once it has finished): an icon instead of the
+     live dot */
+  &--replay::before {
+    display: none;
+  }
 }
 
 @keyframes live-toggle-pulse {

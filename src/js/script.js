@@ -264,11 +264,13 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Estimate builder: once on screen, it builds a new estimate from job notes
-   * on a loop. The notes come in word by word, each line item appears with
+   * Estimate builder: once on screen, it builds one estimate from job notes,
+   * then stops. The notes come in word by word, each line item appears with
    * its price counting up, the total adds up, the draft waits for review,
-   * then "Review & send" is pressed and it's sent. Always three line items,
-   * and the notes box keeps its height, so the card never changes size.
+   * then "Review & send" is pressed and it's sent. When it's done, the Pause
+   * button becomes Replay, which builds the next job's estimate. Always three
+   * line items, and the notes box keeps its height, so the card never changes
+   * size.
    */
   const estimate = document.querySelector('.estimate');
 
@@ -328,6 +330,14 @@ window.addEventListener('DOMContentLoaded', () => {
     liveFeed(estimate, 'estimate builder', 1500, (later, toggle) => {
       estimate.querySelector('.estimate__header').append(toggle);
       notes.style.minHeight = `${notes.offsetHeight}px`;
+
+      // Shown in place of Pause once an estimate is sent
+      const replay = document.createElement('button');
+      replay.type = 'button';
+      replay.className = 'live-toggle live-toggle--replay';
+      replay.setAttribute('aria-label', 'Replay estimate builder');
+      replay.innerHTML =
+        '<svg class="icon icon--bold icon--round" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6"></path><path d="M4 4v4.5h4.5"></path></svg>Replay';
 
       const build = () => {
         const [text, rows] = jobs[next % jobs.length];
@@ -390,8 +400,20 @@ window.addEventListener('DOMContentLoaded', () => {
           );
           setChip(chip, 'Sent to customer', 'success');
         });
-        later((at += 3000), build);
+
+        // Done: swap Pause for Replay (keeping focus on the control)
+        later((at += 1000), () => {
+          const hadFocus = document.activeElement === toggle;
+          toggle.replaceWith(replay);
+          if (hadFocus) replay.focus();
+        });
       };
+
+      replay.addEventListener('click', () => {
+        replay.replaceWith(toggle);
+        toggle.focus();
+        build();
+      });
 
       build();
     });
