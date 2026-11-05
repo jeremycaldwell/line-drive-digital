@@ -1,5 +1,9 @@
 /* =============================================================================
    TRAJECTORY (about page "line drive" illustration)
+   Once its panel is half in view (script.js arms it and adds .is-visible),
+   the line drives up from the base, each marker pops in as the line passes,
+   and the ball lands at the end. Plays once; the circle keeps floating.
+   Without JS the finished illustration shows.
    ========================================================================== */
 
 .trajectory {
@@ -28,6 +32,12 @@
     stroke-linecap: round;
   }
 
+  &__ball,
+  &__marker {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
   &__ball {
     fill: var(--color-white);
   }
@@ -40,5 +50,32 @@
 
   &__base {
     fill: var(--color-text-subtle);
+  }
+}
+
+/* Armed: line undrawn and markers hidden until the panel is in view */
+.trajectory.is-armed {
+  .trajectory__path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+  }
+
+  .trajectory__marker,
+  .trajectory__ball {
+    opacity: 0;
+  }
+}
+
+.is-visible .trajectory.is-armed {
+  .trajectory__path {
+    animation: draw 1.2s 0.2s var(--motion-ease-out) both;
+  }
+
+  .trajectory__marker,
+  .trajectory__ball {
+    --pop-from: 0;
+
+    animation: pop 0.4s calc(0.45s + var(--i) * 0.3s) var(--motion-ease-pop)
+      both;
   }
 }

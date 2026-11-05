@@ -1,9 +1,10 @@
 /* =============================================================================
    CHAT (message bubbles mockup)
-   With JS, script.js adds .chat--armed, then .is-visible to the card once it
-   scrolls into view: after the rank chart beside it finishes, the late-night message arrives, the assistant types,
-   replies, and the booking is confirmed. Without JS (or with reduced motion)
-   the finished conversation shows.
+   With JS, script.js adds .is-armed, then .is-visible to the card once it
+   scrolls into view: after the rank chart beside it finishes, the late-night
+   message arrives, the assistant types, replies, and the booking is
+   confirmed. Without JS (or with reduced motion) the finished conversation
+   shows.
    ========================================================================== */
 
 .chat {
@@ -81,7 +82,7 @@
 }
 
 /* Hidden until the card is in view */
-.chat--armed {
+.chat.is-armed {
   .chat__time,
   .chat__bubble,
   .chat__status {
@@ -89,7 +90,7 @@
   }
 }
 
-.is-visible .chat--armed {
+.is-visible .chat.is-armed {
   /* Side by side with the rank chart on desktop: wait for it to finish
      (about 2.4s) so the two tell one story. Phones hide the chart, so no wait. */
   --chat-start: 2.4s;

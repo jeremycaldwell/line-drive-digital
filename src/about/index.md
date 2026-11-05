@@ -26,7 +26,7 @@ eleventyNavigation:
 
 <section class="section section--band-end">
   <div class="container">
-    <div class="grid grid--aside-left grid--gap-48 grid--center">
+    <div class="grid grid--aside-left grid--gap-48 grid--center reveal">
       <figure class="stack">
         {% image "images/team/jeremy.jpg", "Jeremy Caldwell, founder of Line Drive Digital", { class: "photo photo--square", sizes: "(max-width: 56.25rem) calc(100vw - 2rem), 31rem" } %}
         <figcaption class="eyebrow eyebrow--muted">Jeremy · Founder &amp; lead developer</figcaption>
@@ -69,10 +69,10 @@ eleventyNavigation:
         aria-label="Illustration: a straight rising trajectory ending in a node"
       >
         <circle class="trajectory__sun" cx="330" cy="150" r="130"></circle>
-        <path class="trajectory__path" d="M20 210 L340 60"></path>
-        <circle class="trajectory__ball" cx="340" cy="60" r="14"></circle>
-        <circle class="trajectory__marker" cx="120" cy="163" r="9"></circle>
-        <circle class="trajectory__marker" cx="220" cy="116" r="9"></circle>
+        <path class="trajectory__path" pathLength="1" d="M20 210 L340 60"></path>
+        <circle class="trajectory__ball" style="--i: 3" cx="340" cy="60" r="14"></circle>
+        <circle class="trajectory__marker" style="--i: 0" cx="120" cy="163" r="9"></circle>
+        <circle class="trajectory__marker" style="--i: 1" cx="220" cy="116" r="9"></circle>
         <rect class="trajectory__base" x="20" y="222" width="70" height="8" rx="2"></rect>
       </svg>
     </div>
@@ -85,7 +85,7 @@ eleventyNavigation:
       <p class="eyebrow">How we work</p>
       <h2 class="heading heading--lg section-header__title">What you can count on.</h2>
     </div>
-    <ul class="grid grid--3 list-reset">
+    <ul class="grid grid--3 list-reset reveal">
       <li class="card">
         <p class="eyebrow eyebrow--muted">01</p>
         <h3 class="heading heading--sm">Plain English</h3>

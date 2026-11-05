@@ -67,10 +67,19 @@
   }
 }
 
+/* Shared line draw (rank chart, About trajectory). The path needs
+   pathLength="1", stroke-dasharray: 1 and stroke-dashoffset: 1 before it
+   starts; this draws it to 0. */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 /* Scroll reveal: a group's children rise in one after another, once, when
    the group is half in view (script.js arms it and adds .is-visible, so
    without JS it shows). Reduced motion: shown finished (reset.css). */
-.reveal--armed {
+.reveal.is-armed {
   --rise: 1.5rem;
 
   /* Decor circles keep their own float, so they're left out */

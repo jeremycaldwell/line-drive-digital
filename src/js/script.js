@@ -26,12 +26,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   /**
    * Animated mockups (floating circles, rank chart, chat, About illustration)
-   * and .reveal groups: start their animation when their panel is half in
-   * view, by adding .is-visible to the panel. The panel is observed because
-   * the circles are cropped by it; reveal groups are their own panel, since
-   * their section can be too tall to ever be half in view on phones. Rank
-   * charts, chats and reveal groups are armed (hidden) only here, so without
-   * JS they show. Each reveal child gets an index (--i) for its stagger.
+   * and .reveal groups start when script.js adds .is-visible to their panel.
+   * Mockup panels (the card, feature or CTA that crops the circles) start
+   * when half in view, so the whole scene is on screen. Reveal groups start
+   * as soon as their top is 10% up the screen: content is never left hidden
+   * below the fold on load, and tall groups on phones still start. Rank
+   * charts, trajectories, chats and reveal groups are armed (hidden) only
+   * here, so without JS they show. Each reveal child gets an index (--i) for
+   * its stagger.
    */
   const panels = new Set(
     [
@@ -47,28 +49,29 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (panels.size && 'IntersectionObserver' in window) {
     document
-      .querySelectorAll('.rank')
-      .forEach((rank) => rank.classList.add('rank--armed'));
-    document
-      .querySelectorAll('.chat')
-      .forEach((chat) => chat.classList.add('chat--armed'));
+      .querySelectorAll('.rank, .trajectory, .chat, .reveal')
+      .forEach((el) => el.classList.add('is-armed'));
     document.querySelectorAll('.reveal').forEach((group) => {
-      group.classList.add('reveal--armed');
       [...group.children]
         .filter((el) => !el.matches('.decor'))
         .forEach((el, i) => el.style.setProperty('--i', i));
     });
-    const observer = new IntersectionObserver(
-      (entries) => {
+
+    const watch = (options) => {
+      const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           entry.target.classList.add('is-visible');
           observer.unobserve(entry.target);
         });
-      },
-      { threshold: 0.5 },
+      }, options);
+      return observer;
+    };
+    const mockups = watch({ threshold: 0.5 });
+    const reveals = watch({ rootMargin: '0px 0px -10% 0px' });
+    panels.forEach((panel) =>
+      (panel.matches('.reveal') ? reveals : mockups).observe(panel),
     );
-    panels.forEach((panel) => observer.observe(panel));
   }
 
   /**
