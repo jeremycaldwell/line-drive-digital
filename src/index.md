@@ -362,7 +362,17 @@ description: "SEO-focused websites, website management and custom apps that help
             <span class="chip__dot"></span>
             Draft — needs your review
           </span>
-          <span class="button button--light button--small">Review &amp; send</span>
+          <span class="estimate__send">
+            <svg class="icon icon--bold"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M4 12l16-8-6 16-2.5-6.5z"></path>
+            </svg>
+            Review &amp; send
+          </span>
         </div>
       </div>
     </div>

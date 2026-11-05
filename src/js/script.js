@@ -278,7 +278,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const items = lines.slice(0, 3);
     const total = lines[3].querySelector('dd');
     const chip = estimate.querySelector('.chip');
-    const send = estimate.querySelector('.button');
+    const send = estimate.querySelector('.estimate__send');
     const money = (n) => `$${Math.round(n).toLocaleString('en-US')}`;
     const jobs = [
       [
