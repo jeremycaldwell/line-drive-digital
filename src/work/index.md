@@ -19,31 +19,28 @@ eleventyNavigation:
         Websites that rank in their towns, and the tools that help the people behind them get home on time.
       </p>
     </div>
-    <div class="cluster cluster--spaced" role="tablist" aria-label="Filter projects">
+    <div class="cluster cluster--spaced" role="group" aria-label="Filter projects">
       <button
-        role="tab"
         type="button"
         class="button button--secondary button--small button--toggle"
         data-filter="all"
-        aria-selected="true"
+        aria-pressed="true"
       >
         All work
       </button>
       <button
-        role="tab"
         type="button"
         class="button button--secondary button--small button--toggle"
         data-filter="web"
-        aria-selected="false"
+        aria-pressed="false"
       >
         Websites
       </button>
       <button
-        role="tab"
         type="button"
         class="button button--secondary button--small button--toggle"
         data-filter="ai"
-        aria-selected="false"
+        aria-pressed="false"
       >
         AI tools &amp; apps
       </button>
@@ -53,7 +50,7 @@ eleventyNavigation:
 
 <section class="section">
   <div class="container">
-    <div class="grid grid--2 grid--rows-40">
+    <div class="grid grid--2 grid--rows-40 reveal">
       {%- for project in projects %}{% include "project-card.njk" %}{% endfor -%}
     </div>
   </div>

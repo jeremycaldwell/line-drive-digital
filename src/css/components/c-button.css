@@ -72,7 +72,7 @@
   }
 
   /* Selected filter tab */
-  &--toggle[aria-selected='true'] {
+  &--toggle[aria-pressed='true'] {
     background: var(--color-brown);
     color: var(--color-white);
   }

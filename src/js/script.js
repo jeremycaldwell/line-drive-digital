@@ -384,22 +384,38 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Work page filters.
+   * Work page filters: toggle buttons (aria-pressed) that show one category.
+   * Where the browser supports View Transitions (and reduced motion is off),
+   * hidden cards fade out and the rest glide into their new places; each
+   * card needs its own view-transition-name for that. Otherwise the cards
+   * switch instantly.
    */
   const filters = document.querySelectorAll('[data-filter]');
+  const projects = filters.length
+    ? document.querySelectorAll('article[data-cat]')
+    : [];
+
+  projects.forEach((article, i) => {
+    article.style.viewTransitionName = `project-${i}`;
+  });
 
   filters.forEach((button) => {
     button.addEventListener('click', () => {
       const filter = button.dataset.filter;
       filters.forEach((other) => {
-        other.setAttribute(
-          'aria-selected',
-          other === button ? 'true' : 'false',
-        );
+        other.setAttribute('aria-pressed', String(other === button));
       });
-      document.querySelectorAll('article[data-cat]').forEach((article) => {
-        article.hidden = !(filter === 'all' || article.dataset.cat === filter);
-      });
+      const apply = () =>
+        projects.forEach((article) => {
+          article.hidden = !(
+            filter === 'all' || article.dataset.cat === filter
+          );
+        });
+      if (document.startViewTransition && !reduceMotion.matches) {
+        document.startViewTransition(apply);
+      } else {
+        apply();
+      }
     });
   });
 
