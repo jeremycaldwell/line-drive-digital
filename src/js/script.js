@@ -281,6 +281,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const total = lines[3].querySelector('dd');
     const chip = estimate.querySelector('.chip');
     const send = estimate.querySelector('.estimate__send');
+    const sendLabel = [...send.childNodes].findLast(
+      (n) => n.nodeType === 3 && n.textContent.trim(),
+    );
     const money = (n) => `$${Math.round(n).toLocaleString('en-US')}`;
     const jobs = [
       [
@@ -345,7 +348,7 @@ window.addEventListener('DOMContentLoaded', () => {
         let at = 0;
 
         // Clear the last estimate
-        [notes, ...items, lines[3]].forEach((el) =>
+        [notes, ...items, lines[3], send].forEach((el) =>
           el.animate(
             { opacity: [1, 0] },
             {
@@ -357,6 +360,8 @@ window.addEventListener('DOMContentLoaded', () => {
         later((at += 300), () => {
           notes.getAnimations().forEach((a) => a.cancel());
           lines[3].getAnimations().forEach((a) => a.cancel());
+          chip.getAnimations().forEach((a) => a.cancel());
+          sendLabel.textContent = ' Review & send ';
           notes.textContent = '';
           total.textContent = money(0);
           setChip(chip, 'Writing estimate…', '');
@@ -364,7 +369,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         // Notes come in word by word
         text.split(' ').forEach((word, i) => {
-          later((at += 100), () => {
+          later((at += 150), () => {
             notes.textContent += `${i ? ' ' : ''}${word}`;
           });
         });
@@ -372,7 +377,7 @@ window.addEventListener('DOMContentLoaded', () => {
         // Line items, one at a time, prices counting up
         let sum = 0;
         rows.forEach(([desc, price], i) => {
-          later((at += 500), () => {
+          later((at += 1200), () => {
             const line = items[i];
             line.getAnimations().forEach((a) => a.cancel());
             line.querySelector('dt').textContent = desc;
@@ -390,19 +395,31 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         // Draft ready, then reviewed and sent
-        later((at += 800), () =>
-          setChip(chip, 'Draft — needs your review', 'warning'),
-        );
-        later((at += 2500), () => {
+        later((at += 1200), () => {
+          setChip(chip, 'Draft — needs your review', 'warning');
+          send.getAnimations().forEach((a) => a.cancel());
+          send.animate(
+            { opacity: [0, 1], transform: ['translateY(0.25rem)', 'none'] },
+            { duration: 350, easing },
+          );
+        });
+        later((at += 3500), () => {
           send.animate(
             { transform: ['none', 'scale(0.92)', 'none'] },
             { duration: 300, easing },
           );
-          setChip(chip, 'Sent to customer', 'success');
+        });
+        // Once the press lands: button reads "Sent", draft status fades out
+        later((at += 500), () => {
+          sendLabel.textContent = ' Sent ';
+          chip.animate(
+            { opacity: [1, 0] },
+            { duration: 250, fill: 'forwards' },
+          );
         });
 
         // Done: swap Pause for Replay (keeping focus on the control)
-        later((at += 1000), () => {
+        later((at += 1500), () => {
           const hadFocus = document.activeElement === toggle;
           toggle.replaceWith(replay);
           if (hadFocus) replay.focus();
