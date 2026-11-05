@@ -2,6 +2,12 @@
    RESET
    ========================================================================== */
 
+/* Same-page anchor links (#seo, #websites, skip link) scroll smoothly.
+   Reduced motion jumps instead (rule at the end of this file). */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: var(--color-white);
