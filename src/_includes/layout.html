@@ -47,6 +47,16 @@
         }
       }
     </script>
+    {%- if page.url == '/' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}/"
+      }
+    </script>
+    {%- endif %}
     {%- if env.production and site.googleTagManager %}
     <script src="/js/analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtm.js?id={{ site.googleTagManager }}"></script>
