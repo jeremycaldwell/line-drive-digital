@@ -535,6 +535,24 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
+   * Lead tracking. Pushes phone taps and contact form sends to the GTM data
+   * layer as phone_call_click and generate_lead events. In GTM, a GA4 Event tag
+   * on each custom event sends them to Analytics, where they count as leads in
+   * Box Score.
+   */
+  const trackLead = (name, params = {}) => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: name, ...params });
+  };
+
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href^="tel:"]');
+    if (link) {
+      trackLead('phone_call_click', { link_url: link.getAttribute('href') });
+    }
+  });
+
+  /**
    * Contact form (Netlify Forms). Posts in the background and shows the
    * thank-you message; without JS the form posts normally to Netlify.
    */
@@ -545,10 +563,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Pre-select a "What do you need?" option from the link, e.g.
     // /contact/?need=free-audit ticks "Free audit" (value lowercased, spaces → -).
-    const need = new URLSearchParams(window.location.search).get('need');
+    // Box Score report buttons also pass ?website= and ?message= to prefill those fields.
+    const params = new URLSearchParams(window.location.search);
+    const need = params.get('need');
     form.querySelectorAll('input[name="needs"]').forEach((option) => {
       if (option.value.toLowerCase().replace(/\s+/g, '-') === need) {
         option.checked = true;
+      }
+    });
+    ['website', 'message'].forEach((name) => {
+      const value = params.get(name);
+      const field = form.elements.namedItem(name);
+      if (value && field && !field.value) {
+        field.value = value.slice(0, 1000);
       }
     });
 
@@ -564,6 +591,7 @@ window.addEventListener('DOMContentLoaded', () => {
           body: new URLSearchParams(new FormData(form)).toString(),
         });
         if (!response.ok) throw new Error(response.statusText);
+        trackLead('generate_lead', { form_name: 'contact' });
         form.hidden = true;
         sent.hidden = false;
         // The Send button just disappeared: move focus to the confirmation so
