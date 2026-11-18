@@ -575,7 +575,12 @@ window.addEventListener('DOMContentLoaded', () => {
       const value = params.get(name);
       const field = form.elements.namedItem(name);
       if (value && field && !field.value) {
-        field.value = value.slice(0, 1000);
+        // The website field is type="url", which rejects a bare domain on submit.
+        const full =
+          name === 'website' && !/^https?:\/\//i.test(value)
+            ? `https://${value}`
+            : value;
+        field.value = full.slice(0, 1000);
       }
     });
 

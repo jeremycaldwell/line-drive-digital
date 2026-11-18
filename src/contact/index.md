@@ -92,6 +92,10 @@ description: "Get a free site audit from Line Drive Digital."
                 <span class="button button--light button--small">Website management</span>
               </label>
               <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Ongoing SEO" />
+                <span class="button button--light button--small">Ongoing SEO</span>
+              </label>
+              <label class="toggle">
                 <input class="toggle__input" type="checkbox" name="needs" value="Workflow review" />
                 <span class="button button--light button--small">Workflow review</span>
               </label>
