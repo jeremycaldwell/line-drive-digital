@@ -524,7 +524,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
     <div class="feature feature--dark feature--top">
       <div class="feature__content">
         <p class="eyebrow eyebrow--on-dark">What we can build</p>
-        <h2 class="heading heading--lg">If it slows you down, we can probably build it.</h2>
+        <h2 class="heading heading--lg">Tell us what slows you down. We'll build the fix.</h2>
         <p class="lead lead--on-dark">
           Tools connect to what you already use: Google Workspace, your CRM, forms, spreadsheets, email and text. You
           approve anything AI writes before it goes out.
