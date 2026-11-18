@@ -526,8 +526,8 @@ description: "SEO Growth Starter, full-service website management, and custom ap
         <p class="eyebrow eyebrow--on-dark">What we can build</p>
         <h2 class="heading heading--lg">Tell us what slows you down. We'll build the fix.</h2>
         <p class="lead lead--on-dark">
-          Tools connect to what you already use: Google Workspace, your CRM, forms, spreadsheets, email and text. You
-          approve anything AI writes before it goes out.
+          Your new tool plugs into what you already use: Google Workspace, your CRM, forms, spreadsheets, email and text
+          messages. Nothing AI writes goes out without your OK.
         </p>
         <p class="price price--on-dark">
           <span class="price__note">Hosting &amp; support for your tools ·</span>
