@@ -586,7 +586,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
         <h2 class="heading heading--lg">Questions we hear a lot.</h2>
       </div>
       <div class="faq">
-        <details class="faq__item" open>
+        <details class="faq__item">
           <summary class="faq__question">
             <span>Do I need a new website to rank better?</span>
             <span class="faq__icon" aria-hidden="true"></span>
