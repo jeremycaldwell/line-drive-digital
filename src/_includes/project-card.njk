@@ -5,4 +5,9 @@
   <p class="eyebrow eyebrow--muted">{{ project.type | escape }}</p>
   <{{ tag }} class="heading heading--md">{{ project.name | escape }}</{{ tag }}>
   <p class="text text--muted">{{ project.description | escape }}</p>
+  {%- if project.url %}
+  <a href="{{ project.url }}" class="link" rel="noopener">
+    Visit {{ project.name | escape }} <span class="link__arrow" aria-hidden="true">→</span>
+  </a>
+  {%- endif %}
 </article>

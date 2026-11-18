@@ -1,5 +1,6 @@
 // Work page projects (also the first three on the homepage).
-// Edit this list to add projects. image is relative to src/.
+// Edit this list to add projects. image is relative to src/. url (optional) adds a
+// link to the live site.
 const imageHtml = require('../../lib/image.js');
 
 const projects = [
@@ -10,6 +11,7 @@ const projects = [
       'Service pages for a welding, fencing and construction company in Eastern Washington.',
     image: 'images/work/vance-fabrication.jpg',
     alt: 'Vance Fabrication LLC general construction services page',
+    url: 'https://www.vancefabrication.com/',
     category: 'web',
   },
   {
