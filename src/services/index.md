@@ -21,9 +21,9 @@ description: "SEO Growth Starter, full-service website management, and custom ap
       </div>
     </div>
     <nav class="cluster cluster--spaced" aria-label="On this page">
-      <a href="#seo" class="button button--secondary button--small">01 · SEO Growth Starter</a>
-      <a href="#websites" class="button button--secondary button--small">02 · Website management</a>
-      <a href="#apps" class="button button--secondary button--small">03 · Custom apps &amp; AI</a>
+      <a href="#seo" class="button button--secondary button--small">SEO Growth Starter</a>
+      <a href="#websites" class="button button--secondary button--small">Website management</a>
+      <a href="#apps" class="button button--secondary button--small">Custom apps &amp; AI</a>
     </nav>
   </div>
 </section>
@@ -40,7 +40,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
     </div>
     <div class="grid grid--3">
       <div class="card">
-        <p class="eyebrow">Step 1 · Free audit</p>
+        <p class="eyebrow">Free audit</p>
         <h3 class="heading heading--md">Scouting Report</h3>
         <p class="text text--muted">
           Send us your website and we'll show you where you stand. No website yet? We'll look at how you show up on
@@ -102,7 +102,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
         </div>
       </div>
       <div class="card">
-        <p class="eyebrow">Step 2 · In-depth audit</p>
+        <p class="eyebrow">In-depth audit</p>
         <h3 class="heading heading--md">Scorecard</h3>
         <p class="text text--muted">
           Our full audit, written so you can act on it. Every page checked and every finding explained, with the
@@ -164,7 +164,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
         </div>
       </div>
       <div id="box-score" class="card">
-        <p class="eyebrow">Step 3 · Every month</p>
+        <p class="eyebrow">Every month</p>
         <h3 class="heading heading--md">Box Score</h3>
         <p class="text text--muted">
           Your private client dashboard, refreshed daily. Log in anytime to see what your website is bringing in, and
@@ -248,7 +248,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
   <div class="container">
     <div class="feature feature--top">
       <div class="feature__content">
-        <p class="eyebrow">01 · SEO Growth Starter</p>
+        <p class="eyebrow">SEO Growth Starter</p>
         <h2 class="heading heading--lg">Get on Google the right way, from day one.</h2>
         <p class="lead">
           An initial SEO strategy that establishes your business on Google and other search engines: every account set
@@ -391,7 +391,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
     <div class="feature feature--top">
       <div class="decor decor--large decor--top-right" aria-hidden="true"></div>
       <div class="feature__content">
-        <p class="eyebrow">02 · Full-Service Website Management</p>
+        <p class="eyebrow">Full-Service Website Management</p>
         <h2 class="heading heading--lg">A website that brings in calls, handled for you.</h2>
         <p class="lead">
           For one monthly fee, we design, build and run a fast, SEO-first website for your local business in Southern
@@ -488,7 +488,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
 <section id="apps" class="section section--band">
   <div class="container">
     <div class="section-header">
-      <p class="eyebrow">03 · Custom apps &amp; AI tools</p>
+      <p class="eyebrow">Custom apps &amp; AI tools</p>
       <h2 class="heading heading--lg section-header__title">Software that fits the way you work.</h2>
       <p class="lead section-header__lead">
         Every business has the task nobody wants to do: the quote typed up at 9pm, the missed call, the spreadsheet that
