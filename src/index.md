@@ -525,22 +525,22 @@ description: "SEO-focused websites, website management and custom apps that help
     </div>
     <ol class="grid grid--4 list-reset reveal">
       <li class="card card--compact">
-        <p class="eyebrow eyebrow--muted">Step 01</p>
+        <p class="eyebrow eyebrow--muted">Step 1</p>
         <h3 class="heading heading--sm">Free audit</h3>
         <p class="text text--muted">Have a site? We run a Scouting Report on it. Starting fresh? We map your local competition.</p>
       </li>
       <li class="card card--compact">
-        <p class="eyebrow eyebrow--muted">Step 02</p>
+        <p class="eyebrow eyebrow--muted">Step 2</p>
         <h3 class="heading heading--sm">Plan &amp; price</h3>
         <p class="text text--muted">A written scope with a fixed price and timeline.</p>
       </li>
       <li class="card card--compact">
-        <p class="eyebrow eyebrow--muted">Step 03</p>
+        <p class="eyebrow eyebrow--muted">Step 3</p>
         <h3 class="heading heading--sm">Build</h3>
         <p class="text text--muted">Weekly check-ins. You approve each piece as it lands.</p>
       </li>
       <li class="card card--compact">
-        <p class="eyebrow eyebrow--muted">Step 04</p>
+        <p class="eyebrow eyebrow--muted">Step 4</p>
         <h3 class="heading heading--sm">Launch &amp; grow</h3>
         <p class="text text--muted">Your Box Score dashboard tracks every call and form from day one, with ongoing help on a monthly plan.</p>
       </li>
