@@ -47,10 +47,10 @@
     color: var(--color-on-dark);
   }
 
-  &--brown {
+  /* Closing call to action in a grid of plain cards: one shade darker, so it stands out without shouting */
+  &--cta {
     justify-content: space-between;
-    background: var(--color-brown);
-    color: var(--color-on-dark);
+    background: var(--color-oat-hover);
   }
 
   /* Fill remaining height in a flex column */

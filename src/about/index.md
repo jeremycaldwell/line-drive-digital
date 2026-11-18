@@ -84,33 +84,28 @@ description: "Line Drive Digital is a Sutherlin, Oregon studio with 20 years of 
     </div>
     <ul class="grid grid--3 list-reset reveal">
       <li class="card">
-        <p class="eyebrow eyebrow--muted">01</p>
         <h3 class="heading heading--sm">Plain English</h3>
         <p class="text text--muted">You'll always know what we're doing and why.</p>
       </li>
       <li class="card">
-        <p class="eyebrow eyebrow--muted">02</p>
         <h3 class="heading heading--sm">Measured</h3>
         <p class="text text--muted">Google Analytics and Search Console set up from day one, so you can see what's working.</p>
       </li>
       <li class="card">
-        <p class="eyebrow eyebrow--muted">03</p>
         <h3 class="heading heading--sm">Honest about AI</h3>
         <p class="text text--muted">We'll tell you when a tool isn't worth it.</p>
       </li>
       <li class="card">
-        <p class="eyebrow eyebrow--muted">04</p>
         <h3 class="heading heading--sm">Built to last</h3>
         <p class="text text--muted">Clean, documented work you can grow on.</p>
       </li>
       <li class="card">
-        <p class="eyebrow eyebrow--muted">05</p>
         <h3 class="heading heading--sm">Local</h3>
         <p class="text text--muted">Sutherlin, Roseburg and Southern Oregon — happy to meet in person.</p>
       </li>
-      <li class="card card--brown">
+      <li class="card card--cta">
         <h3 class="heading heading--sm">Sound like a fit?</h3>
-        <div><a href="/contact/" class="button button--light">Let's talk</a></div>
+        <div><a href="/contact/" class="button button--primary">Let's talk</a></div>
       </li>
     </ul>
   </div>
