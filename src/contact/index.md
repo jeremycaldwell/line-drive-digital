@@ -74,7 +74,17 @@ description: "Get a free site audit from Line Drive Digital."
           </div>
           <div class="field">
             <label class="field__label" for="c-site">Current website</label>
-            <input class="field__input" id="c-site" name="website" type="url" placeholder="yourbusiness.com" />
+            <input
+              class="field__input"
+              id="c-site"
+              name="website"
+              type="text"
+              inputmode="url"
+              autocomplete="url"
+              autocapitalize="none"
+              spellcheck="false"
+              placeholder="yourbusiness.com"
+            />
           </div>
           <fieldset class="form__fieldset">
             <legend class="form__legend">What do you need?</legend>
