@@ -562,12 +562,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const sent = document.getElementById('sent');
 
     // Pre-select a "What do you need?" option from the link, e.g.
-    // /contact/?need=free-audit ticks "Free audit" (value lowercased, spaces → -).
+    // /contact/?need=free-audit ticks "Free audit" (value lowercased, each run of
+    // non-alphanumerics → -, so "Custom tool / app" is custom-tool-app).
     // Box Score report buttons also pass ?website= and ?message= to prefill those fields.
     const params = new URLSearchParams(window.location.search);
     const need = params.get('need');
     form.querySelectorAll('input[name="needs"]').forEach((option) => {
-      if (option.value.toLowerCase().replace(/\s+/g, '-') === need) {
+      if (option.value.toLowerCase().replace(/[^a-z0-9]+/g, '-') === need) {
         option.checked = true;
       }
     });
