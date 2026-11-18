@@ -32,17 +32,67 @@ description: "SEO Growth Starter, full-service website management, and custom ap
   <div class="container">
     <div class="section-header">
       <p class="eyebrow">Start here</p>
-      <h2 class="heading heading--lg section-header__title">See where you stand before you spend a dollar.</h2>
+      <h2 class="heading heading--lg section-header__title">Know the score before, during and after.</h2>
+      <p class="lead section-header__lead">
+        A free Scouting Report shows where you stand. A Scorecard tells you exactly what to fix. Box Score shows you,
+        every month, what the work is bringing in. No guessing at any step.
+      </p>
     </div>
-    <div class="grid grid--2">
+    <div class="grid grid--3">
       <div class="card">
-        <p class="eyebrow">Free audit</p>
+        <p class="eyebrow">Step 1 · Free audit</p>
         <h3 class="heading heading--md">Scouting Report</h3>
         <p class="text text--muted">
-          Send us your website and we'll run a Scouting Report: your score out of 100, the three things costing you the
-          most calls, and how you compare to two local competitors. No website yet? We'll look at how you show up on
+          Send us your website and we'll show you where you stand. No website yet? We'll look at how you show up on
           Google today and who you're up against.
         </p>
+          <ul class="checklist">
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Your score out of 100</strong>
+                — one number for how well your site works for search and for customers
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Top three issues</strong>
+                — the things costing you the most calls, in plain language
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Two local competitors</strong>
+                — how you stack up against the businesses taking your customers
+              </span>
+            </li>
+          </ul>
         <div class="card__footer">
           <p class="price">
             <strong class="price__value">Free</strong>
@@ -52,18 +102,142 @@ description: "SEO Growth Starter, full-service website management, and custom ap
         </div>
       </div>
       <div class="card">
-        <p class="eyebrow">In-depth audit</p>
+        <p class="eyebrow">Step 2 · In-depth audit</p>
         <h3 class="heading heading--md">Scorecard</h3>
         <p class="text text--muted">
-          Our full audit: every page checked, category scores, what's working, what's costing you, a complete
-          competitor comparison, and a prioritized list of what to fix first, with the reasoning behind each step.
+          Our full audit, written so you can act on it. Every page checked and every finding explained, with the
+          reasoning behind each recommendation.
         </p>
+          <ul class="checklist">
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Category scores</strong>
+                — what's working, what's costing you, and why
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Full competitor comparison</strong>
+                — see exactly where local competitors are beating you on Google
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Prioritized fix list</strong>
+                — concrete next steps in the order that will move the needle most
+              </span>
+            </li>
+          </ul>
         <div class="card__footer">
           <p class="price">
             <span class="price__note">Included in the</span>
             <strong class="price__value">SEO Growth Starter</strong>
           </p>
           <div><a href="#seo" class="button button--primary">See SEO Growth Starter</a></div>
+        </div>
+      </div>
+      <div id="box-score" class="card">
+        <p class="eyebrow">Step 3 · Every month</p>
+        <h3 class="heading heading--md">Box Score</h3>
+        <p class="text text--muted">
+          Your private client dashboard, refreshed daily. Log in anytime to see what your website is bringing in, and
+          what to do next to get more.
+        </p>
+          <ul class="checklist">
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Every lead counted</strong>
+                — form sends, website calls and Google profile calls, tracked to their source
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Rankings &amp; traffic</strong>
+                — the searches you show up for and where visitors come from, AI assistants included
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">A fresh Scorecard monthly</strong>
+                — plus site speed and health checks, so problems get caught early
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">What to do next</strong>
+                — a ranked list of improvements with expected impact, and a button to have us do it
+              </span>
+            </li>
+          </ul>
+        <div class="card__footer">
+          <p class="price">
+            <span class="price__note">Included with</span>
+            <strong class="price__value">Website management</strong>
+          </p>
+          <div><a href="#websites" class="button button--primary">See website plans</a></div>
         </div>
       </div>
     </div>
@@ -218,10 +392,10 @@ description: "SEO Growth Starter, full-service website management, and custom ap
       <div class="decor decor--large decor--top-right" aria-hidden="true"></div>
       <div class="feature__content">
         <p class="eyebrow">02 · Full-Service Website Management</p>
-        <h2 class="heading heading--lg">Your whole website, handled.</h2>
+        <h2 class="heading heading--lg">A website that brings in calls, handled for you.</h2>
         <p class="lead">
-          Design, development, hosting and maintenance, plus SEO, social media integration and content updates. It's
-          like having a full-time marketing team for your website.
+          For one monthly fee, we design, build and run a fast, SEO-first website for your local business in Southern
+          Oregon, then track every call and form so you can see what it brings in.
         </p>
         <ul class="checklist">
           <li class="checklist__item">
@@ -236,7 +410,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
             </svg>
             <span>
               <strong class="checklist__term">Design &amp; development</strong>
-              — a fast, clear site built to rank and bring in calls
+              — a fast, mobile-friendly site built to rank in the towns you serve
             </span>
           </li>
           <li class="checklist__item">
@@ -250,8 +424,8 @@ description: "SEO Growth Starter, full-service website management, and custom ap
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
             </svg>
             <span>
-              <strong class="checklist__term">Hosting &amp; maintenance</strong>
-              — updates, security and backups taken care of
+              <strong class="checklist__term">Lead capture</strong>
+              — clear calls to action and forms that send every inquiry straight to you
             </span>
           </li>
           <li class="checklist__item">
@@ -265,8 +439,8 @@ description: "SEO Growth Starter, full-service website management, and custom ap
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
             </svg>
             <span>
-              <strong class="checklist__term">Ongoing SEO</strong>
-              — service and location pages that keep you climbing
+              <strong class="checklist__term">Box Score dashboard</strong>
+              — log in anytime to see your calls, form leads, rankings and site health, plus a ranked list of what to do next <a href="#box-score" class="link">See Box Score <span class="link__arrow" aria-hidden="true">→</span></a>
             </span>
           </li>
           <li class="checklist__item">
@@ -284,24 +458,9 @@ description: "SEO Growth Starter, full-service website management, and custom ap
               — your profiles connected to your site
             </span>
           </li>
-          <li class="checklist__item">
-            <svg
-              class="checklist__icon icon icon--bold"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-            </svg>
-            <span>
-              <strong class="checklist__term">Content updates</strong>
-              — new services, photos, hours and offers, whenever you need them
-            </span>
-          </li>
         </ul>
         <div class="cluster">
-          <a href="/contact/" class="button button--primary">Talk about your site</a>
+          <a href="/contact/?need=website-management" class="button button--primary">Talk about your site</a>
           <a href="/work/" class="button button--secondary">See sites we've built</a>
         </div>
       </div>
@@ -313,18 +472,12 @@ description: "SEO Growth Starter, full-service website management, and custom ap
             <span class="plan__unit">/ month</span>
           </p>
           <p class="plan__text">
-            Everything included, for one monthly fee. 12-month minimum commitment.
+            Everything included: design, build, hosting, maintenance, security and backups, plus content updates
+            whenever you need them. Your site stays live as long as your subscription is active. 12-month minimum.
           </p>
-        </div>
-        <p class="plan__or">or</p>
-        <div class="plan">
-          <p class="eyebrow eyebrow--muted">Own your website</p>
-          <p class="plan__price">
-            <strong class="plan__amount">$3,500</strong>
-            <span class="plan__unit">one-time</span>
-          </p>
-          <p class="plan__text">
-            Pay once and the website is yours, then just $25/month for hosting and maintenance.
+          <p class="plan__note">
+            Prefer to own it? Pay $3,500 once, then $25/month for hosting and maintenance. Content updates billed as
+            needed.
           </p>
         </div>
       </div>
@@ -622,9 +775,13 @@ description: "SEO Growth Starter, full-service website management, and custom ap
             <span class="faq__icon" aria-hidden="true"></span>
           </summary>
           <p class="faq__answer">
-            The SEO Growth Starter is a one-time $500. Full-Service Website Management is $175/month with a 12-month
-            minimum, or $3,500 once to own your website plus $25/month for hosting and maintenance. Custom tools start
-            with a $250 workflow review; quick tools run $750–$2,000 and custom apps $2,500–$7,500.
+            The Scouting Report is free. The SEO Growth Starter is a one-time $500 and includes a full Scorecard audit.
+            Full-Service Website Management is $175/month with a 12-month minimum: design, build, hosting, maintenance
+            and content updates are all included, and your site stays live as long as your subscription is active.
+            Prefer to own your site? Pay $3,500 once, then $25/month for hosting and maintenance, with content updates
+            billed as needed. Both website options include your Box Score dashboard. Custom tools start with a $250
+            workflow review, credited in full toward any build within 60 days; quick tools run $750–$2,000, custom
+            apps $2,500–$7,500, and hosting and support for your tools starts at $50/month.
           </p>
         </details>
         <details class="faq__item">

@@ -304,6 +304,140 @@ description: "SEO-focused websites, website management and custom apps that help
   </div>
 </section>
 
+<section id="box-score" class="section">
+  <div class="container">
+    <div class="feature feature--wide-visual">
+      <div class="feature__content">
+        <p class="eyebrow">Box Score · your client dashboard</p>
+        <h2 class="heading heading--lg">See exactly what your website brings in.</h2>
+        <p class="lead">
+          Every website client gets Box Score: a private dashboard that shows the calls and form leads your site brings
+          in, where they came from, and what to do next to get more.
+        </p>
+        <ul class="checklist">
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon icon icon--bold"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Every lead counted</strong>
+              — form sends, website calls and Google profile calls, tracked back to their source
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon icon icon--bold"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Rankings &amp; traffic</strong>
+              — the searches you show up for, where visitors come from (AI assistants included) and how many turn into leads
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon icon icon--bold"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">Site health</strong>
+              — speed and technical checks, plus a fresh Scorecard every month
+            </span>
+          </li>
+          <li class="checklist__item">
+            <svg
+              class="checklist__icon icon icon--bold"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+            </svg>
+            <span>
+              <strong class="checklist__term">What to do next</strong>
+              — a ranked list of improvements with the impact we expect, and a button to have us do it
+            </span>
+          </li>
+        </ul>
+        <div class="cluster">
+          <a href="/services/#websites" class="button button--primary">See website plans</a>
+          <a href="/contact/?need=free-audit" class="button button--secondary">Get a free site audit</a>
+        </div>
+      </div>
+      <div class="inbox">
+        <div class="inbox__header">
+          <p class="label label--on-dark">Box Score · sample</p>
+          <span class="inbox__period">This month</span>
+        </div>
+        <ul class="inbox__list">
+          <li class="inbox__row">
+            <span class="inbox__main">
+              <strong class="inbox__subject">Add a Roseburg service page</strong>
+              <span class="inbox__source">What to do next · ranked #1</span>
+            </span>
+            <span class="inbox__time">High impact</span>
+            <span class="chip chip--warning">
+              <span class="chip__dot"></span>
+              Have us do this
+            </span>
+          </li>
+          <li class="inbox__row">
+            <span class="inbox__main">
+              <strong class="inbox__subject">31 leads this month</strong>
+              <span class="inbox__source">18 calls · 13 forms · up from 22</span>
+            </span>
+            <span class="inbox__time">Leads</span>
+            <span class="chip chip--success">
+              <span class="chip__dot"></span>
+              Trending up
+            </span>
+          </li>
+          <li class="inbox__row">
+            <span class="inbox__main">
+              <strong class="inbox__subject">“water heater repair roseburg”</strong>
+              <span class="inbox__source">Search Console · position 4</span>
+            </span>
+            <span class="inbox__time">Rankings</span>
+            <span class="chip chip--success">
+              <span class="chip__dot"></span>
+              Up 3 spots
+            </span>
+          </li>
+          <li class="inbox__row">
+            <span class="inbox__main">
+              <strong class="inbox__subject">Mobile page speed</strong>
+              <span class="inbox__source">PageSpeed Insights · 71 / 100</span>
+            </span>
+            <span class="inbox__time">Site health</span>
+            <span class="chip chip--danger">
+              <span class="chip__dot"></span>
+              Needs work
+            </span>
+          </li>
+        </ul>
+        <p class="inbox__footnote">Refreshed daily from Google Analytics, Search Console and your Business Profile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="section-header section-header--split">
@@ -408,7 +542,7 @@ description: "SEO-focused websites, website management and custom apps that help
       <li class="card card--compact">
         <p class="eyebrow eyebrow--muted">Step 04</p>
         <h3 class="heading heading--sm">Launch &amp; grow</h3>
-        <p class="text text--muted">Tracking from day one, and ongoing help on a monthly plan if you want it.</p>
+        <p class="text text--muted">Your Box Score dashboard tracks every call and form from day one, with ongoing help on a monthly plan.</p>
       </li>
     </ol>
   </div>

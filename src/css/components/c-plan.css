@@ -63,14 +63,4 @@
     line-height: var(--leading-snug);
     color: var(--color-text-muted);
   }
-
-  /* "or" between two plan cards */
-  &__or {
-    margin: 0;
-    font-family: var(--font-mono);
-    font-size: var(--font-size-13);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-  }
 }
