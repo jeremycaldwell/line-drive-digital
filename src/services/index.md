@@ -339,8 +339,8 @@ description: "SEO Growth Starter, full-service website management, and custom ap
       <h2 class="heading heading--lg section-header__title">Software that fits the way you work.</h2>
       <p class="lead section-header__lead">
         Every business has the task nobody wants to do: the quote typed up at 9pm, the missed call, the spreadsheet that
-        lives in one person's head. We build small, practical tools around those problems, using AI where it saves real
-        time and custom-built software where that's the better fit.
+        lives in one person's head. We build small, practical tools around those problems: AI where it saves real time,
+        custom-built software everywhere else.
       </p>
     </div>
     <div class="grid grid--3 reveal">
