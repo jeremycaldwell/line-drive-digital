@@ -340,7 +340,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
       <p class="lead section-header__lead">
         Every business has the task nobody wants to do: the quote typed up at 9pm, the missed call, the spreadsheet that
         lives in one person's head. We build small, practical tools around those problems, using AI where it saves real
-        time and plain software where that's the better fit.
+        time and custom-built software where that's the better fit.
       </p>
     </div>
     <div class="grid grid--3 reveal">
