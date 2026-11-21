@@ -49,7 +49,3 @@ Drop in a large source image (e.g. 2x the display size) under `src/images/`; the
 {% image "images/photo.jpg", "Alt text" %}
 {% image "images/photo.jpg", "Alt text", { hero: true, isFirstHero: true } %}
 ```
-
-## Before launch
-- Replace every `[PLACEHOLDER]` (prices, email, phone, hours, client names, results, photos).
-- Add a social preview image and `og:image` tags.

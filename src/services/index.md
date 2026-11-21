@@ -257,7 +257,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
         <p class="text text--muted">
           A good fit if you're new, starting over, or have a website but no real presence on Google yet.
         </p>
-        <div><a href="/contact/" class="button button--primary">Get started</a></div>
+        <div><a href="/contact/?need=seo-growth-starter" class="button button--primary">Get started</a></div>
       </div>
       <div class="reveal">
         <div class="plan">
@@ -806,8 +806,8 @@ description: "SEO Growth Starter, full-service website management, and custom ap
       <p class="eyebrow eyebrow--on-dark">Not sure where to start?</p>
       <h2 class="heading heading--lg cta__title">Start with a free audit.</h2>
       <p class="lead lead--on-dark cta__text">
-        Have a website? We'll run a Scouting Report and tell you the one thing we'd fix first. Starting from scratch?
-        We'll show you who you're up against on Google.
+        Have a website? We'll run a Scouting Report: your score, the top three issues costing you calls, and how you
+        stack up against local competitors. Starting from scratch? We'll show you who you're up against on Google.
       </p>
       <div class="cta__actions"><a href="/contact/?need=free-audit" class="button button--light">Let's talk</a></div>
     </div>

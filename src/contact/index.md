@@ -102,10 +102,6 @@ description: "Get a free site audit from Line Drive Digital."
                 <span class="button button--light button--small">Website management</span>
               </label>
               <label class="toggle">
-                <input class="toggle__input" type="checkbox" name="needs" value="Ongoing SEO" />
-                <span class="button button--light button--small">Ongoing SEO</span>
-              </label>
-              <label class="toggle">
                 <input class="toggle__input" type="checkbox" name="needs" value="Workflow review" />
                 <span class="button button--light button--small">Workflow review</span>
               </label>
@@ -162,15 +158,12 @@ description: "Get a free site audit from Line Drive Digital."
           <p class="eyebrow">What happens next</p>
           <ol class="numbered-list">
             <li class="numbered-list__item">
-              <span class="numbered-list__number">01</span>
               <span>We run a free Scouting Report on your site, or check your local competition if you're starting fresh.</span>
             </li>
             <li class="numbered-list__item">
-              <span class="numbered-list__number">02</span>
               <span>A short call to learn how your business runs.</span>
             </li>
             <li class="numbered-list__item">
-              <span class="numbered-list__number">03</span>
               <span>You get your results and a clear proposal.</span>
             </li>
           </ol>
