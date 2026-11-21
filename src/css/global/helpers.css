@@ -22,6 +22,14 @@
   color: var(--color-black);
 }
 
+/* Hidden on tablet and phone (helpers load before layout, so !important
+   wins over .cluster's display: flex) */
+.desktop-only {
+  @media (--viewport-tablet-down) {
+    display: none !important;
+  }
+}
+
 /* Remove list bullets and spacing (lists used for layout) */
 .list-reset {
   margin: 0;

@@ -20,7 +20,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
         <div><a href="/contact/?need=free-audit" class="button button--primary">Get a free audit</a></div>
       </div>
     </div>
-    <nav class="cluster cluster--spaced" aria-label="On this page">
+    <nav class="cluster cluster--spaced desktop-only" aria-label="On this page">
       <a href="#seo" class="button button--secondary button--small">SEO Growth Starter</a>
       <a href="#websites" class="button button--secondary button--small">Website management</a>
       <a href="#apps" class="button button--secondary button--small">Custom apps &amp; AI</a>
