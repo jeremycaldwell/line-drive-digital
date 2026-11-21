@@ -39,7 +39,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
       </p>
     </div>
     <div class="grid grid--3">
-      <div class="card">
+      <div id="scouting-report" class="card">
         <p class="eyebrow">Free audit</p>
         <h3 class="heading heading--md">Scouting Report</h3>
         <p class="text text--muted">
