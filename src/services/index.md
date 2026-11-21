@@ -687,7 +687,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
           <strong class="price__value">from $50 / month</strong>
         </p>
         <div class="cluster">
-          <a href="/contact/?need=custom-tool-app" class="button button--light">Describe your idea</a>
+          <a href="/contact/?need=custom-app" class="button button--light">Describe your idea</a>
           <a href="/work/" class="button button--ghost">See apps we've built</a>
         </div>
       </div>

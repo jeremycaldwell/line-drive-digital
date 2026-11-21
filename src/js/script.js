@@ -563,7 +563,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Pre-select a "What do you need?" option from the link, e.g.
     // /contact/?need=free-audit ticks "Free audit" (value lowercased, each run of
-    // non-alphanumerics → -, so "Custom tool / app" is custom-tool-app).
+    // non-alphanumerics → -, so "Quick tool / automation" is quick-tool-automation).
     // Box Score report buttons also pass ?website= and ?message= to prefill those fields.
     const params = new URLSearchParams(window.location.search);
     const need = params.get('need');

@@ -102,6 +102,10 @@ description: "Get a free site audit from Line Drive Digital."
                 <span class="button button--light button--small">Website management</span>
               </label>
               <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="One-time website build" />
+                <span class="button button--light button--small">One-time website build</span>
+              </label>
+              <label class="toggle">
                 <input class="toggle__input" type="checkbox" name="needs" value="Box Score" />
                 <span class="button button--light button--small">Box Score</span>
               </label>
@@ -110,8 +114,12 @@ description: "Get a free site audit from Line Drive Digital."
                 <span class="button button--light button--small">Workflow review</span>
               </label>
               <label class="toggle">
-                <input class="toggle__input" type="checkbox" name="needs" value="Custom tool / app" />
-                <span class="button button--light button--small">Custom tool / app</span>
+                <input class="toggle__input" type="checkbox" name="needs" value="Quick tool / automation" />
+                <span class="button button--light button--small">Quick tool / automation</span>
+              </label>
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" name="needs" value="Custom app" />
+                <span class="button button--light button--small">Custom app</span>
               </label>
               <label class="toggle">
                 <input class="toggle__input" type="checkbox" name="needs" value="Not sure yet" />
