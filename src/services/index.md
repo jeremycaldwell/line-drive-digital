@@ -411,8 +411,11 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
         <div class="plan">
           <p class="eyebrow eyebrow--muted">Monthly retainer</p>
           <p class="plan__price">
-            <strong class="plan__amount">Monthly</strong>
-            <span class="plan__unit">priced in your free audit</span>
+            <strong class="plan__amount">From $250</strong>
+            <span class="plan__unit">/ month</span>
+          </p>
+          <p class="plan__text">
+            Scoped in your free audit by how much of the roadmap you want worked each month. No long-term contract.
           </p>
           <ul class="checklist">
             <li class="checklist__item">
@@ -891,7 +894,7 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
           </summary>
           <p class="faq__answer">
             The Scouting Report is free. The SEO Growth Starter is a one-time $500 and includes a full Scorecard audit.
-            Ongoing SEO is a monthly retainer, priced in your free audit by how much of the roadmap you want worked.
+            Ongoing SEO starts at $250/month, scoped in your free audit by how much of the roadmap you want worked.
             Full-Service Website Management is $175/month with a 12-month minimum: design, build, hosting, maintenance
             and content updates are all included, and your site stays live as long as your subscription is active.
             Prefer to own your site? Pay $3,500 once, then $25/month for hosting and maintenance, with content updates
