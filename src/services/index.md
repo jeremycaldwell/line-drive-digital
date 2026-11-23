@@ -253,10 +253,10 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
         <h2 class="heading heading--lg">Get on Google the right way, from day one.</h2>
         <p class="lead">
           An initial SEO strategy that establishes your business on Google and other search engines: every account set
-          up properly, research on what your customers search, and a roadmap for what to do next.
+          up properly, a look at who outranks you locally, and your next steps in order.
         </p>
         <p class="text text--muted">
-          A good fit if you're new, starting over, or have a website but no real presence on Google yet.
+          A good fit if you have a website but no real presence on Google yet, or you're launching a new one.
         </p>
         <div><a href="/contact/?need=seo-growth-starter" class="button button--primary">Get started</a></div>
       </div>
@@ -280,7 +280,7 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
               </svg>
               <span>
                 <strong class="checklist__term">Scorecard audit</strong>
-                — a page-by-page review of your site (or your top local competitors if you're starting fresh) with a prioritized fix list
+                — a page-by-page review of your site with a prioritized fix list
               </span>
             </li>
             <li class="checklist__item">
@@ -295,7 +295,7 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
               </svg>
               <span>
                 <strong class="checklist__term">Google Business Profile</strong>
-                — created and set up so you show up on Maps and local search
+                — created and set up with you so you show up on Maps and local search
               </span>
             </li>
             <li class="checklist__item">
@@ -310,7 +310,7 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
               </svg>
               <span>
                 <strong class="checklist__term">Google Analytics &amp; Search Console</strong>
-                — see who finds you, and how
+                — set up with you so you can see who finds you, and how
               </span>
             </li>
             <li class="checklist__item">
@@ -325,22 +325,7 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
               </svg>
               <span>
                 <strong class="checklist__term">Google Ads account</strong>
-                — set up and ready whenever you want to run ads
-              </span>
-            </li>
-            <li class="checklist__item">
-              <svg
-                class="checklist__icon icon icon--bold"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
-              </svg>
-              <span>
-                <strong class="checklist__term">Keyword research</strong>
-                — the words your customers actually search
+                — set up with you, ready whenever you want to run ads
               </span>
             </li>
             <li class="checklist__item">
@@ -355,7 +340,7 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
               </svg>
               <span>
                 <strong class="checklist__term">Competitor analysis</strong>
-                — who shows up today, and why
+                — a snapshot of three local competitors: how their sites score against yours and what they do differently
               </span>
             </li>
             <li class="checklist__item">
@@ -370,10 +355,14 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
               </svg>
               <span>
                 <strong class="checklist__term">SEO roadmap</strong>
-                — a clear, prioritized plan for what comes next
+                — your three highest-impact next steps, in order, with what each fixes
               </span>
             </li>
           </ul>
+          <p class="plan__note">
+            Google requires you, the owner, to verify your Business Profile and accept the terms on each account. We
+            set everything up together and walk you through each step.
+          </p>
           <p class="plan__note">
             Add-on: updates to your Facebook, Instagram, Yelp, Angi and other profiles, for an additional fee.
           </p>
@@ -893,7 +882,8 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
             <span class="faq__icon" aria-hidden="true"></span>
           </summary>
           <p class="faq__answer">
-            The Scouting Report is free. The SEO Growth Starter is a one-time $500 and includes a full Scorecard audit.
+            The Scouting Report is free. The SEO Growth Starter is a one-time $500: a Scorecard audit of your site, your
+            Google accounts set up with you, and your three highest-impact next steps.
             Ongoing SEO starts at $250/month, scoped in your free audit by how much of the roadmap you want worked.
             Full-Service Website Management is $175/month with a 12-month minimum: design, build, hosting, maintenance
             and content updates are all included, and your site stays live as long as your subscription is active.
