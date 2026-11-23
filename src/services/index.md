@@ -2,7 +2,7 @@
 layout: layout.html
 seoTitle: "SEO, Website & Custom App Pricing | Line Drive Digital"
 title: Services
-description: "SEO Growth Starter, full-service website management, and custom apps and AI tools for small businesses."
+description: "SEO Growth Starter, ongoing SEO, full-service website management, and custom apps and AI tools for small businesses."
 ---
 
 <section class="section section--intro">
@@ -22,6 +22,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
     </div>
     <nav class="cluster cluster--spaced desktop-only" aria-label="On this page">
       <a href="#seo" class="button button--secondary button--small">SEO Growth Starter</a>
+      <a href="#ongoing-seo" class="button button--secondary button--small">Ongoing SEO</a>
       <a href="#websites" class="button button--secondary button--small">Website management</a>
       <a href="#apps" class="button button--secondary button--small">Custom apps &amp; AI</a>
     </nav>
@@ -228,7 +229,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
               </svg>
               <span>
                 <strong class="checklist__term">What to do next</strong>
-                — a ranked list of improvements with expected impact, and a button to have us do it
+                — a ranked list of improvements with expected impact, and a button to have us do it <a href="#ongoing-seo" class="link">See Ongoing SEO <span class="link__arrow" aria-hidden="true">→</span></a>
               </span>
             </li>
           </ul>
@@ -377,8 +378,122 @@ description: "SEO Growth Starter, full-service website management, and custom ap
             Add-on: updates to your Facebook, Instagram, Yelp, Angi and other profiles, for an additional fee.
           </p>
           <p class="plan__note">
+            Want us to work the roadmap for you?
+            <a href="#ongoing-seo" class="link">See Ongoing SEO <span class="link__arrow" aria-hidden="true">→</span></a>
+          </p>
+          <p class="plan__note">
             Need a new website too?
             <a href="#websites" class="link">See Full-Service Website Management <span class="link__arrow" aria-hidden="true">→</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ongoing-seo" class="section section--band">
+  <div class="container">
+    <div class="feature feature--top">
+      <div class="feature__content">
+        <p class="eyebrow">Ongoing SEO</p>
+        <h2 class="heading heading--lg">Keep climbing, month after month.</h2>
+        <p class="lead">
+          The Growth Starter gets you set up and hands you a roadmap. Ongoing SEO is us working that roadmap: every
+          month we take the top items from your Box Score list, do the work, and show you what it brought in.
+        </p>
+        <p class="text text--muted">
+          A good fit once you're set up on Google and want to show up for more jobs in more towns, without doing the
+          work yourself.
+        </p>
+        <div><a href="/contact/?need=ongoing-seo" class="button button--primary">Talk about ongoing SEO</a></div>
+      </div>
+      <div class="reveal">
+        <div class="plan">
+          <p class="eyebrow eyebrow--muted">Monthly retainer</p>
+          <p class="plan__price">
+            <strong class="plan__amount">Monthly</strong>
+            <span class="plan__unit">priced in your free audit</span>
+          </p>
+          <ul class="checklist">
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">The top items, done</strong>
+                — each month we take the highest-impact fixes from your ranked list and do the work
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Service &amp; location pages</strong>
+                — new pages for the jobs you want and the towns you serve, written to rank
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Google Business Profile upkeep</strong>
+                — posts, photos, services and review replies that keep your listing active
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">A fresh Scorecard monthly</strong>
+                — so new problems get caught, and the fix list stays current
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
+                <strong class="checklist__term">Results you can see</strong>
+                — your Box Score shows the work as done and what it brought in, with a report email every month
+              </span>
+            </li>
+          </ul>
+          <p class="plan__note">
+            Not set up on Google yet?
+            <a href="#seo" class="link">Start with the SEO Growth Starter <span class="link__arrow" aria-hidden="true">→</span></a>
           </p>
         </div>
       </div>
@@ -746,8 +861,8 @@ description: "SEO Growth Starter, full-service website management, and custom ap
           </summary>
           <p class="faq__answer">
             Not always. If your site is solid, the <a href="#seo" class="link">SEO Growth Starter</a> may be all you
-            need. The free audit tells you whether your current site can be fixed or whether a rebuild will pay off
-            faster.
+            need, with <a href="#ongoing-seo" class="link">Ongoing SEO</a> if you want us to keep working the list.
+            The free audit tells you whether your current site can be fixed or whether a rebuild will pay off faster.
           </p>
         </details>
         <details class="faq__item">
@@ -776,6 +891,7 @@ description: "SEO Growth Starter, full-service website management, and custom ap
           </summary>
           <p class="faq__answer">
             The Scouting Report is free. The SEO Growth Starter is a one-time $500 and includes a full Scorecard audit.
+            Ongoing SEO is a monthly retainer, priced in your free audit by how much of the roadmap you want worked.
             Full-Service Website Management is $175/month with a 12-month minimum: design, build, hosting, maintenance
             and content updates are all included, and your site stays live as long as your subscription is active.
             Prefer to own your site? Pay $3,500 once, then $25/month for hosting and maintenance, with content updates
