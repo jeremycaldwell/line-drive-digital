@@ -311,8 +311,9 @@ description: "SEO-focused websites, website management and custom apps that help
         <p class="eyebrow">Box Score · your client dashboard</p>
         <h2 class="heading heading--lg">See exactly what your website brings in.</h2>
         <p class="lead">
-          Every website client gets Box Score: a private dashboard that shows the calls and form leads your site brings
-          in, where they came from, and what to do next to get more.
+          Box Score is a private dashboard that shows the calls and form leads your site brings in, where they came
+          from, and what to do next to get more. It comes with every website plan and with Ongoing SEO, or on its own
+          for $75 a month.
         </p>
         <ul class="checklist">
           <li class="checklist__item">
@@ -377,7 +378,7 @@ description: "SEO-focused websites, website management and custom apps that help
           </li>
         </ul>
         <div class="cluster">
-          <a href="/services/#websites" class="button button--primary">See website plans</a>
+          <a href="/services/#box-score" class="button button--primary">See Box Score</a>
           <a href="/contact/?need=free-audit" class="button button--secondary">Get a free site audit</a>
         </div>
       </div>

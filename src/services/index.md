@@ -2,7 +2,7 @@
 layout: layout.html
 seoTitle: "SEO, Website & Custom App Pricing | Line Drive Digital"
 title: Services
-description: "SEO Growth Starter, ongoing SEO, full-service website management, and custom apps and AI tools for small businesses."
+description: "SEO Growth Starter, Box Score, ongoing SEO, full-service website management, and custom apps and AI tools for small businesses."
 ---
 
 <section class="section section--intro">
@@ -14,14 +14,16 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
       </div>
       <div class="intro__aside">
         <p class="lead">
-          Get found on Google with a one-time SEO setup, hand us your whole website, or bring us a problem and we'll
-          build the tool that solves it. Every engagement starts with a free audit, whether you have a website or not.
+          Get found on Google with a one-time SEO setup, watch what it brings in every month with Box Score, have us
+          work the list for you, hand us your whole website, or bring us a problem and we'll build the tool that
+          solves it. Every engagement starts with a free audit, whether you have a website or not.
         </p>
         <div><a href="/contact/?need=free-audit" class="button button--primary">Get a free audit</a></div>
       </div>
     </div>
     <nav class="cluster cluster--spaced desktop-only" aria-label="On this page">
       <a href="#seo" class="button button--secondary button--small">SEO Growth Starter</a>
+      <a href="#box-score" class="button button--secondary button--small">Box Score</a>
       <a href="#ongoing-seo" class="button button--secondary button--small">Ongoing SEO</a>
       <a href="#websites" class="button button--secondary button--small">Website management</a>
       <a href="#apps" class="button button--secondary button--small">Custom apps &amp; AI</a>
@@ -161,6 +163,7 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
             <span class="price__note">Included in the</span>
             <strong class="price__value">SEO Growth Starter</strong>
           </p>
+          <p class="price__note">Then fresh every month with <a href="#box-score" class="link">Box Score</a>.</p>
           <div><a href="#seo" class="button button--primary">See SEO Growth Starter</a></div>
         </div>
       </div>
@@ -169,7 +172,8 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
         <h3 class="heading heading--md">Box Score</h3>
         <p class="text text--muted">
           Your private client dashboard, refreshed daily. Log in anytime to see what your website is bringing in, and
-          what to do next to get more.
+          what to do next to get more. Works on the site you have today, so it's the natural next step after your
+          Growth Starter.
         </p>
           <ul class="checklist">
             <li class="checklist__item">
@@ -228,6 +232,21 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
               </svg>
               <span>
+                <strong class="checklist__term">Monthly report email</strong>
+                — the month's numbers and next steps in your inbox, with a link to the live dashboard
+              </span>
+            </li>
+            <li class="checklist__item">
+              <svg
+                class="checklist__icon icon icon--bold"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+              </svg>
+              <span>
                 <strong class="checklist__term">What to do next</strong>
                 — a ranked list of improvements with expected impact, and a button to have us do it <a href="#ongoing-seo" class="link">See Ongoing SEO <span class="link__arrow" aria-hidden="true">→</span></a>
               </span>
@@ -235,10 +254,10 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
           </ul>
         <div class="card__footer">
           <p class="price">
-            <span class="price__note">Included with</span>
-            <strong class="price__value">Website management</strong>
+            <strong class="price__value">$75</strong>
+            <span class="price__note">/ month · included with Ongoing SEO and every website plan</span>
           </p>
-          <div><a href="#websites" class="button button--primary">See website plans</a></div>
+          <div><a href="/contact/?need=box-score" class="button button--primary">Get Box Score</a></div>
         </div>
       </div>
     </div>
@@ -367,6 +386,10 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
             Add-on: updates to your Facebook, Instagram, Yelp, Angi and other profiles, for an additional fee.
           </p>
           <p class="plan__note">
+            Want to watch the roadmap pay off?
+            <a href="#box-score" class="link">Add Box Score for $75/month <span class="link__arrow" aria-hidden="true">→</span></a>
+          </p>
+          <p class="plan__note">
             Want us to work the roadmap for you?
             <a href="#ongoing-seo" class="link">See Ongoing SEO <span class="link__arrow" aria-hidden="true">→</span></a>
           </p>
@@ -478,8 +501,8 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
                 <path d="M5 12.5l4.5 4.5L19 7.5"></path>
               </svg>
               <span>
-                <strong class="checklist__term">Results you can see</strong>
-                — your Box Score shows the work as done and what it brought in, with a report email every month
+                <strong class="checklist__term">Box Score included</strong>
+                — your dashboard shows the work as done and what it brought in, with a report email every month
               </span>
             </li>
           </ul>
@@ -546,8 +569,8 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
               <path d="M5 12.5l4.5 4.5L19 7.5"></path>
             </svg>
             <span>
-              <strong class="checklist__term">Box Score dashboard</strong>
-              — log in anytime to see your calls, form leads, rankings and site health, plus a ranked list of what to do next <a href="#box-score" class="link">See Box Score <span class="link__arrow" aria-hidden="true">→</span></a>
+              <strong class="checklist__term">Box Score included</strong>
+              — log in anytime to see your calls, form leads, rankings and site health, plus a fresh Scorecard every month and a ranked list of what to do next <a href="#box-score" class="link">See Box Score <span class="link__arrow" aria-hidden="true">→</span></a>
             </span>
           </li>
           <li class="checklist__item">
@@ -584,7 +607,7 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
           </p>
           <p class="plan__note">
             Prefer to own it? Pay $3,500 once, then $25/month for hosting and maintenance. Content updates billed as
-            needed.
+            needed. Box Score is included either way.
           </p>
         </div>
       </div>
@@ -853,7 +876,8 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
           </summary>
           <p class="faq__answer">
             Not always. If your site is solid, the <a href="#seo" class="link">SEO Growth Starter</a> may be all you
-            need, with <a href="#ongoing-seo" class="link">Ongoing SEO</a> if you want us to keep working the list.
+            need, with <a href="#box-score" class="link">Box Score</a> to watch the results and
+            <a href="#ongoing-seo" class="link">Ongoing SEO</a> if you want us to keep working the list.
             The free audit tells you whether your current site can be fixed or whether a rebuild will pay off faster.
           </p>
         </details>
@@ -883,12 +907,13 @@ description: "SEO Growth Starter, ongoing SEO, full-service website management, 
           </summary>
           <p class="faq__answer">
             The Scouting Report is free. The SEO Growth Starter is a one-time $500: a Scorecard audit of your site, your
-            Google accounts set up with you, and your three highest-impact next steps.
+            Google accounts set up with you, and your three highest-impact next steps. Box Score is $75/month on its
+            own, and included with Ongoing SEO and both website options.
             Ongoing SEO starts at $250/month, scoped in your free audit by how much of the roadmap you want worked.
             Full-Service Website Management is $175/month with a 12-month minimum: design, build, hosting, maintenance
             and content updates are all included, and your site stays live as long as your subscription is active.
             Prefer to own your site? Pay $3,500 once, then $25/month for hosting and maintenance, with content updates
-            billed as needed. Both website options include your Box Score dashboard. Custom tools start with a $250
+            billed as needed. Custom tools start with a $250
             workflow review, credited in full toward any build within 60 days; quick tools run $750–$2,000, custom
             apps $2,500–$7,500, and hosting and support for your tools starts at $50/month.
           </p>
